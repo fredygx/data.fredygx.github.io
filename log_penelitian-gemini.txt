@@ -1,0 +1,3412 @@
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:14:07
+============================================================
+{
+  "timestamp": "2026-06-14 18:14:07",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Tambah stok buku 10",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"buku\", \"jumlah\": 10}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok buku ditambah 10. Total: 10 unit.",
+  "latency_ms": 2928.21,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "buku",
+    "jumlah": 10,
+    "stok_sebelum": 0,
+    "stok_sesudah": 10
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:14:10
+============================================================
+{
+  "timestamp": "2026-06-14 18:14:10",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Tambahkan pulpen 5",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"pulpen\", \"jumlah\": 5}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok pulpen ditambah 5. Total: 5 unit.",
+  "latency_ms": 1057.94,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "pulpen",
+    "jumlah": 5,
+    "stok_sebelum": 0,
+    "stok_sesudah": 5
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:14:12
+============================================================
+{
+  "timestamp": "2026-06-14 18:14:12",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Tambah penghapus 8",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"penghapus\", \"jumlah\": 8}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok penghapus ditambah 8. Total: 8 unit.",
+  "latency_ms": 1509.63,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "penghapus",
+    "jumlah": 8,
+    "stok_sebelum": 0,
+    "stok_sesudah": 8
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:14:13
+============================================================
+{
+  "timestamp": "2026-06-14 18:14:13",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Tambahkan monitor 2",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"monitor\", \"jumlah\": 2}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok monitor ditambah 2. Total: 2 unit.",
+  "latency_ms": 697.32,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "monitor",
+    "jumlah": 2,
+    "stok_sebelum": 0,
+    "stok_sesudah": 2
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:14:16
+============================================================
+{
+  "timestamp": "2026-06-14 18:14:16",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Tambah laptop 1",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"laptop\", \"jumlah\": 1}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok laptop ditambah 1. Total: 1 unit.",
+  "latency_ms": 578.22,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "laptop",
+    "jumlah": 1,
+    "stok_sebelum": 0,
+    "stok_sesudah": 1
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:14:20
+============================================================
+{
+  "timestamp": "2026-06-14 18:14:20",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Tambah router 3",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"router\", \"jumlah\": 3}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok router ditambah 3. Total: 3 unit.",
+  "latency_ms": 1410.19,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "router",
+    "jumlah": 3,
+    "stok_sebelum": 0,
+    "stok_sesudah": 3
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:14:30
+============================================================
+{
+  "timestamp": "2026-06-14 18:14:30",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Tambahkan keyboard 4",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"keyboard\", \"jumlah\": 4}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok keyboard ditambah 4. Total: 4 unit.",
+  "latency_ms": 8146.18,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "keyboard",
+    "jumlah": 4,
+    "stok_sebelum": 0,
+    "stok_sesudah": 4
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:14:33
+============================================================
+{
+  "timestamp": "2026-06-14 18:14:33",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Tambah mouse 6",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"mouse\", \"jumlah\": 6}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok mouse ditambah 6. Total: 6 unit.",
+  "latency_ms": 1738.99,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "mouse",
+    "jumlah": 6,
+    "stok_sebelum": 0,
+    "stok_sesudah": 6
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:14:36
+============================================================
+{
+  "timestamp": "2026-06-14 18:14:36",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Tambahkan printer 2",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"printer\", \"jumlah\": 2}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok printer ditambah 2. Total: 2 unit.",
+  "latency_ms": 2551.41,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "printer",
+    "jumlah": 2,
+    "stok_sebelum": 0,
+    "stok_sesudah": 2
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:14:38
+============================================================
+{
+  "timestamp": "2026-06-14 18:14:38",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Tambah flashdisk 10",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"flashdisk\", \"jumlah\": 10}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok flashdisk ditambah 10. Total: 35 unit.",
+  "latency_ms": 1383.29,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "flashdisk",
+    "jumlah": 10,
+    "stok_sebelum": 25,
+    "stok_sesudah": 35
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:14:39
+============================================================
+{
+  "timestamp": "2026-06-14 18:14:39",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Buku datang 15",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"buku\", \"jumlah\": 15}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok buku ditambah 15. Total: 25 unit.",
+  "latency_ms": 707.88,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "buku",
+    "jumlah": 15,
+    "stok_sebelum": 10,
+    "stok_sesudah": 25
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:14:43
+============================================================
+{
+  "timestamp": "2026-06-14 18:14:43",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Pulpen datang 20",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"pulpen\", \"jumlah\": 20}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok pulpen ditambah 20. Total: 25 unit.",
+  "latency_ms": 1399.72,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "pulpen",
+    "jumlah": 20,
+    "stok_sebelum": 5,
+    "stok_sesudah": 25
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:14:45
+============================================================
+{
+  "timestamp": "2026-06-14 18:14:45",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Penghapus masuk 10",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"penghapus\", \"jumlah\": 10}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok penghapus ditambah 10. Total: 18 unit.",
+  "latency_ms": 902.78,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "penghapus",
+    "jumlah": 10,
+    "stok_sebelum": 8,
+    "stok_sesudah": 18
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:14:48
+============================================================
+{
+  "timestamp": "2026-06-14 18:14:48",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Monitor baru datang 3",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"monitor\", \"jumlah\": 3}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok monitor ditambah 3. Total: 5 unit.",
+  "latency_ms": 869.56,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "monitor",
+    "jumlah": 3,
+    "stok_sebelum": 2,
+    "stok_sesudah": 5
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:14:51
+============================================================
+{
+  "timestamp": "2026-06-14 18:14:51",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Laptop baru datang 2",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"Laptop\", \"jumlah\": 2}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok Laptop ditambah 2. Total: 3 unit.",
+  "latency_ms": 1211.66,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "Laptop",
+    "jumlah": 2,
+    "stok_sebelum": 1,
+    "stok_sesudah": 3
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:14:55
+============================================================
+{
+  "timestamp": "2026-06-14 18:14:55",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Router masuk 5",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"Router\", \"jumlah\": 5}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok Router ditambah 5. Total: 8 unit.",
+  "latency_ms": 2090.88,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "Router",
+    "jumlah": 5,
+    "stok_sebelum": 3,
+    "stok_sesudah": 8
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:14:57
+============================================================
+{
+  "timestamp": "2026-06-14 18:14:57",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Keyboard datang 7",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"keyboard\", \"jumlah\": 7}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok keyboard ditambah 7. Total: 11 unit.",
+  "latency_ms": 1220.49,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "keyboard",
+    "jumlah": 7,
+    "stok_sebelum": 4,
+    "stok_sesudah": 11
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:15:00
+============================================================
+{
+  "timestamp": "2026-06-14 18:15:00",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Mouse masuk 12",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"mouse\", \"jumlah\": 12}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok mouse ditambah 12. Total: 18 unit.",
+  "latency_ms": 862.72,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "mouse",
+    "jumlah": 12,
+    "stok_sebelum": 6,
+    "stok_sesudah": 18
+  }
+}
+
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:16:45
+============================================================
+{
+  "timestamp": "2026-06-14 18:16:45",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Flashdisk masuk 25",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"flashdisk\", \"jumlah\": 25}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok flashdisk ditambah 25. Total: 60 unit.",
+  "latency_ms": 1200.12,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "flashdisk",
+    "jumlah": 25,
+    "stok_sebelum": 35,
+    "stok_sesudah": 60
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:16:52
+============================================================
+{
+  "timestamp": "2026-06-14 18:16:52",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Printer datang 1",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"printer\", \"jumlah\": 1}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok printer ditambah 1. Total: 3 unit.",
+  "latency_ms": 3493.87,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "printer",
+    "jumlah": 1,
+    "stok_sebelum": 2,
+    "stok_sesudah": 3
+  }
+}
+
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:19:11
+============================================================
+{
+  "timestamp": "2026-06-14 18:19:11",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Tolong tambah buku 5",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"buku\", \"jumlah\": 5}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok buku ditambah 5. Total: 30 unit.",
+  "latency_ms": 907.34,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "buku",
+    "jumlah": 5,
+    "stok_sebelum": 25,
+    "stok_sesudah": 30
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:19:23
+============================================================
+{
+  "timestamp": "2026-06-14 18:19:23",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Tolong tambahkan pulpen 4",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"pulpen\", \"jumlah\": 4}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok pulpen ditambah 4. Total: 29 unit.",
+  "latency_ms": 7750.68,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "pulpen",
+    "jumlah": 4,
+    "stok_sebelum": 25,
+    "stok_sesudah": 29
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:19:25
+============================================================
+{
+  "timestamp": "2026-06-14 18:19:25",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Tambah stok penghapus 3",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"penghapus\", \"jumlah\": 3}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok penghapus ditambah 3. Total: 21 unit.",
+  "latency_ms": 1057.36,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "penghapus",
+    "jumlah": 3,
+    "stok_sebelum": 18,
+    "stok_sesudah": 21
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:19:27
+============================================================
+{
+  "timestamp": "2026-06-14 18:19:27",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Tambahkan monitor sebanyak 2",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"monitor\", \"jumlah\": 2}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok monitor ditambah 2. Total: 7 unit.",
+  "latency_ms": 848.5,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "monitor",
+    "jumlah": 2,
+    "stok_sebelum": 5,
+    "stok_sesudah": 7
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:19:31
+============================================================
+{
+  "timestamp": "2026-06-14 18:19:31",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Tambah laptop sebanyak 1",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"laptop\", \"jumlah\": 1}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok laptop ditambah 1. Total: 4 unit.",
+  "latency_ms": 519.27,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "laptop",
+    "jumlah": 1,
+    "stok_sebelum": 3,
+    "stok_sesudah": 4
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:19:36
+============================================================
+{
+  "timestamp": "2026-06-14 18:19:36",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Router bertambah 2",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"Router\", \"jumlah\": 2}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok Router ditambah 2. Total: 10 unit.",
+  "latency_ms": 891.02,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "Router",
+    "jumlah": 2,
+    "stok_sebelum": 8,
+    "stok_sesudah": 10
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:19:41
+============================================================
+{
+  "timestamp": "2026-06-14 18:19:41",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Keyboard bertambah 3",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"keyboard\", \"jumlah\": 3}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok keyboard ditambah 3. Total: 14 unit.",
+  "latency_ms": 1408.33,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "keyboard",
+    "jumlah": 3,
+    "stok_sebelum": 11,
+    "stok_sesudah": 14
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:19:43
+============================================================
+{
+  "timestamp": "2026-06-14 18:19:43",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Mouse bertambah 5",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"mouse\", \"jumlah\": 5}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok mouse ditambah 5. Total: 23 unit.",
+  "latency_ms": 749.94,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "mouse",
+    "jumlah": 5,
+    "stok_sebelum": 18,
+    "stok_sesudah": 23
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:19:47
+============================================================
+{
+  "timestamp": "2026-06-14 18:19:47",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Printer bertambah 1",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"printer\", \"jumlah\": 1}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok printer ditambah 1. Total: 5 unit.",
+  "latency_ms": 1512.79,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "printer",
+    "jumlah": 1,
+    "stok_sebelum": 4,
+    "stok_sesudah": 5
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:19:51
+============================================================
+{
+  "timestamp": "2026-06-14 18:19:51",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Flashdisk bertambah 8",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"flashdisk\", \"jumlah\": 8}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok flashdisk ditambah 8. Total: 68 unit.",
+  "latency_ms": 917.56,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "flashdisk",
+    "jumlah": 8,
+    "stok_sebelum": 60,
+    "stok_sesudah": 68
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:19:54
+============================================================
+{
+  "timestamp": "2026-06-14 18:19:54",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Masukkan buku 12",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"buku\", \"jumlah\": 12}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok buku ditambah 12. Total: 42 unit.",
+  "latency_ms": 921.1,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "buku",
+    "jumlah": 12,
+    "stok_sebelum": 30,
+    "stok_sesudah": 42
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:20:06
+============================================================
+{
+  "timestamp": "2026-06-14 18:20:06",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Masukkan pulpen 6",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"pulpen\", \"jumlah\": 6}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok pulpen ditambah 6. Total: 35 unit.",
+  "latency_ms": 9267.39,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "pulpen",
+    "jumlah": 6,
+    "stok_sebelum": 29,
+    "stok_sesudah": 35
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:20:09
+============================================================
+{
+  "timestamp": "2026-06-14 18:20:09",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Masukkan penghapus 4",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"penghapus\", \"jumlah\": 4}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok penghapus ditambah 4. Total: 25 unit.",
+  "latency_ms": 740.31,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "penghapus",
+    "jumlah": 4,
+    "stok_sebelum": 21,
+    "stok_sesudah": 25
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:20:14
+============================================================
+{
+  "timestamp": "2026-06-14 18:20:14",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Masukkan monitor 2",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"monitor\", \"jumlah\": 2}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok monitor ditambah 2. Total: 9 unit.",
+  "latency_ms": 2199.7,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "monitor",
+    "jumlah": 2,
+    "stok_sebelum": 7,
+    "stok_sesudah": 9
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:20:29
+============================================================
+{
+  "timestamp": "2026-06-14 18:20:29",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Masukkan laptop 1",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"laptop\", \"jumlah\": 1}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok laptop ditambah 1. Total: 5 unit.",
+  "latency_ms": 14130.52,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "laptop",
+    "jumlah": 1,
+    "stok_sebelum": 4,
+    "stok_sesudah": 5
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:20:31
+============================================================
+{
+  "timestamp": "2026-06-14 18:20:31",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Masukkan router 3",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"router\", \"jumlah\": 3}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok router ditambah 3. Total: 13 unit.",
+  "latency_ms": 645.6,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "router",
+    "jumlah": 3,
+    "stok_sebelum": 10,
+    "stok_sesudah": 13
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:20:33
+============================================================
+{
+  "timestamp": "2026-06-14 18:20:33",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Masukkan keyboard 5",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"keyboard\", \"jumlah\": 5}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok keyboard ditambah 5. Total: 19 unit.",
+  "latency_ms": 969.01,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "keyboard",
+    "jumlah": 5,
+    "stok_sebelum": 14,
+    "stok_sesudah": 19
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:20:36
+============================================================
+{
+  "timestamp": "2026-06-14 18:20:36",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Masukkan mouse 7",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"mouse\", \"jumlah\": 7}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok mouse ditambah 7. Total: 30 unit.",
+  "latency_ms": 972.91,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "mouse",
+    "jumlah": 7,
+    "stok_sebelum": 23,
+    "stok_sesudah": 30
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:20:48
+============================================================
+{
+  "timestamp": "2026-06-14 18:20:48",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Masukkan flashdisk 10",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"flashdisk\", \"jumlah\": 10}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok flashdisk ditambah 10. Total: 78 unit.",
+  "latency_ms": 9200.22,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "flashdisk",
+    "jumlah": 10,
+    "stok_sebelum": 68,
+    "stok_sesudah": 78
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:26:54
+============================================================
+{
+  "timestamp": "2026-06-14 18:26:54",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Kurangi stok buku 2",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"buku\", \"jumlah\": 2}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok buku dikurangi 2. Sisa: 40 unit.",
+  "latency_ms": 16140.95,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "buku",
+    "jumlah": 2,
+    "stok_sebelum": 42,
+    "stok_sesudah": 40
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:26:55
+============================================================
+{
+  "timestamp": "2026-06-14 18:26:55",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Kurangi pulpen 3",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"pulpen\", \"jumlah\": 3}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok pulpen dikurangi 3. Sisa: 32 unit.",
+  "latency_ms": 805.11,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "pulpen",
+    "jumlah": 3,
+    "stok_sebelum": 35,
+    "stok_sesudah": 32
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:26:57
+============================================================
+{
+  "timestamp": "2026-06-14 18:26:57",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Kurangi penghapus 4",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"penghapus\", \"jumlah\": 4}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok penghapus dikurangi 4. Sisa: 21 unit.",
+  "latency_ms": 1091.63,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "penghapus",
+    "jumlah": 4,
+    "stok_sebelum": 25,
+    "stok_sesudah": 21
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:27:20
+============================================================
+{
+  "timestamp": "2026-06-14 18:27:20",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Kurangi monitor 1",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"monitor\", \"jumlah\": 1}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok monitor dikurangi 1. Sisa: 8 unit.",
+  "latency_ms": 3350.47,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "monitor",
+    "jumlah": 1,
+    "stok_sebelum": 9,
+    "stok_sesudah": 8
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:28:02
+============================================================
+{
+  "timestamp": "2026-06-14 18:28:02",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Kurangi laptop 1",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"laptop\", \"jumlah\": 1}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok laptop dikurangi 1. Sisa: 4 unit.",
+  "latency_ms": 10600.51,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "laptop",
+    "jumlah": 1,
+    "stok_sebelum": 5,
+    "stok_sesudah": 4
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:28:17
+============================================================
+{
+  "timestamp": "2026-06-14 18:28:17",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Kurangi router 2",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"router\", \"jumlah\": 2}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok router dikurangi 2. Sisa: 11 unit.",
+  "latency_ms": 14167.99,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "router",
+    "jumlah": 2,
+    "stok_sebelum": 13,
+    "stok_sesudah": 11
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:28:24
+============================================================
+{
+  "timestamp": "2026-06-14 18:28:24",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Kurangi keyboard 2",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"keyboard\", \"jumlah\": 2}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok keyboard dikurangi 2. Sisa: 17 unit.",
+  "latency_ms": 5791.98,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "keyboard",
+    "jumlah": 2,
+    "stok_sebelum": 19,
+    "stok_sesudah": 17
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:28:29
+============================================================
+{
+  "timestamp": "2026-06-14 18:28:29",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Kurangi mouse 3",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"mouse\", \"jumlah\": 3}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok mouse dikurangi 3. Sisa: 27 unit.",
+  "latency_ms": 1587.78,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "mouse",
+    "jumlah": 3,
+    "stok_sebelum": 30,
+    "stok_sesudah": 27
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:29:23
+============================================================
+{
+  "timestamp": "2026-06-14 18:29:23",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Kurangi printer 1",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"printer\", \"jumlah\": 1}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok printer dikurangi 1. Sisa: 4 unit.",
+  "latency_ms": 1400.08,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "printer",
+    "jumlah": 1,
+    "stok_sebelum": 5,
+    "stok_sesudah": 4
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:29:25
+============================================================
+{
+  "timestamp": "2026-06-14 18:29:25",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Kurangi flashdisk 5",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"flashdisk\", \"jumlah\": 5}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok flashdisk dikurangi 5. Sisa: 73 unit.",
+  "latency_ms": 725.42,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "flashdisk",
+    "jumlah": 5,
+    "stok_sebelum": 78,
+    "stok_sesudah": 73
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:29:31
+============================================================
+{
+  "timestamp": "2026-06-14 18:29:31",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Buku digunakan 3",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"buku\", \"jumlah\": 3}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok buku dikurangi 3. Sisa: 37 unit.",
+  "latency_ms": 3218.6,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "buku",
+    "jumlah": 3,
+    "stok_sebelum": 40,
+    "stok_sesudah": 37
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:29:32
+============================================================
+{
+  "timestamp": "2026-06-14 18:29:32",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Pulpen digunakan 2",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"pulpen\", \"jumlah\": 2}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok pulpen dikurangi 2. Sisa: 30 unit.",
+  "latency_ms": 689.74,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "pulpen",
+    "jumlah": 2,
+    "stok_sebelum": 32,
+    "stok_sesudah": 30
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:29:34
+============================================================
+{
+  "timestamp": "2026-06-14 18:29:34",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Penghapus digunakan 4",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"penghapus\", \"jumlah\": 4}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok penghapus dikurangi 4. Sisa: 17 unit.",
+  "latency_ms": 729.81,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "penghapus",
+    "jumlah": 4,
+    "stok_sebelum": 21,
+    "stok_sesudah": 17
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:29:44
+============================================================
+{
+  "timestamp": "2026-06-14 18:29:44",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Monitor digunakan 1",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"monitor\", \"jumlah\": 1}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok monitor dikurangi 1. Sisa: 7 unit.",
+  "latency_ms": 8208.62,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "monitor",
+    "jumlah": 1,
+    "stok_sebelum": 8,
+    "stok_sesudah": 7
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:29:53
+============================================================
+{
+  "timestamp": "2026-06-14 18:29:53",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Laptop digunakan 1",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"laptop\", \"jumlah\": 1}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok laptop dikurangi 1. Sisa: 3 unit.",
+  "latency_ms": 7810.58,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "laptop",
+    "jumlah": 1,
+    "stok_sebelum": 4,
+    "stok_sesudah": 3
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:29:55
+============================================================
+{
+  "timestamp": "2026-06-14 18:29:55",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Router digunakan 2",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"router\", \"jumlah\": 2}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok router dikurangi 2. Sisa: 9 unit.",
+  "latency_ms": 1090.69,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "router",
+    "jumlah": 2,
+    "stok_sebelum": 11,
+    "stok_sesudah": 9
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:30:16
+============================================================
+{
+  "timestamp": "2026-06-14 18:30:16",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Keyboard digunakan 1",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"keyboard\", \"jumlah\": 1}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok keyboard dikurangi 1. Sisa: 16 unit.",
+  "latency_ms": 1208.9,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "keyboard",
+    "jumlah": 1,
+    "stok_sebelum": 17,
+    "stok_sesudah": 16
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:30:29
+============================================================
+{
+  "timestamp": "2026-06-14 18:30:29",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Mouse digunakan 2",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"mouse\", \"jumlah\": 2}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok mouse dikurangi 2. Sisa: 25 unit.",
+  "latency_ms": 2800.46,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "mouse",
+    "jumlah": 2,
+    "stok_sebelum": 27,
+    "stok_sesudah": 25
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:30:43
+============================================================
+{
+  "timestamp": "2026-06-14 18:30:43",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Printer digunakan 1",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"printer\", \"jumlah\": 1}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok printer dikurangi 1. Sisa: 3 unit.",
+  "latency_ms": 11330.71,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "printer",
+    "jumlah": 1,
+    "stok_sebelum": 4,
+    "stok_sesudah": 3
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:30:46
+============================================================
+{
+  "timestamp": "2026-06-14 18:30:46",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Flashdisk digunakan 3",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"flashdisk\", \"jumlah\": 3}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok flashdisk dikurangi 3. Sisa: 70 unit.",
+  "latency_ms": 2217.53,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "flashdisk",
+    "jumlah": 3,
+    "stok_sebelum": 73,
+    "stok_sesudah": 70
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:30:48
+============================================================
+{
+  "timestamp": "2026-06-14 18:30:48",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Buku keluar 5",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"buku\", \"jumlah\": 5}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok buku dikurangi 5. Sisa: 32 unit.",
+  "latency_ms": 1392.46,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "buku",
+    "jumlah": 5,
+    "stok_sebelum": 37,
+    "stok_sesudah": 32
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:31:59
+============================================================
+{
+  "timestamp": "2026-06-14 18:31:59",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Pulpen keluar 4",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"pulpen\", \"jumlah\": 4}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok pulpen dikurangi 4. Sisa: 26 unit.",
+  "latency_ms": 3947.21,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "pulpen",
+    "jumlah": 4,
+    "stok_sebelum": 30,
+    "stok_sesudah": 26
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:32:01
+============================================================
+{
+  "timestamp": "2026-06-14 18:32:01",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Penghapus keluar 3",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"penghapus\", \"jumlah\": 3}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok penghapus dikurangi 3. Sisa: 14 unit.",
+  "latency_ms": 1170.31,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "penghapus",
+    "jumlah": 3,
+    "stok_sebelum": 17,
+    "stok_sesudah": 14
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:32:02
+============================================================
+{
+  "timestamp": "2026-06-14 18:32:02",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Monitor keluar 1",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"monitor\", \"jumlah\": 1}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok monitor dikurangi 1. Sisa: 6 unit.",
+  "latency_ms": 1010.58,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "monitor",
+    "jumlah": 1,
+    "stok_sebelum": 7,
+    "stok_sesudah": 6
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:32:04
+============================================================
+{
+  "timestamp": "2026-06-14 18:32:04",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Laptop keluar 1",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"Laptop\", \"jumlah\": 1}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok Laptop dikurangi 1. Sisa: 2 unit.",
+  "latency_ms": 864.27,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "Laptop",
+    "jumlah": 1,
+    "stok_sebelum": 3,
+    "stok_sesudah": 2
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:32:17
+============================================================
+{
+  "timestamp": "2026-06-14 18:32:17",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Router keluar 2",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"router\", \"jumlah\": 2}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok router dikurangi 2. Sisa: 7 unit.",
+  "latency_ms": 10664.71,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "router",
+    "jumlah": 2,
+    "stok_sebelum": 9,
+    "stok_sesudah": 7
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:32:20
+============================================================
+{
+  "timestamp": "2026-06-14 18:32:20",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Keyboard keluar 2",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"keyboard\", \"jumlah\": 2}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok keyboard dikurangi 2. Sisa: 14 unit.",
+  "latency_ms": 803.15,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "keyboard",
+    "jumlah": 2,
+    "stok_sebelum": 16,
+    "stok_sesudah": 14
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:32:34
+============================================================
+{
+  "timestamp": "2026-06-14 18:32:34",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Mouse keluar 3",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"mouse\", \"jumlah\": 3}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok mouse dikurangi 3. Sisa: 22 unit.",
+  "latency_ms": 10362.51,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "mouse",
+    "jumlah": 3,
+    "stok_sebelum": 25,
+    "stok_sesudah": 22
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:32:36
+============================================================
+{
+  "timestamp": "2026-06-14 18:32:36",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Printer keluar 1",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"printer\", \"jumlah\": 1}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok printer dikurangi 1. Sisa: 2 unit.",
+  "latency_ms": 825.5,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "printer",
+    "jumlah": 1,
+    "stok_sebelum": 3,
+    "stok_sesudah": 2
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:32:39
+============================================================
+{
+  "timestamp": "2026-06-14 18:32:39",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Flashdisk keluar 4",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"flashdisk\", \"jumlah\": 4}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok flashdisk dikurangi 4. Sisa: 66 unit.",
+  "latency_ms": 2840.64,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "flashdisk",
+    "jumlah": 4,
+    "stok_sebelum": 70,
+    "stok_sesudah": 66
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:32:42
+============================================================
+{
+  "timestamp": "2026-06-14 18:32:42",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Tolong kurangi buku 2",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"buku\", \"jumlah\": 2}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok buku dikurangi 2. Sisa: 30 unit.",
+  "latency_ms": 928.5,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "buku",
+    "jumlah": 2,
+    "stok_sebelum": 32,
+    "stok_sesudah": 30
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:32:57
+============================================================
+{
+  "timestamp": "2026-06-14 18:32:57",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Tolong kurangi pulpen 1",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"pulpen\", \"jumlah\": 1}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok pulpen dikurangi 1. Sisa: 25 unit.",
+  "latency_ms": 6749.53,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "pulpen",
+    "jumlah": 1,
+    "stok_sebelum": 26,
+    "stok_sesudah": 25
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:33:10
+============================================================
+{
+  "timestamp": "2026-06-14 18:33:10",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Tolong kurangi penghapus 2",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"penghapus\", \"jumlah\": 2}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok penghapus dikurangi 2. Sisa: 12 unit.",
+  "latency_ms": 4406.43,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "penghapus",
+    "jumlah": 2,
+    "stok_sebelum": 14,
+    "stok_sesudah": 12
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:33:15
+============================================================
+{
+  "timestamp": "2026-06-14 18:33:15",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Tolong kurangi monitor 1",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"monitor\", \"jumlah\": 1}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok monitor dikurangi 1. Sisa: 5 unit.",
+  "latency_ms": 2874.82,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "monitor",
+    "jumlah": 1,
+    "stok_sebelum": 6,
+    "stok_sesudah": 5
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:33:18
+============================================================
+{
+  "timestamp": "2026-06-14 18:33:18",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Tolong kurangi laptop 1",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"laptop\", \"jumlah\": 1}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok laptop dikurangi 1. Sisa: 1 unit.",
+  "latency_ms": 898.97,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "laptop",
+    "jumlah": 1,
+    "stok_sebelum": 2,
+    "stok_sesudah": 1
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:33:22
+============================================================
+{
+  "timestamp": "2026-06-14 18:33:22",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Router dipakai 2",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"router\", \"jumlah\": 2}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok router dikurangi 2. Sisa: 5 unit.",
+  "latency_ms": 698.73,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "router",
+    "jumlah": 2,
+    "stok_sebelum": 7,
+    "stok_sesudah": 5
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:33:25
+============================================================
+{
+  "timestamp": "2026-06-14 18:33:25",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Keyboard dipakai 1",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"keyboard\", \"jumlah\": 1}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok keyboard dikurangi 1. Sisa: 13 unit.",
+  "latency_ms": 586.54,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "keyboard",
+    "jumlah": 1,
+    "stok_sebelum": 14,
+    "stok_sesudah": 13
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:33:34
+============================================================
+{
+  "timestamp": "2026-06-14 18:33:34",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Mouse dipakai 2",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"mouse\", \"jumlah\": 2}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok mouse dikurangi 2. Sisa: 20 unit.",
+  "latency_ms": 6734.61,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "mouse",
+    "jumlah": 2,
+    "stok_sebelum": 22,
+    "stok_sesudah": 20
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:33:37
+============================================================
+{
+  "timestamp": "2026-06-14 18:33:37",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Printer dipakai 1",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"printer\", \"jumlah\": 1}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok printer dikurangi 1. Sisa: 1 unit.",
+  "latency_ms": 1114.83,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "printer",
+    "jumlah": 1,
+    "stok_sebelum": 2,
+    "stok_sesudah": 1
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:33:41
+============================================================
+{
+  "timestamp": "2026-06-14 18:33:41",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Flashdisk dipakai 3",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"flashdisk\", \"jumlah\": 3}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok flashdisk dikurangi 3. Sisa: 63 unit.",
+  "latency_ms": 2132.79,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "flashdisk",
+    "jumlah": 3,
+    "stok_sebelum": 66,
+    "stok_sesudah": 63
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:33:47
+============================================================
+{
+  "timestamp": "2026-06-14 18:33:47",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Cek stok buku",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"buku\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok buku saat ini: 30 unit.",
+  "latency_ms": 2641.34,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:33:51
+============================================================
+{
+  "timestamp": "2026-06-14 18:33:51",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Cek stok pulpen",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"pulpen\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok pulpen saat ini: 25 unit.",
+  "latency_ms": 1408.88,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:33:54
+============================================================
+{
+  "timestamp": "2026-06-14 18:33:54",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Cek stok penghapus",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"penghapus\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok penghapus saat ini: 12 unit.",
+  "latency_ms": 988.79,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:33:57
+============================================================
+{
+  "timestamp": "2026-06-14 18:33:57",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Cek stok monitor",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"monitor\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok monitor saat ini: 5 unit.",
+  "latency_ms": 919.15,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:34:00
+============================================================
+{
+  "timestamp": "2026-06-14 18:34:00",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Cek stok laptop",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"laptop\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok laptop saat ini: 1 unit.",
+  "latency_ms": 1476.02,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:34:05
+============================================================
+{
+  "timestamp": "2026-06-14 18:34:05",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Cek stok router",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"router\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok router saat ini: 5 unit.",
+  "latency_ms": 3527.84,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:34:07
+============================================================
+{
+  "timestamp": "2026-06-14 18:34:07",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Cek stok keyboard",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"keyboard\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok keyboard saat ini: 13 unit.",
+  "latency_ms": 619.75,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:34:10
+============================================================
+{
+  "timestamp": "2026-06-14 18:34:10",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Cek stok mouse",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"mouse\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok mouse saat ini: 20 unit.",
+  "latency_ms": 1068.91,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:34:13
+============================================================
+{
+  "timestamp": "2026-06-14 18:34:13",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Cek stok printer",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"printer\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok printer saat ini: 1 unit.",
+  "latency_ms": 889.31,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:34:15
+============================================================
+{
+  "timestamp": "2026-06-14 18:34:15",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Cek stok flashdisk",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"flashdisk\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok flashdisk saat ini: 63 unit.",
+  "latency_ms": 852.42,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:34:19
+============================================================
+{
+  "timestamp": "2026-06-14 18:34:19",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Berapa stok buku",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"buku\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok buku saat ini: 30 unit.",
+  "latency_ms": 1048.07,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:34:22
+============================================================
+{
+  "timestamp": "2026-06-14 18:34:22",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Berapa stok pulpen",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"pulpen\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok pulpen saat ini: 25 unit.",
+  "latency_ms": 786.35,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:34:24
+============================================================
+{
+  "timestamp": "2026-06-14 18:34:24",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Berapa stok penghapus",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"penghapus\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok penghapus saat ini: 12 unit.",
+  "latency_ms": 879.14,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:34:35
+============================================================
+{
+  "timestamp": "2026-06-14 18:34:35",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Berapa stok monitor",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"monitor\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok monitor saat ini: 5 unit.",
+  "latency_ms": 9341.64,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:34:37
+============================================================
+{
+  "timestamp": "2026-06-14 18:34:37",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Berapa stok laptop",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"laptop\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok laptop saat ini: 1 unit.",
+  "latency_ms": 678.66,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:34:46
+============================================================
+{
+  "timestamp": "2026-06-14 18:34:46",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Berapa stok router",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"router\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok router saat ini: 5 unit.",
+  "latency_ms": 6048.85,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:34:51
+============================================================
+{
+  "timestamp": "2026-06-14 18:34:51",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Berapa stok keyboard",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"keyboard\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok keyboard saat ini: 13 unit.",
+  "latency_ms": 3466.61,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:34:56
+============================================================
+{
+  "timestamp": "2026-06-14 18:34:56",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Berapa stok mouse",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"mouse\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok mouse saat ini: 20 unit.",
+  "latency_ms": 4649.83,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:34:58
+============================================================
+{
+  "timestamp": "2026-06-14 18:34:58",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Berapa stok printer",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"printer\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok printer saat ini: 1 unit.",
+  "latency_ms": 1267.66,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:34:59
+============================================================
+{
+  "timestamp": "2026-06-14 18:34:59",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Berapa stok flashdisk",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"flashdisk\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok flashdisk saat ini: 63 unit.",
+  "latency_ms": 738.31,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:38:01
+============================================================
+{
+  "timestamp": "2026-06-14 18:38:01",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Ada buku?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"buku\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok buku saat ini: 30 unit.",
+  "latency_ms": 660.54,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:38:10
+============================================================
+{
+  "timestamp": "2026-06-14 18:38:10",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Ada pulpen?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"pulpen\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok pulpen saat ini: 25 unit.",
+  "latency_ms": 6742.46,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:38:29
+============================================================
+{
+  "timestamp": "2026-06-14 18:38:29",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Ada penghapus?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"penghapus\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok penghapus saat ini: 12 unit.",
+  "latency_ms": 16147.75,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:38:32
+============================================================
+{
+  "timestamp": "2026-06-14 18:38:32",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Ada monitor?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"monitor\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok monitor saat ini: 5 unit.",
+  "latency_ms": 997.15,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:38:40
+============================================================
+{
+  "timestamp": "2026-06-14 18:38:40",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Ada laptop?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"laptop\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok laptop saat ini: 1 unit.",
+  "latency_ms": 656.4,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:38:57
+============================================================
+{
+  "timestamp": "2026-06-14 18:38:57",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Ada router?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"router\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok router saat ini: 5 unit.",
+  "latency_ms": 14795.56,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:39:00
+============================================================
+{
+  "timestamp": "2026-06-14 18:39:00",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Ada keyboard?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"keyboard\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok keyboard saat ini: 13 unit.",
+  "latency_ms": 1637.67,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:39:01
+============================================================
+{
+  "timestamp": "2026-06-14 18:39:01",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Ada mouse?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"mouse\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok mouse saat ini: 20 unit.",
+  "latency_ms": 685.42,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:39:02
+============================================================
+{
+  "timestamp": "2026-06-14 18:39:02",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Ada printer?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"printer\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok printer saat ini: 1 unit.",
+  "latency_ms": 869.88,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:39:04
+============================================================
+{
+  "timestamp": "2026-06-14 18:39:04",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Ada flashdisk?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"flashdisk\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok flashdisk saat ini: 63 unit.",
+  "latency_ms": 1196.59,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:39:15
+============================================================
+{
+  "timestamp": "2026-06-14 18:39:15",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Buku masih tersedia?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"buku\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok buku saat ini: 30 unit.",
+  "latency_ms": 537.22,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:39:19
+============================================================
+{
+  "timestamp": "2026-06-14 18:39:19",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Pulpen masih tersedia?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"pulpen\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok pulpen saat ini: 25 unit.",
+  "latency_ms": 899.74,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:39:33
+============================================================
+{
+  "timestamp": "2026-06-14 18:39:33",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Penghapus masih tersedia?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"penghapus\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok penghapus saat ini: 12 unit.",
+  "latency_ms": 11458.78,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:39:38
+============================================================
+{
+  "timestamp": "2026-06-14 18:39:38",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Monitor masih tersedia?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"monitor\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok monitor saat ini: 5 unit.",
+  "latency_ms": 4079.76,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:39:39
+============================================================
+{
+  "timestamp": "2026-06-14 18:39:39",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Laptop masih tersedia?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"laptop\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok laptop saat ini: 1 unit.",
+  "latency_ms": 651.06,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:39:42
+============================================================
+{
+  "timestamp": "2026-06-14 18:39:42",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Router masih tersedia?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"router\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok router saat ini: 5 unit.",
+  "latency_ms": 2389.5,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:39:49
+============================================================
+{
+  "timestamp": "2026-06-14 18:39:49",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Keyboard masih tersedia?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"keyboard\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok keyboard saat ini: 13 unit.",
+  "latency_ms": 5985.09,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:39:51
+============================================================
+{
+  "timestamp": "2026-06-14 18:39:51",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Printer masih tersedia?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"printer\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok printer saat ini: 1 unit.",
+  "latency_ms": 1163.05,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:40:09
+============================================================
+{
+  "timestamp": "2026-06-14 18:40:09",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Mouse masih tersedia?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"mouse\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok mouse saat ini: 20 unit.",
+  "latency_ms": 13606.39,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:40:11
+============================================================
+{
+  "timestamp": "2026-06-14 18:40:11",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Flashdisk masih tersedia?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"flashdisk\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok flashdisk saat ini: 63 unit.",
+  "latency_ms": 891.38,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:43:01
+============================================================
+{
+  "timestamp": "2026-06-14 18:43:01",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Hapus buku",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"buku\"}",
+  "parsed_function": "hapus",
+  "output": "Berhasil! Barang 'buku' telah dihapus dari database.",
+  "latency_ms": 3240.35,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "hapus",
+    "barang": "buku",
+    "stok_sebelum": 30
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:43:04
+============================================================
+{
+  "timestamp": "2026-06-14 18:43:04",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Hapus pulpen",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"pulpen\"}",
+  "parsed_function": "hapus",
+  "output": "Berhasil! Barang 'pulpen' telah dihapus dari database.",
+  "latency_ms": 938.5,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "hapus",
+    "barang": "pulpen",
+    "stok_sebelum": 25
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:43:08
+============================================================
+{
+  "timestamp": "2026-06-14 18:43:08",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Hapus penghapus",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"penghapus\"}",
+  "parsed_function": "hapus",
+  "output": "Berhasil! Barang 'penghapus' telah dihapus dari database.",
+  "latency_ms": 1124.87,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "hapus",
+    "barang": "penghapus",
+    "stok_sebelum": 12
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:43:10
+============================================================
+{
+  "timestamp": "2026-06-14 18:43:10",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Hapus monitor",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"monitor\"}",
+  "parsed_function": "hapus",
+  "output": "Berhasil! Barang 'monitor' telah dihapus dari database.",
+  "latency_ms": 618.33,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "hapus",
+    "barang": "monitor",
+    "stok_sebelum": 5
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:43:13
+============================================================
+{
+  "timestamp": "2026-06-14 18:43:13",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Hapus laptop",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"laptop\"}",
+  "parsed_function": "hapus",
+  "output": "Berhasil! Barang 'laptop' telah dihapus dari database.",
+  "latency_ms": 1075.1,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "hapus",
+    "barang": "laptop",
+    "stok_sebelum": 1
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:43:20
+============================================================
+{
+  "timestamp": "2026-06-14 18:43:20",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Hapus router",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"router\"}",
+  "parsed_function": "hapus",
+  "output": "Berhasil! Barang 'router' telah dihapus dari database.",
+  "latency_ms": 4708.05,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "hapus",
+    "barang": "router",
+    "stok_sebelum": 5
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:44:15
+============================================================
+{
+  "timestamp": "2026-06-14 18:44:15",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Hapus keyboard",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"keyboard\"}",
+  "parsed_function": "hapus",
+  "output": "Berhasil! Barang 'keyboard' telah dihapus dari database.",
+  "latency_ms": 1328.95,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "hapus",
+    "barang": "keyboard",
+    "stok_sebelum": 13
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:44:17
+============================================================
+{
+  "timestamp": "2026-06-14 18:44:17",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Hapus mouse",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"mouse\"}",
+  "parsed_function": "hapus",
+  "output": "Berhasil! Barang 'mouse' telah dihapus dari database.",
+  "latency_ms": 729.98,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "hapus",
+    "barang": "mouse",
+    "stok_sebelum": 20
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:44:22
+============================================================
+{
+  "timestamp": "2026-06-14 18:44:22",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Hapus printer",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"printer\"}",
+  "parsed_function": "hapus",
+  "output": "Berhasil! Barang 'printer' telah dihapus dari database.",
+  "latency_ms": 629.98,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "hapus",
+    "barang": "printer",
+    "stok_sebelum": 1
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:44:25
+============================================================
+{
+  "timestamp": "2026-06-14 18:44:25",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Hapus flashdisk",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"flashdisk\"}",
+  "parsed_function": "hapus",
+  "output": "Berhasil! Barang 'flashdisk' telah dihapus dari database.",
+  "latency_ms": 1014.97,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "hapus",
+    "barang": "flashdisk",
+    "stok_sebelum": 63
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:44:27
+============================================================
+{
+  "timestamp": "2026-06-14 18:44:27",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Delete buku",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"buku\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'buku' tidak ditemukan di database.",
+  "latency_ms": 1007.63,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:44:31
+============================================================
+{
+  "timestamp": "2026-06-14 18:44:31",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Delete pulpen",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"pulpen\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'pulpen' tidak ditemukan di database.",
+  "latency_ms": 1010.58,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:44:36
+============================================================
+{
+  "timestamp": "2026-06-14 18:44:36",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Delete penghapus",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"penghapus\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'penghapus' tidak ditemukan di database.",
+  "latency_ms": 569.95,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:44:52
+============================================================
+{
+  "timestamp": "2026-06-14 18:44:52",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Delete monitor",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"monitor\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'monitor' tidak ditemukan di database.",
+  "latency_ms": 9369.6,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:45:03
+============================================================
+{
+  "timestamp": "2026-06-14 18:45:03",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Delete laptop",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"laptop\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'laptop' tidak ditemukan di database.",
+  "latency_ms": 10014.52,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:45:14
+============================================================
+{
+  "timestamp": "2026-06-14 18:45:14",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Delete router",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"router\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'router' tidak ditemukan di database.",
+  "latency_ms": 10207.82,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:45:27
+============================================================
+{
+  "timestamp": "2026-06-14 18:45:27",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Delete keyboard",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"keyboard\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'keyboard' tidak ditemukan di database.",
+  "latency_ms": 11359.44,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:45:37
+============================================================
+{
+  "timestamp": "2026-06-14 18:45:37",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Delete mouse",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"mouse\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'mouse' tidak ditemukan di database.",
+  "latency_ms": 9717.61,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:45:39
+============================================================
+{
+  "timestamp": "2026-06-14 18:45:39",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Delete printer",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"printer\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'printer' tidak ditemukan di database.",
+  "latency_ms": 1266.31,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:50:11
+============================================================
+{
+  "timestamp": "2026-06-14 18:50:11",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Delete flashdisk",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"flashdisk\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'flashdisk' tidak ditemukan di database.",
+  "latency_ms": 1148.0,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:50:28
+============================================================
+{
+  "timestamp": "2026-06-14 18:50:28",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Buang data buku",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"buku\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'buku' tidak ditemukan di database.",
+  "latency_ms": 16258.85,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:50:30
+============================================================
+{
+  "timestamp": "2026-06-14 18:50:30",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Buang data pulpen",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"pulpen\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'pulpen' tidak ditemukan di database.",
+  "latency_ms": 979.92,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:52:14
+============================================================
+{
+  "timestamp": "2026-06-14 18:52:14",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Buang data penghapus",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"penghapus\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'penghapus' tidak ditemukan di database.",
+  "latency_ms": 1057.17,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:52:18
+============================================================
+{
+  "timestamp": "2026-06-14 18:52:18",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Buang data monitor",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"monitor\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'monitor' tidak ditemukan di database.",
+  "latency_ms": 926.63,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:52:21
+============================================================
+{
+  "timestamp": "2026-06-14 18:52:21",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Buang data laptop",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"laptop\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'laptop' tidak ditemukan di database.",
+  "latency_ms": 1079.41,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:52:23
+============================================================
+{
+  "timestamp": "2026-06-14 18:52:23",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Buang data router",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"router\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'router' tidak ditemukan di database.",
+  "latency_ms": 927.08,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:52:37
+============================================================
+{
+  "timestamp": "2026-06-14 18:52:37",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Buang data keyboard",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"keyboard\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'keyboard' tidak ditemukan di database.",
+  "latency_ms": 12040.3,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:52:39
+============================================================
+{
+  "timestamp": "2026-06-14 18:52:39",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Buang data mouse",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"mouse\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'mouse' tidak ditemukan di database.",
+  "latency_ms": 868.34,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:52:41
+============================================================
+{
+  "timestamp": "2026-06-14 18:52:41",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Buang data printer",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"printer\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'printer' tidak ditemukan di database.",
+  "latency_ms": 696.49,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:52:44
+============================================================
+{
+  "timestamp": "2026-06-14 18:52:44",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Buang data flashdisk",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"flashdisk\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'flashdisk' tidak ditemukan di database.",
+  "latency_ms": 834.71,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:52:47
+============================================================
+{
+  "timestamp": "2026-06-14 18:52:47",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Hilangkan buku",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"buku\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'buku' tidak ditemukan di database.",
+  "latency_ms": 923.74,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:52:49
+============================================================
+{
+  "timestamp": "2026-06-14 18:52:49",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Hilangkan pulpen",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"pulpen\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'pulpen' tidak ditemukan di database.",
+  "latency_ms": 856.59,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:52:52
+============================================================
+{
+  "timestamp": "2026-06-14 18:52:52",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Hilangkan penghapus",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"penghapus\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'penghapus' tidak ditemukan di database.",
+  "latency_ms": 918.28,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:52:54
+============================================================
+{
+  "timestamp": "2026-06-14 18:52:54",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Hilangkan monitor",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"monitor\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'monitor' tidak ditemukan di database.",
+  "latency_ms": 616.34,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:52:57
+============================================================
+{
+  "timestamp": "2026-06-14 18:52:57",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Hilangkan laptop",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"laptop\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'laptop' tidak ditemukan di database.",
+  "latency_ms": 682.73,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:53:00
+============================================================
+{
+  "timestamp": "2026-06-14 18:53:00",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Hilangkan router",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"router\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'router' tidak ditemukan di database.",
+  "latency_ms": 547.98,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:53:04
+============================================================
+{
+  "timestamp": "2026-06-14 18:53:04",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Hilangkan keyboard",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"keyboard\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'keyboard' tidak ditemukan di database.",
+  "latency_ms": 1538.69,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:53:06
+============================================================
+{
+  "timestamp": "2026-06-14 18:53:06",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Hilangkan mouse",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"mouse\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'mouse' tidak ditemukan di database.",
+  "latency_ms": 608.53,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:53:25
+============================================================
+{
+  "timestamp": "2026-06-14 18:53:25",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Hilangkan printer",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"printer\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'printer' tidak ditemukan di database.",
+  "latency_ms": 16606.11,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:53:27
+============================================================
+{
+  "timestamp": "2026-06-14 18:53:27",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Hilangkan flashdisk",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"flashdisk\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'flashdisk' tidak ditemukan di database.",
+  "latency_ms": 934.17,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:20:15
+============================================================
+{
+  "timestamp": "2026-06-14 21:20:15",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Halo",
+  "raw_ai_response": "Halo! Ada yang bisa saya bantu terkait inventaris gudang hari ini?",
+  "parsed_function": null,
+  "output": "Halo! Ada yang bisa saya bantu terkait inventaris gudang hari ini?",
+  "latency_ms": 1006.96,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:20:24
+============================================================
+{
+  "timestamp": "2026-06-14 21:20:24",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Selamat pagi",
+  "raw_ai_response": "Selamat pagi! Ada yang bisa saya bantu terkait inventaris gudang hari ini?",
+  "parsed_function": null,
+  "output": "Selamat pagi! Ada yang bisa saya bantu terkait inventaris gudang hari ini?",
+  "latency_ms": 9016.73,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:20:26
+============================================================
+{
+  "timestamp": "2026-06-14 21:20:26",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Apa kabar?",
+  "raw_ai_response": "Kabar saya baik! Ada yang bisa saya bantu terkait inventaris gudang hari ini?",
+  "parsed_function": null,
+  "output": "Kabar saya baik! Ada yang bisa saya bantu terkait inventaris gudang hari ini?",
+  "latency_ms": 700.24,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:20:27
+============================================================
+{
+  "timestamp": "2026-06-14 21:20:27",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Siapa kamu?",
+  "raw_ai_response": "Saya adalah asisten gudang inventaris yang bertugas membantu Anda mengelola data stok barang. Anda bisa meminta saya untuk mengecek, menambah, mengurangi, atau menghapus barang dari inventaris. Ada yang bisa saya bantu hari ini?",
+  "parsed_function": null,
+  "output": "Saya adalah asisten gudang inventaris yang bertugas membantu Anda mengelola data stok barang. Anda bisa meminta saya untuk mengecek, menambah, mengurangi, atau menghapus barang dari inventaris. Ada yang bisa saya bantu hari ini?",
+  "latency_ms": 774.88,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:20:39
+============================================================
+{
+  "timestamp": "2026-06-14 21:20:39",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Apa itu AI?",
+  "raw_ai_response": "AI (Artificial Intelligence) atau Kecerdasan Buatan adalah bidang ilmu komputer yang dikhususkan untuk memecahkan masalah kognitif yang umumnya terkait dengan kecerdasan manusia, seperti pembelajaran, pemecahan masalah, dan pengenalan pola. Secara sederhana, AI adalah sistem komputer yang dirancang untuk meniru kemampuan intelektual manusia.",
+  "parsed_function": null,
+  "output": "AI (Artificial Intelligence) atau Kecerdasan Buatan adalah bidang ilmu komputer yang dikhususkan untuk memecahkan masalah kognitif yang umumnya terkait dengan kecerdasan manusia, seperti pembelajaran, pemecahan masalah, dan pengenalan pola. Secara sederhana, AI adalah sistem komputer yang dirancang untuk meniru kemampuan intelektual manusia.",
+  "latency_ms": 815.99,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:20:43
+============================================================
+{
+  "timestamp": "2026-06-14 21:20:43",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Jelaskan machine learning",
+  "raw_ai_response": "Machine learning (pembelajaran mesin) adalah cabang dari kecerdasan buatan (AI) yang berfokus pada pengembangan sistem yang mampu belajar dari data. Alih-alih diprogram secara eksplisit untuk melakukan tugas tertentu, komputer menggunakan algoritma untuk mengenali pola dalam data, membuat prediksi, atau mengambil keputusan.\n\nSecara garis besar, prosesnya melibatkan pemberian data dalam jumlah besar ke model, yang kemudian akan menyesuaikan parameternya untuk meningkatkan akurasi hasil. Contoh penerapannya meliputi sistem rekomendasi di Netflix/YouTube, deteksi spam pada email, hingga pengenalan wajah pada smartphone.",
+  "parsed_function": null,
+  "output": "Machine learning (pembelajaran mesin) adalah cabang dari kecerdasan buatan (AI) yang berfokus pada pengembangan sistem yang mampu belajar dari data. Alih-alih diprogram secara eksplisit untuk melakukan tugas tertentu, komputer menggunakan algoritma untuk mengenali pola dalam data, membuat prediksi, atau mengambil keputusan.\n\nSecara garis besar, prosesnya melibatkan pemberian data dalam jumlah besar ke model, yang kemudian akan menyesuaikan parameternya untuk meningkatkan akurasi hasil. Contoh penerapannya meliputi sistem rekomendasi di Netflix/YouTube, deteksi spam pada email, hingga pengenalan wajah pada smartphone.",
+  "latency_ms": 1490.97,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:20:46
+============================================================
+{
+  "timestamp": "2026-06-14 21:20:46",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Cuaca hari ini bagaimana?",
+  "raw_ai_response": "Cuaca hari ini cukup cerah dengan sedikit awan di beberapa wilayah. Apakah ada yang bisa saya bantu terkait inventaris gudang?",
+  "parsed_function": null,
+  "output": "Cuaca hari ini cukup cerah dengan sedikit awan di beberapa wilayah. Apakah ada yang bisa saya bantu terkait inventaris gudang?",
+  "latency_ms": 1029.51,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:20:48
+============================================================
+{
+  "timestamp": "2026-06-14 21:20:48",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Berapa umur bumi?",
+  "raw_ai_response": "Umur bumi diperkirakan sekitar 4,54 miliar tahun.",
+  "parsed_function": null,
+  "output": "Umur bumi diperkirakan sekitar 4,54 miliar tahun.",
+  "latency_ms": 935.08,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:20:51
+============================================================
+{
+  "timestamp": "2026-06-14 21:20:51",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Saya lapar",
+  "raw_ai_response": "Saya tidak bisa membantu urusan makanan, tapi jika Anda butuh bantuan terkait inventaris gudang, silakan beri tahu saya!",
+  "parsed_function": null,
+  "output": "Saya tidak bisa membantu urusan makanan, tapi jika Anda butuh bantuan terkait inventaris gudang, silakan beri tahu saya!",
+  "latency_ms": 957.26,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:20:54
+============================================================
+{
+  "timestamp": "2026-06-14 21:20:54",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Saya capek",
+  "raw_ai_response": "Wah, sepertinya kamu butuh istirahat sejenak. Jangan lupa minum air putih dan tarik napas dalam-dalam ya. Ada yang bisa saya bantu terkait inventaris gudang setelah kamu merasa lebih baik?",
+  "parsed_function": null,
+  "output": "Wah, sepertinya kamu butuh istirahat sejenak. Jangan lupa minum air putih dan tarik napas dalam-dalam ya. Ada yang bisa saya bantu terkait inventaris gudang setelah kamu merasa lebih baik?",
+  "latency_ms": 1045.31,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:20:57
+============================================================
+{
+  "timestamp": "2026-06-14 21:20:57",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Buku favorit saya Harry Potter",
+  "raw_ai_response": "Buku Harry Potter memang sangat menarik! Apakah ada yang bisa saya bantu terkait inventaris barang atau stok?",
+  "parsed_function": null,
+  "output": "Buku Harry Potter memang sangat menarik! Apakah ada yang bisa saya bantu terkait inventaris barang atau stok?",
+  "latency_ms": 805.62,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:21:03
+============================================================
+{
+  "timestamp": "2026-06-14 21:21:03",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Laptop saya rusak",
+  "raw_ai_response": "Mohon maaf mendengar hal tersebut. Apakah ada yang bisa saya bantu terkait inventaris gudang, atau apakah Anda memerlukan bantuan teknis lainnya?",
+  "parsed_function": null,
+  "output": "Mohon maaf mendengar hal tersebut. Apakah ada yang bisa saya bantu terkait inventaris gudang, atau apakah Anda memerlukan bantuan teknis lainnya?",
+  "latency_ms": 4446.53,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:21:05
+============================================================
+{
+  "timestamp": "2026-06-14 21:21:05",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Monitor saya mati",
+  "raw_ai_response": "Mohon maaf atas kendala monitor Anda. Apakah Anda ingin saya memeriksa stok monitor yang tersedia di gudang untuk penggantian, atau ada hal lain yang bisa saya bantu terkait inventaris?",
+  "parsed_function": null,
+  "output": "Mohon maaf atas kendala monitor Anda. Apakah Anda ingin saya memeriksa stok monitor yang tersedia di gudang untuk penggantian, atau ada hal lain yang bisa saya bantu terkait inventaris?",
+  "latency_ms": 763.19,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:21:07
+============================================================
+{
+  "timestamp": "2026-06-14 21:21:07",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Router rumah saya error",
+  "raw_ai_response": "Mohon maaf, saya adalah asisten gudang inventaris. Saya tidak dapat membantu memperbaiki perangkat elektronik. Apakah ada yang bisa saya bantu terkait pengelolaan stok barang di gudang?",
+  "parsed_function": null,
+  "output": "Mohon maaf, saya adalah asisten gudang inventaris. Saya tidak dapat membantu memperbaiki perangkat elektronik. Apakah ada yang bisa saya bantu terkait pengelolaan stok barang di gudang?",
+  "latency_ms": 955.77,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:21:13
+============================================================
+{
+  "timestamp": "2026-06-14 21:21:13",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Flashdisk saya hilang",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"flashdisk\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'flashdisk' tidak ditemukan di database.",
+  "latency_ms": 758.73,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:21:15
+============================================================
+{
+  "timestamp": "2026-06-14 21:21:15",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Saya suka keyboard mekanikal",
+  "raw_ai_response": "Saya juga suka keyboard mekanikal! Apakah ada yang bisa saya bantu terkait inventaris barang?",
+  "parsed_function": null,
+  "output": "Saya juga suka keyboard mekanikal! Apakah ada yang bisa saya bantu terkait inventaris barang?",
+  "latency_ms": 979.47,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:21:16
+============================================================
+{
+  "timestamp": "2026-06-14 21:21:16",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Mouse gaming mahal ya",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"mouse gaming\"}",
+  "parsed_function": "cek",
+  "output": "❌ Barang 'mouse gaming' tidak ditemukan di database.",
+  "latency_ms": 620.11,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:21:21
+============================================================
+{
+  "timestamp": "2026-06-14 21:21:21",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Printer saya macet",
+  "raw_ai_response": "Mohon maaf, apakah ada yang bisa saya bantu terkait inventaris gudang? Jika Anda ingin mengecek stok printer atau melakukan perubahan data inventaris, silakan beri tahu saya.",
+  "parsed_function": null,
+  "output": "Mohon maaf, apakah ada yang bisa saya bantu terkait inventaris gudang? Jika Anda ingin mengecek stok printer atau melakukan perubahan data inventaris, silakan beri tahu saya.",
+  "latency_ms": 866.72,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:21:32
+============================================================
+{
+  "timestamp": "2026-06-14 21:21:32",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Pulpen saya habis tinta",
+  "raw_ai_response": "{\"fungsi\": \"kurang_tanpa_jumlah\", \"barang\": \"pulpen\"}",
+  "parsed_function": "kurang_tanpa_jumlah",
+  "output": "Kurangi berapa unit pulpen? Contoh: 'Kurangi stok pulpen 2'",
+  "latency_ms": 8030.15,
+  "status": "Clarification"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:21:40
+============================================================
+{
+  "timestamp": "2026-06-14 21:21:40",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Penghapus saya hilang",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"penghapus\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'penghapus' tidak ditemukan di database.",
+  "latency_ms": 1064.99,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:21:53
+============================================================
+{
+  "timestamp": "2026-06-14 21:21:53",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Tolong ceritakan lelucon",
+  "raw_ai_response": "Kenapa pohon kalau dikasih tugas selalu gagal? Karena dia selalu \"bercabang\" pikirannya!",
+  "parsed_function": null,
+  "output": "Kenapa pohon kalau dikasih tugas selalu gagal? Karena dia selalu \"bercabang\" pikirannya!",
+  "latency_ms": 9659.83,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:21:56
+============================================================
+{
+  "timestamp": "2026-06-14 21:21:56",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Berapa 10 + 20",
+  "raw_ai_response": "Hasil dari 10 + 20 adalah 30.",
+  "parsed_function": null,
+  "output": "Hasil dari 10 + 20 adalah 30.",
+  "latency_ms": 1109.8,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:22:10
+============================================================
+{
+  "timestamp": "2026-06-14 21:22:10",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Siapa presiden Indonesia?",
+  "raw_ai_response": "Presiden Indonesia saat ini adalah Prabowo Subianto.",
+  "parsed_function": null,
+  "output": "Presiden Indonesia saat ini adalah Prabowo Subianto.",
+  "latency_ms": 938.23,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:22:14
+============================================================
+{
+  "timestamp": "2026-06-14 21:22:14",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Saya ingin membeli laptop baru",
+  "raw_ai_response": "Apakah Anda ingin menambahkan laptop tersebut ke dalam daftar inventaris gudang? Jika ya, mohon sebutkan jumlahnya.",
+  "parsed_function": null,
+  "output": "Apakah Anda ingin menambahkan laptop tersebut ke dalam daftar inventaris gudang? Jika ya, mohon sebutkan jumlahnya.",
+  "latency_ms": 619.28,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:22:30
+============================================================
+{
+  "timestamp": "2026-06-14 21:22:30",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Terima kasih",
+  "raw_ai_response": "Sama-sama! Ada lagi yang bisa saya bantu terkait inventaris gudang?",
+  "parsed_function": null,
+  "output": "Sama-sama! Ada lagi yang bisa saya bantu terkait inventaris gudang?",
+  "latency_ms": 13698.57,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:22:32
+============================================================
+{
+  "timestamp": "2026-06-14 21:22:32",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Sampai jumpa",
+  "raw_ai_response": "Sampai jumpa kembali! Jika ada yang bisa saya bantu terkait inventaris gudang, silakan beri tahu ya.",
+  "parsed_function": null,
+  "output": "Sampai jumpa kembali! Jika ada yang bisa saya bantu terkait inventaris gudang, silakan beri tahu ya.",
+  "latency_ms": 998.5,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:23:01
+============================================================
+{
+  "timestamp": "2026-06-14 21:23:01",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Selamat malam",
+  "raw_ai_response": "Selamat malam! Ada yang bisa saya bantu terkait inventaris gudang?",
+  "parsed_function": null,
+  "output": "Selamat malam! Ada yang bisa saya bantu terkait inventaris gudang?",
+  "latency_ms": 941.51,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:27:43
+============================================================
+{
+  "timestamp": "2026-06-14 21:27:43",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Selamat siang",
+  "raw_ai_response": "Selamat siang! Ada yang bisa saya bantu terkait inventaris gudang hari ini?",
+  "parsed_function": null,
+  "output": "Selamat siang! Ada yang bisa saya bantu terkait inventaris gudang hari ini?",
+  "latency_ms": 12689.78,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:27:45
+============================================================
+{
+  "timestamp": "2026-06-14 21:27:45",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Apa hobi kamu?",
+  "raw_ai_response": "Hobi saya adalah membantu mengelola inventaris gudang dengan efisien! Apakah ada barang yang ingin kamu cek atau perbarui hari ini?",
+  "parsed_function": null,
+  "output": "Hobi saya adalah membantu mengelola inventaris gudang dengan efisien! Apakah ada barang yang ingin kamu cek atau perbarui hari ini?",
+  "latency_ms": 983.79,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:27:46
+============================================================
+{
+  "timestamp": "2026-06-14 21:27:46",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Kamu dibuat pakai apa?",
+  "raw_ai_response": "Saya adalah model bahasa besar yang dilatih oleh Google.",
+  "parsed_function": null,
+  "output": "Saya adalah model bahasa besar yang dilatih oleh Google.",
+  "latency_ms": 658.46,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:27:49
+============================================================
+{
+  "timestamp": "2026-06-14 21:27:49",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Jelaskan database",
+  "raw_ai_response": "Database adalah kumpulan data yang terorganisir secara sistematis sehingga dapat diakses, dikelola, dan diperbarui dengan mudah. Secara teknis, database berfungsi sebagai tempat penyimpanan informasi digital yang memungkinkan pengguna untuk mencari, menyaring, dan memproses data secara efisien menggunakan sistem manajemen database (DBMS).",
+  "parsed_function": null,
+  "output": "Database adalah kumpulan data yang terorganisir secara sistematis sehingga dapat diakses, dikelola, dan diperbarui dengan mudah. Secara teknis, database berfungsi sebagai tempat penyimpanan informasi digital yang memungkinkan pengguna untuk mencari, menyaring, dan memproses data secara efisien menggunakan sistem manajemen database (DBMS).",
+  "latency_ms": 1049.2,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:27:55
+============================================================
+{
+  "timestamp": "2026-06-14 21:27:55",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Jelaskan Firebase",
+  "raw_ai_response": "Firebase adalah platform pengembangan aplikasi dari Google yang menyediakan berbagai layanan backend siap pakai untuk pengembang. Dengan Firebase, pengembang tidak perlu membangun infrastruktur server sendiri untuk fitur-fitur umum seperti database real-time, autentikasi pengguna, penyimpanan file, hosting, hingga analitik.\n\nBeberapa layanan utama Firebase meliputi:\n1. **Firestore & Realtime Database:** Database berbasis cloud untuk menyimpan dan menyinkronkan data antar perangkat secara real-time.\n2. **Authentication:** Sistem login yang mudah untuk email, media sosial, nomor telepon, dll.\n3. **Cloud Storage:** Penyimpanan file seperti gambar, video, atau dokumen.\n4. **Cloud Functions:** Menjalankan kode backend secara otomatis sebagai respons terhadap event tertentu tanpa harus mengelola server.\n5. **Firebase Hosting:** Layanan hosting cepat untuk aplikasi web.\n6. **Analytics:** Alat untuk memantau perilaku pengguna di dalam aplikasi.\n\nSecara singkat, Firebase membantu pengembang fokus pada pembuatan fitur aplikasi (frontend) sementara urusan infrastruktur backend ditangani oleh Google.",
+  "parsed_function": null,
+  "output": "Firebase adalah platform pengembangan aplikasi dari Google yang menyediakan berbagai layanan backend siap pakai untuk pengembang. Dengan Firebase, pengembang tidak perlu membangun infrastruktur server sendiri untuk fitur-fitur umum seperti database real-time, autentikasi pengguna, penyimpanan file, hosting, hingga analitik.\n\nBeberapa layanan utama Firebase meliputi:\n1. **Firestore & Realtime Database:** Database berbasis cloud untuk menyimpan dan menyinkronkan data antar perangkat secara real-time.\n2. **Authentication:** Sistem login yang mudah untuk email, media sosial, nomor telepon, dll.\n3. **Cloud Storage:** Penyimpanan file seperti gambar, video, atau dokumen.\n4. **Cloud Functions:** Menjalankan kode backend secara otomatis sebagai respons terhadap event tertentu tanpa harus mengelola server.\n5. **Firebase Hosting:** Layanan hosting cepat untuk aplikasi web.\n6. **Analytics:** Alat untuk memantau perilaku pengguna di dalam aplikasi.\n\nSecara singkat, Firebase membantu pengembang fokus pada pembuatan fitur aplikasi (frontend) sementara urusan infrastruktur backend ditangani oleh Google.",
+  "latency_ms": 1460.25,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:27:58
+============================================================
+{
+  "timestamp": "2026-06-14 21:27:58",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Apa itu Telegram Bot?",
+  "raw_ai_response": "Telegram Bot adalah program aplikasi pihak ketiga yang berjalan di dalam platform Telegram. Bot ini dapat berinteraksi dengan pengguna melalui pesan, perintah, dan permintaan inline. Pengguna dapat berinteraksi dengan bot dengan mengirimkan pesan atau menekan tombol, dan bot akan merespons secara otomatis berdasarkan logika yang telah diprogram oleh pengembangnya. Bot Telegram sering digunakan untuk otomatisasi tugas, memberikan informasi, integrasi layanan, hingga manajemen grup.",
+  "parsed_function": null,
+  "output": "Telegram Bot adalah program aplikasi pihak ketiga yang berjalan di dalam platform Telegram. Bot ini dapat berinteraksi dengan pengguna melalui pesan, perintah, dan permintaan inline. Pengguna dapat berinteraksi dengan bot dengan mengirimkan pesan atau menekan tombol, dan bot akan merespons secara otomatis berdasarkan logika yang telah diprogram oleh pengembangnya. Bot Telegram sering digunakan untuk otomatisasi tugas, memberikan informasi, integrasi layanan, hingga manajemen grup.",
+  "latency_ms": 1038.79,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:28:00
+============================================================
+{
+  "timestamp": "2026-06-14 21:28:00",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Apa itu Python?",
+  "raw_ai_response": "Python adalah bahasa pemrograman tingkat tinggi yang populer karena sintaksnya yang mudah dibaca dan dipelajari. Python sering digunakan untuk pengembangan web, analisis data, kecerdasan buatan (AI), otomatisasi, dan berbagai aplikasi perangkat lunak lainnya.",
+  "parsed_function": null,
+  "output": "Python adalah bahasa pemrograman tingkat tinggi yang populer karena sintaksnya yang mudah dibaca dan dipelajari. Python sering digunakan untuk pengembangan web, analisis data, kecerdasan buatan (AI), otomatisasi, dan berbagai aplikasi perangkat lunak lainnya.",
+  "latency_ms": 1039.12,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:28:03
+============================================================
+{
+  "timestamp": "2026-06-14 21:28:03",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Saya sedang belajar coding",
+  "raw_ai_response": "Wah, keren sekali! Belajar coding adalah langkah yang sangat bagus. Apakah ada bahasa pemrograman tertentu yang sedang kamu pelajari atau ada kesulitan yang ingin ditanyakan? Saya siap membantu jika ada yang ingin didiskusikan!",
+  "parsed_function": null,
+  "output": "Wah, keren sekali! Belajar coding adalah langkah yang sangat bagus. Apakah ada bahasa pemrograman tertentu yang sedang kamu pelajari atau ada kesulitan yang ingin ditanyakan? Saya siap membantu jika ada yang ingin didiskusikan!",
+  "latency_ms": 886.75,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:28:08
+============================================================
+{
+  "timestamp": "2026-06-14 21:28:08",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Hari ini panas sekali",
+  "raw_ai_response": "Iya, cuaca memang sedang cukup terik hari ini. Pastikan untuk tetap terhidrasi ya! Ada yang bisa saya bantu terkait inventaris gudang?",
+  "parsed_function": null,
+  "output": "Iya, cuaca memang sedang cukup terik hari ini. Pastikan untuk tetap terhidrasi ya! Ada yang bisa saya bantu terkait inventaris gudang?",
+  "latency_ms": 3101.75,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:28:12
+============================================================
+{
+  "timestamp": "2026-06-14 21:28:12",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Saya suka membaca buku",
+  "raw_ai_response": "Itu hobi yang bagus! Apakah ada yang bisa saya bantu terkait inventaris gudang hari ini?",
+  "parsed_function": null,
+  "output": "Itu hobi yang bagus! Apakah ada yang bisa saya bantu terkait inventaris gudang hari ini?",
+  "latency_ms": 2960.43,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:28:15
+============================================================
+{
+  "timestamp": "2026-06-14 21:28:15",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Monitor 24 inci bagus tidak?",
+  "raw_ai_response": "Monitor 24 inci umumnya sangat bagus untuk penggunaan sehari-hari, bekerja, maupun gaming ringan karena ukurannya yang pas dan resolusi Full HD (1080p) yang tajam. Apakah Anda ingin saya mengecek ketersediaan stok monitor tersebut di gudang?",
+  "parsed_function": null,
+  "output": "Monitor 24 inci umumnya sangat bagus untuk penggunaan sehari-hari, bekerja, maupun gaming ringan karena ukurannya yang pas dan resolusi Full HD (1080p) yang tajam. Apakah Anda ingin saya mengecek ketersediaan stok monitor tersebut di gudang?",
+  "latency_ms": 2620.54,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:28:16
+============================================================
+{
+  "timestamp": "2026-06-14 21:28:16",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Router merek apa yang bagus?",
+  "raw_ai_response": "Untuk rekomendasi router, biasanya tergantung pada kebutuhan luas area dan kecepatan internet Anda. Beberapa merek yang populer dan handal adalah TP-Link, ASUS, dan Mikrotik. Apakah Anda ingin saya membantu mengecek stok router yang tersedia di gudang saat ini?",
+  "parsed_function": null,
+  "output": "Untuk rekomendasi router, biasanya tergantung pada kebutuhan luas area dan kecepatan internet Anda. Beberapa merek yang populer dan handal adalah TP-Link, ASUS, dan Mikrotik. Apakah Anda ingin saya membantu mengecek stok router yang tersedia di gudang saat ini?",
+  "latency_ms": 1126.55,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:28:19
+============================================================
+{
+  "timestamp": "2026-06-14 21:28:19",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Flashdisk 64GB cukup untuk kuliah?",
+  "raw_ai_response": "Flashdisk 64GB sudah sangat cukup untuk kebutuhan kuliah, terutama untuk menyimpan dokumen tugas, presentasi, dan beberapa file multimedia. Kapasitas tersebut biasanya sudah lebih dari memadai untuk penggunaan standar mahasiswa.",
+  "parsed_function": null,
+  "output": "Flashdisk 64GB sudah sangat cukup untuk kebutuhan kuliah, terutama untuk menyimpan dokumen tugas, presentasi, dan beberapa file multimedia. Kapasitas tersebut biasanya sudah lebih dari memadai untuk penggunaan standar mahasiswa.",
+  "latency_ms": 1116.33,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 21:44:20
+============================================================
+{
+  "timestamp": "2026-06-14 21:44:20",
+  "model": "gemini-3.1-flash-lite",
+  "input": "Masukkan printer 2",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"printer\", \"jumlah\": 2}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok printer ditambah 2. Total: 2 unit.",
+  "latency_ms": 785.26,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "printer",
+    "jumlah": 2,
+    "stok_sebelum": 0,
+    "stok_sesudah": 2
+  }
+}

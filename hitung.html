@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📊 Dashboard Penelitian - Groq vs Gemini</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #0f0f13;
+    color: #e1e1e6;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  .container { max-width: 1600px; margin: 0 auto; }
+
+  /* HEADER */
+  .header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 24px; background: linear-gradient(135deg, #1a1a24 0%, #1a1a2e 100%);
+    border-radius: 16px; border: 1px solid #2a2a3a;
+    margin-bottom: 20px; flex-wrap: wrap; gap: 12px;
+  }
+  .header h1 {
+    font-size: 22px; font-weight: 800;
+    background: linear-gradient(135deg, #8b5cf6, #06b6d4);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .header-left { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+  .badge {
+    padding: 4px 12px; border-radius: 20px; font-size: 11px; font-weight: 600;
+  }
+  .badge-groq { background: #2d1b69; color: #a78bfa; border: 1px solid #4c1d95; }
+  .badge-gemini { background: #0a3d2e; color: #34d399; border: 1px solid #059669; }
+  .badge-research { background: #312e1a; color: #fbbf24; border: 1px solid #854d0e; }
+
+  .btn {
+    padding: 7px 16px; border-radius: 8px; border: 1px solid #2a2a3a;
+    background: #1a1a24; color: #c0c0d0; font-size: 13px; font-weight: 500;
+    cursor: pointer; transition: all .15s; font-family: inherit;
+  }
+  .btn:hover { border-color: #4a4a6a; background: #222233; }
+  .btn-primary { background: #2d1b69; border-color: #8b5cf6; color: #c4b5fd; }
+  .btn-primary:hover { background: #3d2b79; }
+  .btn-success { background: #0a3d2e; border-color: #34d399; color: #34d399; }
+  .btn-success:hover { background: #0a4d3e; }
+
+  /* SECTION TITLE */
+  .section-title {
+    font-size: 16px; font-weight: 700; color: #e1e1e6;
+    padding: 12px 0 8px; display: flex; align-items: center; gap: 8px;
+  }
+  .section-title .sub { font-size: 12px; font-weight: 400; color: #8888a0; }
+
+  /* STATS GRID */
+  .stats-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px; margin-bottom: 20px;
+  }
+  .stat-card {
+    background: #1a1a24; border: 1px solid #2a2a3a; border-radius: 12px;
+    padding: 14px 18px; transition: all .2s;
+  }
+  .stat-card:hover { border-color: #4a4a6a; transform: translateY(-1px); }
+  .stat-label {
+    font-size: 10px; color: #8888a0; text-transform: uppercase;
+    letter-spacing: .5px; font-weight: 600; margin-bottom: 4px;
+  }
+  .stat-value { font-size: 26px; font-weight: 800; }
+  .stat-sub { font-size: 11px; color: #8888a0; margin-top: 2px; }
+  .stat-groq .stat-value { color: #a78bfa; }
+  .stat-gemini .stat-value { color: #34d399; }
+  .stat-total .stat-value { color: #fbbf24; }
+  .stat-latency .stat-value { color: #06b6d4; }
+  .stat-error .stat-value { color: #f87171; }
+  .stat-accuracy .stat-value { color: #4ade80; }
+
+  /* TWO COLUMN LAYOUT */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+  .three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+  .card {
+    background: #1a1a24; border: 1px solid #2a2a3a; border-radius: 12px;
+    padding: 16px; overflow: hidden;
+  }
+  .card-title {
+    font-size: 13px; font-weight: 600; color: #c0c0d0;
+    margin-bottom: 12px; display: flex; align-items: center; gap: 6px;
+  }
+  .card-title .val { color: #06b6d4; font-weight: 700; margin-left: auto; }
+
+  /* LATENCY TABLE */
+  .latency-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px;
+  }
+  .latency-item {
+    display: flex; justify-content: space-between; padding: 6px 10px;
+    background: #12121c; border-radius: 6px; font-size: 13px;
+  }
+  .latency-item .key { color: #8888a0; }
+  .latency-item .val { font-family: 'JetBrains Mono', monospace; font-weight: 500; }
+
+  /* METRIC ROW */
+  .metric-row {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 8px; margin-bottom: 16px;
+  }
+  .metric-card {
+    background: #12121c; border: 1px solid #2a2a3a; border-radius: 10px;
+    padding: 12px 14px; text-align: center;
+  }
+  .metric-card .label { font-size: 10px; color: #8888a0; text-transform: uppercase; font-weight: 600; letter-spacing: .3px; }
+  .metric-card .value { font-size: 22px; font-weight: 800; margin: 2px 0; }
+  .metric-card .value.good { color: #4ade80; }
+  .metric-card .value.bad { color: #f87171; }
+  .metric-card .value.warn { color: #fbbf24; }
+  .metric-card .value.info { color: #38bdf8; }
+  .metric-card .sub { font-size: 10px; color: #8888a0; }
+
+  /* TABLE */
+  .table-wrap {
+    overflow-x: auto; border-radius: 10px; border: 1px solid #2a2a3a;
+  }
+  table {
+    width: 100%; border-collapse: collapse; font-size: 13px;
+  }
+  thead th {
+    background: #12121c; color: #8888a0; font-size: 11px;
+    font-weight: 600; text-transform: uppercase; letter-spacing: .3px;
+    padding: 10px 12px; text-align: left; border-bottom: 1px solid #2a2a3a;
+    white-space: nowrap;
+  }
+  tbody td {
+    padding: 8px 12px; border-bottom: 1px solid #222233;
+  }
+  tbody tr:hover { background: #222233; }
+  tbody tr:last-child td { border-bottom: none; }
+  .badge-cell {
+    display: inline-block; padding: 2px 8px; border-radius: 4px;
+    font-size: 11px; font-weight: 500;
+  }
+  .badge-cell.true { background: #0a3d2e; color: #34d399; }
+  .badge-cell.false { background: #3d0a0a; color: #f87171; }
+  .badge-cell.partial { background: #3d2e0a; color: #fbbf24; }
+
+  /* CONFUSION MATRIX */
+  .matrix-wrap {
+    overflow-x: auto; margin-bottom: 16px;
+  }
+  .matrix-table {
+    width: auto; min-width: 100%; border-collapse: collapse;
+    font-size: 13px;
+  }
+  .matrix-table th, .matrix-table td {
+    padding: 8px 12px; border: 1px solid #2a2a3a; text-align: center;
+    min-width: 80px;
+  }
+  .matrix-table th {
+    background: #12121c; color: #8888a0; font-size: 11px;
+    font-weight: 600; text-transform: uppercase;
+  }
+  .matrix-table .row-label {
+    background: #12121c; color: #c0c0d0; font-weight: 600;
+    text-align: right;
+  }
+  .matrix-table .cell-high { background: #0a3d2e; color: #34d399; font-weight: 600; }
+  .matrix-table .cell-med { background: #312e1a; color: #fbbf24; }
+  .matrix-table .cell-low { background: #3d0a0a; color: #f87171; }
+  .matrix-table .cell-zero { background: #12121c; color: #555; }
+  .matrix-table .cell-diag { background: #1a1a3d; color: #818cf8; font-weight: 600; }
+  .matrix-table .total-row td { background: #1a1a24; font-weight: 600; border-top: 2px solid #3a3a5a; }
+
+  /* CHART CONTAINER */
+  .chart-box { position: relative; height: 260px; width: 100%; }
+
+  /* EXPORT */
+  .export-bar {
+    display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px;
+    align-items: center;
+  }
+
+  /* FP/FN TABLE */
+  .fpfn-table tbody td { font-size: 12px; }
+  .fpfn-table .input-col { max-width: 280px; word-break: break-word; }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .two-col, .three-col { grid-template-columns: 1fr; }
+    .latency-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .metric-row { grid-template-columns: repeat(2, 1fr); }
+    .header h1 { font-size: 18px; }
+  }
+
+  /* LOADING */
+  .loading {
+    text-align: center; padding: 60px 24px; color: #8888a0;
+  }
+  .loading .spinner {
+    width: 40px; height: 40px; border: 3px solid #2a2a3a;
+    border-top-color: #8b5cf6; border-radius: 50%; animation: spin .7s linear infinite;
+    margin: 0 auto 16px;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* TABS */
+  .tabs {
+    display: flex; gap: 4px; margin-bottom: 16px; flex-wrap: wrap;
+  }
+  .tab {
+    padding: 8px 18px; border-radius: 8px 8px 0 0; border: 1px solid #2a2a3a;
+    border-bottom: none; background: #12121c; color: #8888a0;
+    font-size: 13px; font-weight: 500; cursor: pointer; transition: all .15s;
+    font-family: inherit;
+  }
+  .tab:hover { color: #c0c0d0; background: #1a1a24; }
+  .tab.active { background: #1a1a24; color: #06b6d4; border-color: #3a3a5a; }
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+
+  .fp-row { cursor: pointer; }
+  .fp-row:hover { background: #222233; }
+  .fp-row.false-positive td { border-left: 3px solid #f87171; }
+  .fp-row.false-negative td { border-left: 3px solid #fbbf24; }
+</style>
+</head>
+<body>
+<div class="container">
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <h1>📊 Dashboard Penelitian</h1>
+      <span class="badge badge-groq">Groq (Llama)</span>
+      <span class="badge badge-gemini">Gemini</span>
+      <span class="badge badge-research">🔬 Analisis</span>
+    </div>
+    <div style="font-size:12px;color:#8888a0;">
+      <span id="headerInfo">Memuat data...</span>
+    </div>
+  </div>
+
+  <!-- TABS -->
+  <div class="tabs" id="tabs">
+    <button class="tab active" data-tab="overview">📈 Ringkasan</button>
+    <button class="tab" data-tab="confusion">🎯 Confusion Matrix</button>
+    <button class="tab" data-tab="fpfn">⚠️ FP & FN</button>
+    <button class="tab" data-tab="details">📋 Detail Log</button>
+  </div>
+
+  <!-- TAB: OVERVIEW -->
+  <div class="tab-content active" id="tab-overview">
+    <!-- STATS ROW -->
+    <div class="stats-grid" id="statsRow">
+      <div class="stat-card stat-groq">
+        <div class="stat-label">Total Groq</div>
+        <div class="stat-value" id="totalGroq">-</div>
+        <div class="stat-sub" id="groqModels"></div>
+      </div>
+      <div class="stat-card stat-gemini">
+        <div class="stat-label">Total Gemini</div>
+        <div class="stat-value" id="totalGemini">-</div>
+        <div class="stat-sub" id="geminiModels"></div>
+      </div>
+      <div class="stat-card stat-total">
+        <div class="stat-label">Total Pengujian</div>
+        <div class="stat-value" id="totalAll">-</div>
+        <div class="stat-sub" id="totalBreakdown"></div>
+      </div>
+      <div class="stat-card stat-latency">
+        <div class="stat-label">Rata-rata Latency</div>
+        <div class="stat-value" id="avgLatency">-</div>
+        <div class="stat-sub" id="latencyCompare"></div>
+      </div>
+    </div>
+
+    <!-- ERROR & COMPLIANCE METRICS -->
+    <div class="metric-row" id="metricsRow">
+      <div class="metric-card">
+        <div class="label">Error Rate</div>
+        <div class="value" id="errorRate">-</div>
+        <div class="sub" id="errorRateSub"></div>
+      </div>
+      <div class="metric-card">
+        <div class="label">JSON Compliance</div>
+        <div class="value" id="jsonRate">-</div>
+        <div class="sub" id="jsonRateSub"></div>
+      </div>
+      <div class="metric-card">
+        <div class="label">Intent Accuracy</div>
+        <div class="value" id="intentAccuracy">-</div>
+        <div class="sub" id="intentAccuracySub"></div>
+      </div>
+      <div class="metric-card">
+        <div class="label">Entity Accuracy</div>
+        <div class="value" id="entityAccuracy">-</div>
+        <div class="sub" id="entityAccuracySub"></div>
+      </div>
+    </div>
+
+    <!-- LATENCY & CHARTS 2-COL -->
+    <div class="two-col">
+      <div class="card">
+        <div class="card-title">⏱ Statistik Latency <span class="val" id="latencyUnit">ms</span></div>
+        <div class="latency-grid" id="latencyGrid">
+          <div class="latency-item"><span class="key">Rata-rata</span><span class="val" id="l_avg">-</span></div>
+          <div class="latency-item"><span class="key">Median</span><span class="val" id="l_med">-</span></div>
+          <div class="latency-item"><span class="key">Minimum</span><span class="val" id="l_min">-</span></div>
+          <div class="latency-item"><span class="key">Maximum</span><span class="val" id="l_max">-</span></div>
+        </div>
+        <div style="margin-top:8px;border-top:1px solid #2a2a3a;padding-top:10px;">
+          <div style="font-size:11px;color:#8888a0;margin-bottom:6px;">Per Model:</div>
+          <div id="latencyPerModel" style="display:flex;flex-direction:column;gap:4px;"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">📊 Perbandingan Latency <span class="val">Groq vs Gemini</span></div>
+        <div class="chart-box"><canvas id="chartLatency"></canvas></div>
+      </div>
+    </div>
+
+    <!-- INTENT DISTRIBUTION & COMPARISON -->
+    <div class="two-col">
+      <div class="card">
+        <div class="card-title">📊 Distribusi Intent <span class="val" id="intentDistTitle">Total</span></div>
+        <div class="chart-box"><canvas id="chartIntent"></canvas></div>
+      </div>
+      <div class="card">
+        <div class="card-title">📊 Groq vs Gemini <span class="val">Per Intent</span></div>
+        <div class="chart-box"><canvas id="chartCompare"></canvas></div>
+      </div>
+    </div>
+
+    <!-- ACCURACY RADAR -->
+    <div class="two-col">
+      <div class="card">
+        <div class="card-title">🎯 Accuracy Metrics <span class="val">Per Model</span></div>
+        <div class="chart-box"><canvas id="chartRadar"></canvas></div>
+      </div>
+      <div class="card">
+        <div class="card-title">✅ Intent Accuracy per Kategori <span class="val">Groq vs Gemini</span></div>
+        <div class="chart-box"><canvas id="chartIntentAcc"></canvas></div>
+      </div>
+    </div>
+
+    <!-- LOG TABLE -->
+    <div class="card" style="margin-top:16px;">
+      <div class="card-title" style="margin-bottom:4px;">📋 Semua Log</div>
+      <div class="export-bar" style="margin-bottom:10px;">
+        <button class="btn" onclick="exportCSV('all')">📥 Export All CSV</button>
+        <button class="btn btn-primary" onclick="exportCSV('groq')">📥 Export Groq CSV</button>
+        <button class="btn btn-success" onclick="exportCSV('gemini')">📥 Export Gemini CSV</button>
+        <span style="font-size:11px;color:#8888a0;margin-left:8px;" id="tableInfo"></span>
+      </div>
+      <div class="table-wrap">
+        <table class="fpfn-table" id="logTable">
+          <thead>
+            <tr>
+              <th>Waktu</th>
+              <th>Sumber</th>
+              <th>Input</th>
+              <th>Parsed</th>
+              <th>Ground Truth</th>
+              <th>Intent ✓</th>
+              <th>Entity ✓</th>
+              <th>Latency</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="logTableBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB: CONFUSION MATRIX -->
+  <div class="tab-content" id="tab-confusion">
+    <div class="card">
+      <div class="card-title">🎯 Confusion Matrix - Klasifikasi Intent</div>
+      <div style="font-size:12px;color:#8888a0;margin-bottom:12px;">
+        Baris = Ground Truth (Aktual), Kolom = Prediksi Model. <span style="color:#818cf8;">Diagonal biru</span> = benar.
+      </div>
+      <div class="matrix-wrap" id="matrixWrapper"></div>
+      <div style="margin-top:12px;display:flex;gap:16px;flex-wrap:wrap;font-size:13px;" id="matrixStats"></div>
+    </div>
+
+    <!-- Per-model confusion matrices -->
+    <div class="two-col" style="margin-top:16px;">
+      <div class="card">
+        <div class="card-title">🎯 Groq Confusion Matrix</div>
+        <div class="matrix-wrap" id="matrixGroqWrapper"></div>
+      </div>
+      <div class="card">
+        <div class="card-title">🎯 Gemini Confusion Matrix</div>
+        <div class="matrix-wrap" id="matrixGeminiWrapper"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB: FP/FN -->
+  <div class="tab-content" id="tab-fpfn">
+    <div class="card">
+      <div class="card-title">⚠️ False Positive & False Negative</div>
+      <div style="font-size:12px;color:#8888a0;margin-bottom:12px;">
+        <span style="color:#f87171;">FP (False Positive)</span> = Model memprediksi intent inventaris padahal seharusnya non-inventaris. &nbsp;
+        <span style="color:#fbbf24;">FN (False Negative) / Intent Miss</span> = Model salah memprediksi intent (misal 'tambah' diprediksi 'kurang').
+      </div>
+      <div class="export-bar">
+        <button class="btn" onclick="exportCSV('fpfn')">📥 Export FP/FN CSV</button>
+        <span style="font-size:11px;color:#8888a0;" id="fpfnInfo"></span>
+      </div>
+      <div class="table-wrap" style="margin-top:8px;">
+        <table class="fpfn-table" id="fpfnTable">
+          <thead>
+            <tr>
+              <th>Tipe</th>
+              <th>Waktu</th>
+              <th>Sumber</th>
+              <th>Input</th>
+              <th>Ground Truth</th>
+              <th>Prediksi</th>
+              <th>Keterangan</th>
+            </tr>
+          </thead>
+          <tbody id="fpfnBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB: DETAIL LOG -->
+  <div class="tab-content" id="tab-details">
+    <div class="card">
+      <div class="card-title">📋 Detail Seluruh Log</div>
+      <div class="export-bar">
+        <button class="btn" onclick="exportCSV('all')">📥 Export CSV</button>
+        <span style="font-size:11px;color:#8888a0;" id="detailInfo"></span>
+      </div>
+      <div class="table-wrap">
+        <table id="detailTable" style="font-size:12px;">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Timestamp</th>
+              <th>Model</th>
+              <th>Source</th>
+              <th>Input</th>
+              <th>Parsed Func</th>
+              <th>Latency (ms)</th>
+              <th>Status</th>
+              <th>JSON Valid</th>
+              <th>Intent Correct</th>
+              <th>Entity Correct</th>
+              <th>Output</th>
+            </tr>
+          </thead>
+          <tbody id="detailBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ======================== STATE ========================
+let groqEntries = [];
+let geminiEntries = [];
+let allEntries = [];
+let chartInstances = {};
+
+// ======================== PARSE LOG ========================
+function parseLogText(text) {
+  const entries = [];
+  const blocks = text.split(/\n={5,}/);
+  for (const block of blocks) {
+    const jsonMatch = block.match(/\{[\s\S]*\}/);
+    if (jsonMatch) {
+      try {
+        const data = JSON.parse(jsonMatch[0]);
+        if (data && data.timestamp) entries.push(data);
+      } catch(e) {}
+    }
+  }
+  return entries;
+}
+
+// ======================== GROUND TRUTH ========================
+function determineGroundTruth(entry) {
+  const input = (entry.input || '').toLowerCase().trim();
+  const words = input.split(/\s+/);
+
+  // Determine intent
+  let intent = 'non-inventaris';
+  const intentKeywords = {
+    'tambah': ['tambah', 'tambahkan', 'tmbahkan', 'tmbh', 'masuk', 'masukkan', 'kirim', 'kiriman',
+               'datang', 'bertambah', 'simpan', 'baru', 'tmbhkan', 'tambahin', 'add'],
+    'kurang': ['kurang', 'kurangi', 'kurangin', 'krangi', 'dipakai', 'keluar', 'rusak',
+               'berkurang', 'dipinjam', 'ambil', 'keluarkan', 'kurangin'],
+    'cek': ['cek', 'check', 'berapa', 'ada berapa', 'tersisa', 'tersedia', 'masih ada',
+            'jumlah', 'tersisa', 'apakah'],
+    'hapus': ['hapus', 'hapuss', 'hilang', 'hilangkan', 'delete', 'buang', 'buang data',
+              'keluarkan dari', 'hps', 'remove']
+  };
+
+  // Check for hapus first (strong signals)
+  if (/\b(hapus|hapuss|hilangkan|delete|buang|hps|remove)\b/i.test(input)) {
+    intent = 'hapus';
+  }
+  // Check cek
+  else if (/\b(cek|check|berapa|tersisa|tersedia|masih ada|jumlah)\b/i.test(input)) {
+    intent = 'cek';
+  }
+  // Check kurang
+  else if (/\b(kurang|kurangi|kurangin|krangi|dipakai|rusak|dipinjam|ambil|keluarkan)\b/i.test(input)) {
+    intent = 'kurang';
+  }
+  // Check tambah
+  else if (/\b(tambah|tambahkan|tmbahkan|tmbh|masuk|masukkan|kirim|kiriman|datang|simpan|baru|add)\b/i.test(input)) {
+    intent = 'tambah';
+  }
+
+  // Determine expected entity (barang) from input
+  const knownItems = [
+    'buku', 'pulpen', 'laptop', 'monitor', 'kursi', 'kursi kantor',
+    'mouse', 'speaker', 'headset', 'flashdisk', 'harddisk',
+    'kabel lan', 'router', 'access point', 'switch', 'modem',
+    'scanner', 'webcam', 'ups', 'proyektor', 'monitor lg',
+    'mouse gaming', 'keyboard mekanik', 'ssd', 'ram', 'harddisk eksternal',
+    'printer', 'postmen', 'flashdisk baru', 'sd', 'ssd'
+  ];
+
+  let expectedItem = null;
+  let expectedQty = null;
+
+  // Extract item
+  for (const item of knownItems) {
+    if (input.includes(item.toLowerCase())) {
+      expectedItem = item;
+      break;
+    }
+  }
+  if (!expectedItem) {
+    // Try to find any noun after verb
+    const itemMatch = input.match(/(?:tambah|kurang|hapus|cek)\s+(?:stok\s+)?(.+?)(?:\s+\d+|$)/i);
+    if (itemMatch) expectedItem = itemMatch[1].trim();
+  }
+
+  // Extract quantity
+  const qtyMatch = input.match(/(\d+)/);
+  if (qtyMatch) expectedQty = parseInt(qtyMatch[1]);
+
+  return { intent, expectedItem, expectedQty };
+}
+
+function normalizeItem(item) {
+  if (!item) return null;
+  return item.toLowerCase().replace(/^[a-z]/, c => c.toUpperCase() === c ? c.toLowerCase() : c).trim();
+}
+
+function itemsMatch(a, b) {
+  if (!a || !b) return false;
+  return normalizeItem(a) === normalizeItem(b);
+}
+
+// ======================== ANALYSIS ========================
+function analyzeEntry(entry, gt) {
+  const parsedFunc = entry.parsed_function;
+
+  // JSON Compliance
+  let jsonValid = false;
+  try {
+    const parsed = JSON.parse(entry.raw_ai_response);
+    jsonValid = typeof parsed === 'object' && parsed !== null;
+  } catch(e) {}
+
+  // Intent Accuracy
+  const intentMapping = {
+    'tambah': 'tambah',
+    'kurang': 'kurang',
+    'cek': 'cek',
+    'hapus': 'hapus',
+    'tambah_tanpa_jumlah': 'tambah',
+    'kurang_tanpa_jumlah': 'kurang',
+    'cek_semua': 'cek'
+  };
+  const predictedIntent = intentMapping[parsedFunc] || null;
+  const intentCorrect = predictedIntent === gt.intent ||
+    (gt.intent === 'non-inventaris' && predictedIntent === null);
+
+  // Entity Accuracy (only for database actions with db_change)
+  let entityCorrect = false;
+  if (gt.intent !== 'non-inventaris') {
+    const dbChange = entry.db_change;
+    if (dbChange && dbChange.barang && gt.expectedItem) {
+      const itemMatch = itemsMatch(dbChange.barang, gt.expectedItem);
+      const qtyMatch = gt.expectedQty == null || dbChange.jumlah == null ||
+                       dbChange.jumlah === gt.expectedQty;
+      entityCorrect = itemMatch && qtyMatch;
+    } else {
+      entityCorrect = null;
+    }
+  } else {
+    entityCorrect = null;
+  }
+
+  return { jsonValid, intentCorrect, entityCorrect, predictedIntent, gt };
+}
+
+// ======================== MAIN ANALYSIS ========================
+let analysisResults = null;
+
+function runAnalysis() {
+  const results = {
+    groq: { total: 0, errors: 0, jsonValid: 0, intents: {}, entityCorrect: 0, entityTotal: 0,
+            latencies: [], intentCorrect: 0, confusion: {}, fp: [], fn: [] },
+    gemini: { total: 0, errors: 0, jsonValid: 0, intents: {}, entityCorrect: 0, entityTotal: 0,
+              latencies: [], intentCorrect: 0, confusion: {}, fp: [], fn: [] },
+    total: { total: 0, errors: 0, jsonValid: 0, entityCorrect: 0, entityTotal: 0,
+             intentCorrect: 0 }
+  };
+
+  const allIntents = ['tambah', 'kurang', 'cek', 'hapus', 'non-inventaris'];
+  for (const src of ['groq', 'gemini']) {
+    results[src].confusion = {};
+    for (const gt of allIntents) {
+      results[src].confusion[gt] = {};
+      for (const pred of allIntents) results[src].confusion[gt][pred] = 0;
+    }
+  }
+
+  const detailRows = [];
+
+  for (const entry of allEntries) {
+    const src = entry._source;
+    const r = results[src];
+    r.total++;
+    results.total.total++;
+
+    const gt = determineGroundTruth(entry);
+    const analysis = analyzeEntry(entry, gt);
+
+    // JSON Valid
+    if (analysis.jsonValid) r.jsonValid++;
+    if (analysis.jsonValid) results.total.jsonValid++;
+
+    // Error
+    if ((entry.status || '').includes('Error') || entry.status === 'Error: Timed out') {
+      r.errors++;
+      results.total.errors++;
+    }
+
+    // Latency
+    if (entry.latency_ms != null) {
+      r.latencies.push(entry.latency_ms);
+      if (!results.total._latencies) results.total._latencies = [];
+      results.total._latencies.push(entry.latency_ms);
+    }
+
+    // Intent Correct
+    if (analysis.intentCorrect) {
+      r.intentCorrect++;
+      results.total.intentCorrect++;
+    }
+
+    // Entity
+    if (analysis.entityCorrect === true) {
+      r.entityCorrect++;
+      results.total.entityCorrect++;
+    }
+    if (analysis.entityCorrect !== null) {
+      r.entityTotal++;
+      results.total.entityTotal++;
+    }
+
+    // Per intent count
+    const predictedLabel = analysis.predictedIntent || 'non-inventaris';
+    if (!r.intents[predictedLabel]) r.intents[predictedLabel] = 0;
+    r.intents[predictedLabel]++;
+
+    // Confusion matrix
+    const actualLabel = gt.intent;
+    r.confusion[actualLabel][predictedLabel]++;
+
+    // FP/FN detection
+    if (actualLabel === 'non-inventaris' && predictedLabel !== 'non-inventaris') {
+      r.fp.push({
+        timestamp: entry.timestamp,
+        source: src,
+        input: entry.input,
+        groundTruth: actualLabel,
+        prediction: predictedLabel,
+        note: 'Non-inventaris diprediksi sebagai ' + predictedLabel
+      });
+    } else if (actualLabel !== 'non-inventaris' && predictedLabel !== actualLabel && predictedLabel !== null) {
+      r.fn.push({
+        timestamp: entry.timestamp,
+        source: src,
+        input: entry.input,
+        groundTruth: actualLabel,
+        prediction: predictedLabel,
+        note: `Seharusnya '${actualLabel}' tapi diprediksi '${predictedLabel}'`
+      });
+    } else if (actualLabel !== 'non-inventaris' && predictedLabel === null) {
+      r.fn.push({
+        timestamp: entry.timestamp,
+        source: src,
+        input: entry.input,
+        groundTruth: actualLabel,
+        prediction: 'non-inventaris',
+        note: `Seharusnya '${actualLabel}' tapi diprediksi chat`
+      });
+    } else if (actualLabel === 'non-inventaris' && predictedLabel === null) {
+      // Correct - non-inventaris chat
+    } else if (actualLabel === predictedLabel) {
+      // Correct intent match
+    }
+
+    // Detail row
+    detailRows.push({
+      timestamp: entry.timestamp,
+      model: entry.model || '-',
+      source: src,
+      input: entry.input || '',
+      parsedFunc: entry.parsed_function || 'null',
+      latency: entry.latency_ms,
+      status: entry.status || '-',
+      jsonValid: analysis.jsonValid,
+      intentCorrect: analysis.intentCorrect,
+      entityCorrect: analysis.entityCorrect,
+      output: entry.output || '',
+      dbChange: entry.db_change
+    });
+  }
+
+  // Merge confusion matrices for total
+  results.total.confusion = {};
+  for (const gt of allIntents) {
+    results.total.confusion[gt] = {};
+    for (const pred of allIntents) {
+      results.total.confusion[gt][pred] =
+        (results.groq.confusion[gt]?.[pred] || 0) + (results.gemini.confusion[gt]?.[pred] || 0);
+    }
+  }
+
+  // Merge FP/FN
+  results.total.fp = [...results.groq.fp, ...results.gemini.fp];
+  results.total.fn = [...results.groq.fn, ...results.gemini.fn];
+
+  // Aggregate intents
+  results.total.intents = {};
+  for (const src of ['groq', 'gemini']) {
+    for (const [k, v] of Object.entries(results[src].intents)) {
+      results.total.intents[k] = (results.total.intents[k] || 0) + v;
+    }
+  }
+
+  results.total.latencies = results.total._latencies || [];
+
+  analysisResults = { results, detailRows };
+  return analysisResults;
+}
+
+// ======================== LATENCY HELPERS ========================
+function calcLatencyStats(lats) {
+  if (!lats || !lats.length) return { avg: 0, min: 0, max: 0, med: 0 };
+  const sorted = [...lats].sort((a, b) => a - b);
+  const avg = lats.reduce((a, b) => a + b, 0) / lats.length;
+  const min = sorted[0];
+  const max = sorted[sorted.length - 1];
+  const mid = Math.floor(sorted.length / 2);
+  const med = sorted.length % 2 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2;
+  return { avg, min, max, med };
+}
+
+function fmtLat(ms) {
+  if (ms == null || isNaN(ms)) return '-';
+  return ms < 1000 ? `${ms.toFixed(0)} ms` : `${(ms / 1000).toFixed(2)} s`;
+}
+
+// ======================== RENDER ========================
+function render() {
+  const { results, detailRows } = runAnalysis();
+  const r = results;
+
+  // Header
+  document.getElementById('headerInfo').textContent =
+    `${r.total.total} pengujian (${r.groq.total} Groq · ${r.gemini.total} Gemini)`;
+
+  // Stats
+  document.getElementById('totalGroq').textContent = r.groq.total;
+  document.getElementById('totalGemini').textContent = r.gemini.total;
+  document.getElementById('totalAll').textContent = r.total.total;
+
+  const groqModels = [...new Set(groqEntries.map(e => e.model))].join(', ');
+  const geminiModels = [...new Set(geminiEntries.map(e => e.model))].join(', ');
+  document.getElementById('groqModels').textContent = groqModels || 'groq';
+  document.getElementById('geminiModels').textContent = geminiModels || 'gemini';
+
+  const dbActions = allEntries.filter(e => e.status === 'Database_Action').length;
+  const chatActions = allEntries.filter(e => e.status === 'Chat_Response').length;
+  document.getElementById('totalBreakdown').textContent =
+    `${dbActions} DB · ${chatActions} Chat · ${r.total.errors} Error`;
+
+  // Latency stats
+  const latG = calcLatencyStats(r.groq.latencies);
+  const latM = calcLatencyStats(r.gemini.latencies);
+  const latT = calcLatencyStats(r.total.latencies);
+
+  document.getElementById('avgLatency').textContent = fmtLat(latT.avg);
+  document.getElementById('latencyCompare').innerHTML =
+    `Groq: ${fmtLat(latG.avg)} · Gemini: ${fmtLat(latM.avg)}`;
+
+  document.getElementById('l_avg').textContent = fmtLat(latT.avg);
+  document.getElementById('l_med').textContent = fmtLat(latT.med);
+  document.getElementById('l_min').textContent = fmtLat(latT.min);
+  document.getElementById('l_max').textContent = fmtLat(latT.max);
+
+  // Per model latency
+  const modelLatHtml = [];
+  const modelMap = {};
+  for (const e of allEntries) {
+    if (e.latency_ms == null) continue;
+    if (!modelMap[e.model]) modelMap[e.model] = [];
+    modelMap[e.model].push(e.latency_ms);
+  }
+  for (const [model, lats] of Object.entries(modelMap)) {
+    const s = calcLatencyStats(lats);
+    modelLatHtml.push(`<div style="display:flex;justify-content:space-between;font-size:12px;padding:2px 0;">
+      <span style="color:#c0c0d0;">${escHtml(model)}</span>
+      <span style="font-family:'JetBrains Mono',monospace;color:#06b6d4;">${fmtLat(s.avg)} (n=${lats.length})</span>
+    </div>`);
+  }
+  document.getElementById('latencyPerModel').innerHTML = modelLatHtml.join('');
+
+  // Error Rate
+  const errRate = r.total.total > 0 ? ((r.total.errors / r.total.total) * 100) : 0;
+  const errRateEl = document.getElementById('errorRate');
+  errRateEl.textContent = errRate.toFixed(1) + '%';
+  errRateEl.className = 'value ' + (errRate < 5 ? 'good' : errRate < 15 ? 'warn' : 'bad');
+
+  const errG = r.groq.total > 0 ? (r.groq.errors / r.groq.total * 100) : 0;
+  const errM = r.gemini.total > 0 ? (r.gemini.errors / r.gemini.total * 100) : 0;
+  document.getElementById('errorRateSub').textContent =
+    `Groq: ${errG.toFixed(1)}% · Gemini: ${errM.toFixed(1)}% (${r.total.errors} total)`;
+
+  // JSON Compliance
+  const jsonRate = r.total.total > 0 ? ((r.total.jsonValid / r.total.total) * 100) : 0;
+  const jsonRateEl = document.getElementById('jsonRate');
+  jsonRateEl.textContent = jsonRate.toFixed(1) + '%';
+  jsonRateEl.className = 'value ' + (jsonRate > 90 ? 'good' : jsonRate > 70 ? 'warn' : 'bad');
+
+  const jsonG = r.groq.total > 0 ? (r.groq.jsonValid / r.groq.total * 100) : 0;
+  const jsonM = r.gemini.total > 0 ? (r.gemini.jsonValid / r.gemini.total * 100) : 0;
+  document.getElementById('jsonRateSub').textContent =
+    `Groq: ${jsonG.toFixed(1)}% · Gemini: ${jsonM.toFixed(1)}%`;
+
+  // Intent Accuracy
+  const intentRate = r.total.total > 0 ? ((r.total.intentCorrect / r.total.total) * 100) : 0;
+  const intentRateEl = document.getElementById('intentAccuracy');
+  intentRateEl.textContent = intentRate.toFixed(1) + '%';
+  intentRateEl.className = 'value ' + (intentRate > 90 ? 'good' : intentRate > 70 ? 'warn' : 'bad');
+
+  const intentG = r.groq.total > 0 ? (r.groq.intentCorrect / r.groq.total * 100) : 0;
+  const intentM = r.gemini.total > 0 ? (r.gemini.intentCorrect / r.gemini.total * 100) : 0;
+  document.getElementById('intentAccuracySub').textContent =
+    `Groq: ${intentG.toFixed(1)}% · Gemini: ${intentM.toFixed(1)}%`;
+
+  // Entity Accuracy
+  const entityRate = r.total.entityTotal > 0 ? ((r.total.entityCorrect / r.total.entityTotal) * 100) : 0;
+  const entityRateEl = document.getElementById('entityAccuracy');
+  entityRateEl.textContent = entityRate.toFixed(1) + '%';
+  entityRateEl.className = 'value ' + (entityRate > 90 ? 'good' : entityRate > 70 ? 'warn' : 'bad');
+
+  const entityG = r.groq.entityTotal > 0 ? (r.groq.entityCorrect / r.groq.entityTotal * 100) : 0;
+  const entityM = r.gemini.entityTotal > 0 ? (r.gemini.entityCorrect / r.gemini.entityTotal * 100) : 0;
+  document.getElementById('entityAccuracySub').textContent =
+    `Groq: ${entityG.toFixed(1)}% · Gemini: ${entityM.toFixed(1)}%`;
+
+  // Render Charts
+  renderCharts(r);
+  renderConfusionMatrices(r);
+  renderFPFN(r);
+  renderDetailTable(detailRows);
+}
+
+// ======================== CHARTS ========================
+function renderCharts(r) {
+  destroyCharts();
+
+  // Latency comparison bar
+  const ctx1 = document.getElementById('chartLatency').getContext('2d');
+  chartInstances.latency = new Chart(ctx1, {
+    type: 'bar',
+    data: {
+      labels: ['Rata-rata', 'Median', 'Minimum', 'Maximum'],
+      datasets: [
+        {
+          label: 'Groq',
+          data: [
+            calcLatencyStats(r.groq.latencies).avg,
+            calcLatencyStats(r.groq.latencies).med,
+            calcLatencyStats(r.groq.latencies).min,
+            calcLatencyStats(r.groq.latencies).max
+          ],
+          backgroundColor: 'rgba(167, 139, 250, 0.7)',
+          borderColor: 'rgba(167, 139, 250, 1)',
+          borderWidth: 1
+        },
+        {
+          label: 'Gemini',
+          data: [
+            calcLatencyStats(r.gemini.latencies).avg,
+            calcLatencyStats(r.gemini.latencies).med,
+            calcLatencyStats(r.gemini.latencies).min,
+            calcLatencyStats(r.gemini.latencies).max
+          ],
+          backgroundColor: 'rgba(52, 211, 153, 0.7)',
+          borderColor: 'rgba(52, 211, 153, 1)',
+          borderWidth: 1
+        }
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { labels: { color: '#8888a0', font: { size: 11 } } } },
+      scales: {
+        x: { ticks: { color: '#8888a0' }, grid: { color: '#222233' } },
+        y: { ticks: { color: '#8888a0', callback: v => v < 1000 ? v + ' ms' : (v/1000).toFixed(1) + ' s' }, grid: { color: '#222233' } }
+      }
+    }
+  });
+
+  // Intent distribution
+  const intentLabels = ['tambah', 'kurang', 'cek', 'hapus', 'non-inventaris'];
+  const totalIntents = intentLabels.map(l => r.total.intents[l] || 0);
+  const colors = ['#4ade80', '#fb923c', '#38bdf8', '#f87171', '#8888a0'];
+
+  const ctx2 = document.getElementById('chartIntent').getContext('2d');
+  chartInstances.intent = new Chart(ctx2, {
+    type: 'doughnut',
+    data: {
+      labels: intentLabels.map(l => {
+        const icons = { 'tambah': '➕ Tambah', 'kurang': '➖ Kurang', 'cek': '👁️ Cek', 'hapus': '🗑️ Hapus', 'non-inventaris': '💬 Chat' };
+        return icons[l] || l;
+      }),
+      datasets: [{
+        data: totalIntents,
+        backgroundColor: colors.map(c => c + 'cc'),
+        borderColor: colors,
+        borderWidth: 2
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { position: 'right', labels: { color: '#c0c0d0', font: { size: 11 }, padding: 12 } }
+      }
+    }
+  });
+
+  // Groq vs Gemini per intent
+  const ctx3 = document.getElementById('chartCompare').getContext('2d');
+  chartInstances.compare = new Chart(ctx3, {
+    type: 'bar',
+    data: {
+      labels: intentLabels.map(l => {
+        const icons = { 'tambah': '➕ Tambah', 'kurang': '➖ Kurang', 'cek': '👁️ Cek', 'hapus': '🗑️ Hapus', 'non-inventaris': '💬 Chat' };
+        return icons[l] || l;
+      }),
+      datasets: [
+        {
+          label: 'Groq',
+          data: intentLabels.map(l => r.groq.intents[l] || 0),
+          backgroundColor: 'rgba(167, 139, 250, 0.7)',
+          borderColor: 'rgba(167, 139, 250, 1)',
+          borderWidth: 1
+        },
+        {
+          label: 'Gemini',
+          data: intentLabels.map(l => r.gemini.intents[l] || 0),
+          backgroundColor: 'rgba(52, 211, 153, 0.7)',
+          borderColor: 'rgba(52, 211, 153, 1)',
+          borderWidth: 1
+        }
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { labels: { color: '#8888a0', font: { size: 11 } } } },
+      scales: {
+        x: { ticks: { color: '#8888a0' }, grid: { color: '#222233' } },
+        y: { ticks: { color: '#8888a0' }, grid: { color: '#222233' } }
+      }
+    }
+  });
+
+  // Radar: Accuracy metrics per model
+  const ctx4 = document.getElementById('chartRadar').getContext('2d');
+  const accG = r.groq;
+  const accM = r.gemini;
+  chartInstances.radar = new Chart(ctx4, {
+    type: 'radar',
+    data: {
+      labels: ['JSON Compliance', 'Intent Accuracy', 'Entity Accuracy', 'Non-Error Rate'],
+      datasets: [
+        {
+          label: 'Groq',
+          data: [
+            accG.total > 0 ? (accG.jsonValid / accG.total * 100) : 0,
+            accG.total > 0 ? (accG.intentCorrect / accG.total * 100) : 0,
+            accG.entityTotal > 0 ? (accG.entityCorrect / accG.entityTotal * 100) : 0,
+            accG.total > 0 ? ((accG.total - accG.errors) / accG.total * 100) : 0
+          ],
+          borderColor: 'rgba(167, 139, 250, 1)',
+          backgroundColor: 'rgba(167, 139, 250, 0.15)',
+          pointBackgroundColor: 'rgba(167, 139, 250, 1)',
+          borderWidth: 2
+        },
+        {
+          label: 'Gemini',
+          data: [
+            accM.total > 0 ? (accM.jsonValid / accM.total * 100) : 0,
+            accM.total > 0 ? (accM.intentCorrect / accM.total * 100) : 0,
+            accM.entityTotal > 0 ? (accM.entityCorrect / accM.entityTotal * 100) : 0,
+            accM.total > 0 ? ((accM.total - accM.errors) / accM.total * 100) : 0
+          ],
+          borderColor: 'rgba(52, 211, 153, 1)',
+          backgroundColor: 'rgba(52, 211, 153, 0.15)',
+          pointBackgroundColor: 'rgba(52, 211, 153, 1)',
+          borderWidth: 2
+        }
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { labels: { color: '#8888a0', font: { size: 11 } } } },
+      scales: {
+        r: {
+          ticks: { color: '#8888a0', backdropColor: 'transparent' },
+          grid: { color: '#222233' },
+          angleLines: { color: '#222233' },
+          pointLabels: { color: '#c0c0d0', font: { size: 11 } }
+        }
+      }
+    }
+  });
+
+  // Intent accuracy per category
+  const ctx5 = document.getElementById('chartIntentAcc').getContext('2d');
+  const intentCategories = ['tambah', 'kurang', 'cek', 'hapus'];
+  const groqIntentAcc = [];
+  const geminiIntentAcc = [];
+
+  for (const cat of intentCategories) {
+    let gTotal = 0, gCorrect = 0;
+    let mTotal = 0, mCorrect = 0;
+    for (const entry of allEntries) {
+      if (entry._source === 'groq') {
+        const gt = determineGroundTruth(entry);
+        if (gt.intent === cat) {
+          gTotal++;
+          const analysis = analyzeEntry(entry, gt);
+          if (analysis.intentCorrect) gCorrect++;
+        }
+      } else {
+        const gt = determineGroundTruth(entry);
+        if (gt.intent === cat) {
+          mTotal++;
+          const analysis = analyzeEntry(entry, gt);
+          if (analysis.intentCorrect) mCorrect++;
+        }
+      }
+    }
+    groqIntentAcc.push(gTotal > 0 ? (gCorrect / gTotal * 100) : 0);
+    geminiIntentAcc.push(mTotal > 0 ? (mCorrect / mTotal * 100) : 0);
+  }
+
+  chartInstances.intentAcc = new Chart(ctx5, {
+    type: 'bar',
+    data: {
+      labels: intentCategories.map(l => {
+        const icons = { 'tambah': '➕ Tambah', 'kurang': '➖ Kurang', 'cek': '👁️ Cek', 'hapus': '🗑️ Hapus' };
+        return icons[l] || l;
+      }),
+      datasets: [
+        {
+          label: 'Groq',
+          data: groqIntentAcc,
+          backgroundColor: 'rgba(167, 139, 250, 0.7)',
+          borderColor: 'rgba(167, 139, 250, 1)',
+          borderWidth: 1
+        },
+        {
+          label: 'Gemini',
+          data: geminiIntentAcc,
+          backgroundColor: 'rgba(52, 211, 153, 0.7)',
+          borderColor: 'rgba(52, 211, 153, 1)',
+          borderWidth: 1
+        }
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { labels: { color: '#8888a0', font: { size: 11 } } } },
+      scales: {
+        x: { ticks: { color: '#8888a0' }, grid: { color: '#222233' } },
+        y: {
+          min: 0, max: 100,
+          ticks: { color: '#8888a0', callback: v => v + '%' },
+          grid: { color: '#222233' }
+        }
+      }
+    }
+  });
+}
+
+function destroyCharts() {
+  for (const key of Object.keys(chartInstances)) {
+    if (chartInstances[key]) chartInstances[key].destroy();
+  }
+  chartInstances = {};
+}
+
+// ======================== CONFUSION MATRIX ========================
+function renderConfusionMatrices(r) {
+  const intents = ['tambah', 'kurang', 'cek', 'hapus', 'non-inventaris'];
+  const labels = ['➕ Tambah', '➖ Kurang', '👁️ Cek', '🗑️ Hapus', '💬 Chat'];
+
+  function buildMatrixHtml(conf, title) {
+    let html = `<table class="matrix-table"><thead><tr><th>GT \\ Pred</th>`;
+    for (const label of labels) html += `<th>${label}</th>`;
+    html += `<th>Total</th></tr></thead><tbody>`;
+
+    const rowTotals = {};
+    for (const gt of intents) {
+      let rowSum = 0;
+      for (const pred of intents) rowSum += conf[gt]?.[pred] || 0;
+      rowTotals[gt] = rowSum;
+    }
+
+    for (let i = 0; i < intents.length; i++) {
+      const gt = intents[i];
+      html += `<tr><td class="row-label">${labels[i]}</td>`;
+      for (let j = 0; j < intents.length; j++) {
+        const pred = intents[j];
+        const val = conf[gt]?.[pred] || 0;
+        let cls = 'cell-zero';
+        if (val > 0 && i === j) cls = val > 5 ? 'cell-diag' : 'cell-diag';
+        else if (val > 0) cls = val > 3 ? 'cell-high' : val > 1 ? 'cell-med' : 'cell-low';
+        html += `<td class="${cls}">${val || 0}</td>`;
+      }
+      html += `<td style="font-weight:600;background:#1a1a24;">${rowTotals[gt]}</td>`;
+      html += `</tr>`;
+    }
+
+    // Precision row
+    html += `<tr class="total-row"><td class="row-label" style="color:#818cf8;">Precision</td>`;
+    for (let j = 0; j < intents.length; j++) {
+      let colSum = 0;
+      for (let i = 0; i < intents.length; i++) colSum += conf[intents[i]]?.[intents[j]] || 0;
+      const correct = conf[intents[j]]?.[intents[j]] || 0;
+      const prec = colSum > 0 ? (correct / colSum * 100) : 0;
+      html += `<td style="color:${prec > 80 ? '#34d399' : prec > 50 ? '#fbbf24' : '#f87171'};font-weight:600;">${prec.toFixed(1)}%</td>`;
+    }
+    html += `<td></td></tr>`;
+
+    // Recall row
+    html += `<tr class="total-row"><td class="row-label" style="color:#34d399;">Recall</td>`;
+    for (let i = 0; i < intents.length; i++) {
+      const rowSum = rowTotals[intents[i]];
+      const correct = conf[intents[i]]?.[intents[i]] || 0;
+      const rec = rowSum > 0 ? (correct / rowSum * 100) : 0;
+      html += `<td style="color:${rec > 80 ? '#34d399' : rec > 50 ? '#fbbf24' : '#f87171'};font-weight:600;">${rec.toFixed(1)}%</td>`;
+    }
+    html += `<td></td></tr>`;
+
+    // F1-Score row
+    html += `<tr class="total-row"><td class="row-label" style="color:#fbbf24;">F1-Score</td>`;
+    for (let i = 0; i < intents.length; i++) {
+      const rowSum = rowTotals[intents[i]];
+      let colSum = 0;
+      for (let k = 0; k < intents.length; k++) colSum += conf[intents[k]]?.[intents[i]] || 0;
+      const correct = conf[intents[i]]?.[intents[i]] || 0;
+      const prec = colSum > 0 ? correct / colSum : 0;
+      const rec = rowSum > 0 ? correct / rowSum : 0;
+      const f1 = (prec + rec) > 0 ? (2 * prec * rec / (prec + rec)) : 0;
+      html += `<td style="color:${f1 > 0.8 ? '#34d399' : f1 > 0.5 ? '#fbbf24' : '#f87171'};font-weight:600;">${(f1 * 100).toFixed(1)}%</td>`;
+    }
+    html += `<td></td></tr>`;
+
+    html += '</tbody></table>';
+    return html;
+  }
+
+  document.getElementById('matrixWrapper').innerHTML = buildMatrixHtml(r.total.confusion, 'Total');
+  document.getElementById('matrixGroqWrapper').innerHTML = buildMatrixHtml(r.groq.confusion, 'Groq');
+  document.getElementById('matrixGeminiWrapper').innerHTML = buildMatrixHtml(r.gemini.confusion, 'Gemini');
+
+  // Matrix stats
+  const totalCorrect = intents.reduce((sum, gt) => sum + (r.total.confusion[gt]?.[gt] || 0), 0);
+  const totalSamples = r.total.total;
+  const overallAcc = totalSamples > 0 ? (totalCorrect / totalSamples * 100) : 0;
+  document.getElementById('matrixStats').innerHTML = `
+    <span>✅ Overall Accuracy: <strong style="color:#4ade80;">${overallAcc.toFixed(1)}%</strong></span>
+    <span>📊 Total Correct: <strong style="color:#818cf8;">${totalCorrect}</strong> / ${totalSamples}</span>
+    <span>⚠️ Total Errors: <strong style="color:#f87171;">${totalSamples - totalCorrect}</strong></span>
+  `;
+}
+
+// ======================== FP/FN ========================
+function renderFPFN(r) {
+  const allFPFN = [
+    ...r.total.fp.map(e => ({ ...e, type: 'FP', typeLabel: 'False Positive' })),
+    ...r.total.fn.map(e => ({ ...e, type: 'FN', typeLabel: 'False Negative' }))
+  ];
+  allFPFN.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+
+  document.getElementById('fpfnInfo').textContent =
+    `${allFPFN.length} total issues (${r.total.fp.length} FP, ${r.total.fn.length} FN)`;
+
+  if (!allFPFN.length) {
+    document.getElementById('fpfnBody').innerHTML = '<tr><td colspan="7" style="text-align:center;padding:24px;color:#8888a0;">Tidak ada false positive atau false negative 🎉</td></tr>';
+    return;
+  }
+
+  let html = '';
+  for (const item of allFPFN) {
+    const cls = item.type === 'FP' ? 'false-positive' : 'false-negative';
+    const typeBadge = item.type === 'FP'
+      ? '<span class="badge-cell false">FP</span>'
+      : '<span class="badge-cell partial">FN</span>';
+    html += `<tr class="fp-row ${cls}">
+      <td>${typeBadge}</td>
+      <td style="font-size:11px;color:#8888a0;font-family:'JetBrains Mono',monospace;">${item.timestamp}</td>
+      <td><span class="badge-cell" style="background:#1a1a24;color:${item.source === 'groq' ? '#a78bfa' : '#34d399'}">${item.source}</span></td>
+      <td class="input-col">${escHtml(item.input || '')}</td>
+      <td><span style="color:#4ade80;">${item.groundTruth}</span></td>
+      <td><span style="color:#f87171;">${item.prediction}</span></td>
+      <td style="font-size:11px;color:#8888a0;">${item.note || ''}</td>
+    </tr>`;
+  }
+  document.getElementById('fpfnBody').innerHTML = html;
+}
+
+// ======================== DETAIL TABLE ========================
+function renderDetailTable(rows) {
+  document.getElementById('detailInfo').textContent = `${rows.length} entries`;
+  document.getElementById('tableInfo').textContent = `${rows.length} entries`;
+
+  let html = '';
+  for (let i = 0; i < rows.length; i++) {
+    const r = rows[i];
+    const intentIcon = r.intentCorrect ? '✅' : '❌';
+    const entityIcon = r.entityCorrect === true ? '✅' : r.entityCorrect === null ? '➖' : '❌';
+    const jsonIcon = r.jsonValid ? '✅' : '❌';
+    html += `<tr>
+      <td style="color:#8888a0;">${i + 1}</td>
+      <td style="font-size:11px;color:#8888a0;font-family:'JetBrains Mono',monospace;">${r.timestamp}</td>
+      <td style="font-size:11px;">${escHtml(r.model)}</td>
+      <td><span style="color:${r.source === 'groq' ? '#a78bfa' : '#34d399'}">${r.source}</span></td>
+      <td style="max-width:200px;word-break:break-word;font-size:12px;">${escHtml(r.input)}</td>
+      <td><span class="badge-cell" style="background:#1a1a24;color:${r.parsedFunc === 'null' ? '#8888a0' : '#06b6d4'}">${r.parsedFunc}</span></td>
+      <td style="font-family:'JetBrains Mono',monospace;font-size:12px;color:${r.latency < 500 ? '#4ade80' : r.latency < 1500 ? '#fbbf24' : '#f87171'}">${r.latency != null ? r.latency.toFixed(0) : '-'}</td>
+      <td style="font-size:11px;">${r.status}</td>
+      <td>${jsonIcon}</td>
+      <td>${intentIcon}</td>
+      <td>${entityIcon}</td>
+      <td style="max-width:200px;word-break:break-word;font-size:11px;color:#8888a0;">${escHtml(r.output || '').slice(0, 80)}</td>
+    </tr>`;
+  }
+  document.getElementById('detailBody').innerHTML = html;
+  document.getElementById('logTableBody').innerHTML = html;
+}
+
+// ======================== EXPORT CSV ========================
+function exportCSV(type) {
+  if (!analysisResults) return;
+  const { detailRows } = analysisResults;
+  let rows = detailRows;
+
+  if (type === 'groq') rows = rows.filter(r => r.source === 'groq');
+  else if (type === 'gemini') rows = rows.filter(r => r.source === 'gemini');
+  else if (type === 'fpfn') {
+    const r = analysisResults.results;
+    const fpfn = [
+      ...r.total.fp.map(e => ({ ...e, type: 'FP' })),
+      ...r.total.fn.map(e => ({ ...e, type: 'FN' }))
+    ];
+    const csv = 'Tipe,Waktu,Sumber,Input,GroundTruth,Prediksi,Keterangan\n' +
+      fpfn.map(e => `"${e.type}","${e.timestamp}","${e.source}","${(e.input || '').replace(/"/g, '""')}","${e.groundTruth}","${e.prediction}","${(e.note || '').replace(/"/g, '""')}"`).join('\n');
+    downloadCSV(csv, 'fpfn_analysis.csv');
+    return;
+  }
+
+  const csv = 'No,Timestamp,Model,Source,Input,ParsedFunc,Latency_ms,Status,JSON_Valid,Intent_Correct,Entity_Correct,Output\n' +
+    rows.map((r, i) => `"${i+1}","${r.timestamp}","${r.model}","${r.source}","${(r.input || '').replace(/"/g, '""')}","${r.parsedFunc}","${r.latency != null ? r.latency : ''}","${r.status}","${r.jsonValid}","${r.intentCorrect}","${r.entityCorrect === true ? 'true' : r.entityCorrect === null ? 'N/A' : 'false'}","${(r.output || '').replace(/"/g, '""')}"`).join('\n');
+
+  const fname = type === 'groq' ? 'groq_analysis.csv' : type === 'gemini' ? 'gemini_analysis.csv' : 'all_analysis.csv';
+  downloadCSV(csv, fname);
+}
+
+function downloadCSV(csv, fname) {
+  const BOM = '\uFEFF';
+  const blob = new Blob([BOM + csv], { type: 'text/csv;charset=utf-8;' });
+  const link = document.createElement('a');
+  link.href = URL.createObjectURL(blob);
+  link.download = fname;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+
+// ======================== TABS ========================
+document.addEventListener('click', function(e) {
+  if (e.target.classList.contains('tab')) {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+    e.target.classList.add('active');
+    document.getElementById('tab-' + e.target.dataset.tab).classList.add('active');
+  }
+});
+
+// ======================== UTILITIES ========================
+function escHtml(str) {
+  if (!str) return '';
+  return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+// ======================== INIT ========================
+async function init() {
+  try {
+    const [groqRes, geminiRes] = await Promise.all([
+      fetch('log_penelitian-groq.txt'),
+      fetch('log_penelitian-gemini.txt')
+    ]);
+
+    const groqText = await groqRes.text();
+    const geminiText = await geminiRes.text();
+
+    groqEntries = parseLogText(groqText);
+    geminiEntries = parseLogText(geminiText);
+
+    groqEntries.forEach(e => e._source = 'groq');
+    geminiEntries.forEach(e => e._source = 'gemini');
+
+    allEntries = [...groqEntries, ...geminiEntries];
+    allEntries.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+
+    render();
+  } catch(e) {
+    document.querySelector('.container').innerHTML = `
+      <div class="header"><h1>❌ Gagal Memuat Data</h1></div>
+      <div class="card" style="text-align:center;padding:48px;">
+        <p style="color:#f87171;font-size:16px;">${escHtml(e.message)}</p>
+        <p style="color:#8888a0;margin-top:12px;">Pastikan file <strong>log_penelitian-groq.txt</strong> dan <strong>log_penelitian-gemini.txt</strong> tersedia.</p>
+      </div>`;
+  }
+}
+
+init();
+</script>
+</body>
+</html>

@@ -1,0 +1,3403 @@
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:09:05
+============================================================
+{
+  "timestamp": "2026-06-14 18:09:05",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Tambah stok buku 10",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"buku\", \"jumlah\": 10}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok buku ditambah 10. Total: 10 unit.",
+  "latency_ms": 423.81,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "buku",
+    "jumlah": 10,
+    "stok_sebelum": 0,
+    "stok_sesudah": 10
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:09:12
+============================================================
+{
+  "timestamp": "2026-06-14 18:09:12",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Tambahkan pulpen 5",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"pulpen\", \"jumlah\": 5}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok pulpen ditambah 5. Total: 5 unit.",
+  "latency_ms": 436.52,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "pulpen",
+    "jumlah": 5,
+    "stok_sebelum": 0,
+    "stok_sesudah": 5
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:09:16
+============================================================
+{
+  "timestamp": "2026-06-14 18:09:16",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Tambah penghapus 8",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"penghapus\", \"jumlah\": 8}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok penghapus ditambah 8. Total: 8 unit.",
+  "latency_ms": 232.95,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "penghapus",
+    "jumlah": 8,
+    "stok_sebelum": 0,
+    "stok_sesudah": 8
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:09:21
+============================================================
+{
+  "timestamp": "2026-06-14 18:09:21",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Tambahkan monitor 2",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"monitor\", \"jumlah\": 2}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok monitor ditambah 2. Total: 2 unit.",
+  "latency_ms": 473.77,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "monitor",
+    "jumlah": 2,
+    "stok_sebelum": 0,
+    "stok_sesudah": 2
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:09:29
+============================================================
+{
+  "timestamp": "2026-06-14 18:09:29",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Tambah laptop 1",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"laptop\", \"jumlah\": 1}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok laptop ditambah 1. Total: 1 unit.",
+  "latency_ms": 467.26,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "laptop",
+    "jumlah": 1,
+    "stok_sebelum": 0,
+    "stok_sesudah": 1
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:09:33
+============================================================
+{
+  "timestamp": "2026-06-14 18:09:33",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Tambah router 3",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"router\", \"jumlah\": 3}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok router ditambah 3. Total: 3 unit.",
+  "latency_ms": 247.97,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "router",
+    "jumlah": 3,
+    "stok_sebelum": 0,
+    "stok_sesudah": 3
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:09:37
+============================================================
+{
+  "timestamp": "2026-06-14 18:09:37",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Tambahkan keyboard 4",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"keyboard\", \"jumlah\": 4}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok keyboard ditambah 4. Total: 4 unit.",
+  "latency_ms": 250.27,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "keyboard",
+    "jumlah": 4,
+    "stok_sebelum": 0,
+    "stok_sesudah": 4
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:09:44
+============================================================
+{
+  "timestamp": "2026-06-14 18:09:44",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Tambah mouse 6",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"mouse\", \"jumlah\": 6}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok mouse ditambah 6. Total: 6 unit.",
+  "latency_ms": 301.83,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "mouse",
+    "jumlah": 6,
+    "stok_sebelum": 0,
+    "stok_sesudah": 6
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:09:48
+============================================================
+{
+  "timestamp": "2026-06-14 18:09:48",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Tambahkan printer 2",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"printer\", \"jumlah\": 2}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok printer ditambah 2. Total: 2 unit.",
+  "latency_ms": 343.23,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "printer",
+    "jumlah": 2,
+    "stok_sebelum": 0,
+    "stok_sesudah": 2
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:09:52
+============================================================
+{
+  "timestamp": "2026-06-14 18:09:52",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Tambah flashdisk 10",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"flashdisk\", \"jumlah\": 10}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok flashdisk ditambah 10. Total: 10 unit.",
+  "latency_ms": 220.46,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "flashdisk",
+    "jumlah": 10,
+    "stok_sebelum": 0,
+    "stok_sesudah": 10
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:09:57
+============================================================
+{
+  "timestamp": "2026-06-14 18:09:57",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Buku datang 15",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"buku\", \"jumlah\": 15}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok buku ditambah 15. Total: 25 unit.",
+  "latency_ms": 391.35,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "buku",
+    "jumlah": 15,
+    "stok_sebelum": 10,
+    "stok_sesudah": 25
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:10:03
+============================================================
+{
+  "timestamp": "2026-06-14 18:10:03",
+  "model": "llama-3.3-70b-versatile",
+  "input": "pulpen datang 10",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"pulpen\", \"jumlah\": 10}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok pulpen ditambah 10. Total: 15 unit.",
+  "latency_ms": 250.86,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "pulpen",
+    "jumlah": 10,
+    "stok_sebelum": 5,
+    "stok_sesudah": 15
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:10:11
+============================================================
+{
+  "timestamp": "2026-06-14 18:10:11",
+  "model": "llama-3.3-70b-versatile",
+  "input": "penghapus masuk 10",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"penghapus\", \"jumlah\": 10}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok penghapus ditambah 10. Total: 18 unit.",
+  "latency_ms": 333.66,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "penghapus",
+    "jumlah": 10,
+    "stok_sebelum": 8,
+    "stok_sesudah": 18
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:10:18
+============================================================
+{
+  "timestamp": "2026-06-14 18:10:18",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Monitor baru datang 3",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"monitor\", \"jumlah\": 3}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok monitor ditambah 3. Total: 5 unit.",
+  "latency_ms": 452.03,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "monitor",
+    "jumlah": 3,
+    "stok_sebelum": 2,
+    "stok_sesudah": 5
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:11:37
+============================================================
+{
+  "timestamp": "2026-06-14 18:11:37",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Laptop baru datang 2",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"Laptop\", \"jumlah\": 2}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok Laptop ditambah 2. Total: 3 unit.",
+  "latency_ms": 680.28,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "Laptop",
+    "jumlah": 2,
+    "stok_sebelum": 1,
+    "stok_sesudah": 3
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:11:43
+============================================================
+{
+  "timestamp": "2026-06-14 18:11:43",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Router masuk 5",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"Router\", \"jumlah\": 5}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok Router ditambah 5. Total: 8 unit.",
+  "latency_ms": 238.85,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "Router",
+    "jumlah": 5,
+    "stok_sebelum": 3,
+    "stok_sesudah": 8
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:11:47
+============================================================
+{
+  "timestamp": "2026-06-14 18:11:47",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Keyboard datang 7",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"keyboard\", \"jumlah\": 7}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok keyboard ditambah 7. Total: 11 unit.",
+  "latency_ms": 563.94,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "keyboard",
+    "jumlah": 7,
+    "stok_sebelum": 4,
+    "stok_sesudah": 11
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:11:49
+============================================================
+{
+  "timestamp": "2026-06-14 18:11:49",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Mouse masuk 12",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"Mouse\", \"jumlah\": 12}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok Mouse ditambah 12. Total: 18 unit.",
+  "latency_ms": 350.28,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "Mouse",
+    "jumlah": 12,
+    "stok_sebelum": 6,
+    "stok_sesudah": 18
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:11:52
+============================================================
+{
+  "timestamp": "2026-06-14 18:11:52",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Printer datang 1",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"Printer\", \"jumlah\": 1}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok Printer ditambah 1. Total: 3 unit.",
+  "latency_ms": 362.98,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "Printer",
+    "jumlah": 1,
+    "stok_sebelum": 2,
+    "stok_sesudah": 3
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:11:55
+============================================================
+{
+  "timestamp": "2026-06-14 18:11:55",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Flashdisk masuk 25",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"Flashdisk\", \"jumlah\": 25}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok Flashdisk ditambah 25. Total: 35 unit.",
+  "latency_ms": 228.11,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "Flashdisk",
+    "jumlah": 25,
+    "stok_sebelum": 10,
+    "stok_sesudah": 35
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:12:45
+============================================================
+{
+  "timestamp": "2026-06-14 18:12:45",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Tolong tambah buku 5",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"buku\", \"jumlah\": 5}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok buku ditambah 5. Total: 30 unit.",
+  "latency_ms": 470.6,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "buku",
+    "jumlah": 5,
+    "stok_sebelum": 25,
+    "stok_sesudah": 30
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:12:48
+============================================================
+{
+  "timestamp": "2026-06-14 18:12:48",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Tolong tambahkan pulpen 4",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"pulpen\", \"jumlah\": 4}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok pulpen ditambah 4. Total: 19 unit.",
+  "latency_ms": 503.7,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "pulpen",
+    "jumlah": 4,
+    "stok_sebelum": 15,
+    "stok_sesudah": 19
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:12:51
+============================================================
+{
+  "timestamp": "2026-06-14 18:12:51",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Tambah stok penghapus 3",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"penghapus\", \"jumlah\": 3}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok penghapus ditambah 3. Total: 21 unit.",
+  "latency_ms": 325.95,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "penghapus",
+    "jumlah": 3,
+    "stok_sebelum": 18,
+    "stok_sesudah": 21
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:12:54
+============================================================
+{
+  "timestamp": "2026-06-14 18:12:54",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Tambahkan monitor sebanyak 2",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"monitor\", \"jumlah\": 2}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok monitor ditambah 2. Total: 7 unit.",
+  "latency_ms": 287.26,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "monitor",
+    "jumlah": 2,
+    "stok_sebelum": 5,
+    "stok_sesudah": 7
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:12:57
+============================================================
+{
+  "timestamp": "2026-06-14 18:12:57",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Tambah laptop sebanyak 1",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"laptop\", \"jumlah\": 1}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok laptop ditambah 1. Total: 4 unit.",
+  "latency_ms": 338.37,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "laptop",
+    "jumlah": 1,
+    "stok_sebelum": 3,
+    "stok_sesudah": 4
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:13:00
+============================================================
+{
+  "timestamp": "2026-06-14 18:13:00",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Router bertambah 2",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"Router\", \"jumlah\": 2}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok Router ditambah 2. Total: 10 unit.",
+  "latency_ms": 330.82,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "Router",
+    "jumlah": 2,
+    "stok_sebelum": 8,
+    "stok_sesudah": 10
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:13:03
+============================================================
+{
+  "timestamp": "2026-06-14 18:13:03",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Keyboard bertambah 3",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"Keyboard\", \"jumlah\": 3}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok Keyboard ditambah 3. Total: 14 unit.",
+  "latency_ms": 248.91,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "Keyboard",
+    "jumlah": 3,
+    "stok_sebelum": 11,
+    "stok_sesudah": 14
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:13:06
+============================================================
+{
+  "timestamp": "2026-06-14 18:13:06",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Mouse bertambah 5",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"Mouse\", \"jumlah\": 5}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok Mouse ditambah 5. Total: 23 unit.",
+  "latency_ms": 461.96,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "Mouse",
+    "jumlah": 5,
+    "stok_sebelum": 18,
+    "stok_sesudah": 23
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:13:10
+============================================================
+{
+  "timestamp": "2026-06-14 18:13:10",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Printer bertambah 1",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"Printer\", \"jumlah\": 1}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok Printer ditambah 1. Total: 4 unit.",
+  "latency_ms": 469.88,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "Printer",
+    "jumlah": 1,
+    "stok_sebelum": 3,
+    "stok_sesudah": 4
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:13:13
+============================================================
+{
+  "timestamp": "2026-06-14 18:13:13",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Flashdisk bertambah 8",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"Flashdisk\", \"jumlah\": 8}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok Flashdisk ditambah 8. Total: 43 unit.",
+  "latency_ms": 341.19,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "Flashdisk",
+    "jumlah": 8,
+    "stok_sebelum": 35,
+    "stok_sesudah": 43
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:13:16
+============================================================
+{
+  "timestamp": "2026-06-14 18:13:16",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Masukkan buku 12",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"buku\", \"jumlah\": 12}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok buku ditambah 12. Total: 42 unit.",
+  "latency_ms": 525.14,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "buku",
+    "jumlah": 12,
+    "stok_sebelum": 30,
+    "stok_sesudah": 42
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:13:19
+============================================================
+{
+  "timestamp": "2026-06-14 18:13:19",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Masukkan pulpen 6",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"pulpen\", \"jumlah\": 6}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok pulpen ditambah 6. Total: 25 unit.",
+  "latency_ms": 219.85,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "pulpen",
+    "jumlah": 6,
+    "stok_sebelum": 19,
+    "stok_sesudah": 25
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:13:21
+============================================================
+{
+  "timestamp": "2026-06-14 18:13:21",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Masukkan penghapus 4",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"penghapus\", \"jumlah\": 4}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok penghapus ditambah 4. Total: 25 unit.",
+  "latency_ms": 299.16,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "penghapus",
+    "jumlah": 4,
+    "stok_sebelum": 21,
+    "stok_sesudah": 25
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:13:24
+============================================================
+{
+  "timestamp": "2026-06-14 18:13:24",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Masukkan monitor 2",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"monitor\", \"jumlah\": 2}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok monitor ditambah 2. Total: 9 unit.",
+  "latency_ms": 260.66,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "monitor",
+    "jumlah": 2,
+    "stok_sebelum": 7,
+    "stok_sesudah": 9
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:13:27
+============================================================
+{
+  "timestamp": "2026-06-14 18:13:27",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Masukkan laptop 1",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"laptop\", \"jumlah\": 1}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok laptop ditambah 1. Total: 5 unit.",
+  "latency_ms": 532.48,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "laptop",
+    "jumlah": 1,
+    "stok_sebelum": 4,
+    "stok_sesudah": 5
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:13:30
+============================================================
+{
+  "timestamp": "2026-06-14 18:13:30",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Masukkan router 3",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"router\", \"jumlah\": 3}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok router ditambah 3. Total: 13 unit.",
+  "latency_ms": 379.24,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "router",
+    "jumlah": 3,
+    "stok_sebelum": 10,
+    "stok_sesudah": 13
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:13:33
+============================================================
+{
+  "timestamp": "2026-06-14 18:13:33",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Masukkan keyboard 5",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"keyboard\", \"jumlah\": 5}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok keyboard ditambah 5. Total: 19 unit.",
+  "latency_ms": 240.07,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "keyboard",
+    "jumlah": 5,
+    "stok_sebelum": 14,
+    "stok_sesudah": 19
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:13:36
+============================================================
+{
+  "timestamp": "2026-06-14 18:13:36",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Masukkan mouse 7",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"mouse\", \"jumlah\": 7}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok mouse ditambah 7. Total: 30 unit.",
+  "latency_ms": 249.11,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "mouse",
+    "jumlah": 7,
+    "stok_sebelum": 23,
+    "stok_sesudah": 30
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:13:40
+============================================================
+{
+  "timestamp": "2026-06-14 18:13:40",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Masukkan printer 2",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"printer\", \"jumlah\": 2}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok printer ditambah 2. Total: 6 unit.",
+  "latency_ms": 237.42,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "printer",
+    "jumlah": 2,
+    "stok_sebelum": 4,
+    "stok_sesudah": 6
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:13:43
+============================================================
+{
+  "timestamp": "2026-06-14 18:13:43",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Masukkan flashdisk 10",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"flashdisk\", \"jumlah\": 10}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok flashdisk ditambah 10. Total: 53 unit.",
+  "latency_ms": 462.66,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "flashdisk",
+    "jumlah": 10,
+    "stok_sebelum": 43,
+    "stok_sesudah": 53
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:20:47
+============================================================
+{
+  "timestamp": "2026-06-14 18:20:47",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Kurangi stok buku 2",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"buku\", \"jumlah\": 2}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok buku dikurangi 2. Sisa: 40 unit.",
+  "latency_ms": 456.84,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "buku",
+    "jumlah": 2,
+    "stok_sebelum": 42,
+    "stok_sesudah": 40
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:20:49
+============================================================
+{
+  "timestamp": "2026-06-14 18:20:49",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Kurangi pulpen 3",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"pulpen\", \"jumlah\": 3}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok pulpen dikurangi 3. Sisa: 22 unit.",
+  "latency_ms": 331.12,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "pulpen",
+    "jumlah": 3,
+    "stok_sebelum": 25,
+    "stok_sesudah": 22
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:20:51
+============================================================
+{
+  "timestamp": "2026-06-14 18:20:51",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Kurangi penghapus 4",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"penghapus\", \"jumlah\": 4}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok penghapus dikurangi 4. Sisa: 21 unit.",
+  "latency_ms": 240.8,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "penghapus",
+    "jumlah": 4,
+    "stok_sebelum": 25,
+    "stok_sesudah": 21
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:20:54
+============================================================
+{
+  "timestamp": "2026-06-14 18:20:54",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Kurangi monitor 1",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"monitor\", \"jumlah\": 1}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok monitor dikurangi 1. Sisa: 8 unit.",
+  "latency_ms": 483.71,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "monitor",
+    "jumlah": 1,
+    "stok_sebelum": 9,
+    "stok_sesudah": 8
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:20:57
+============================================================
+{
+  "timestamp": "2026-06-14 18:20:57",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Kurangi laptop 1",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"laptop\", \"jumlah\": 1}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok laptop dikurangi 1. Sisa: 4 unit.",
+  "latency_ms": 515.51,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "laptop",
+    "jumlah": 1,
+    "stok_sebelum": 5,
+    "stok_sesudah": 4
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:21:00
+============================================================
+{
+  "timestamp": "2026-06-14 18:21:00",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Kurangi router 2",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"router\", \"jumlah\": 2}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok router dikurangi 2. Sisa: 11 unit.",
+  "latency_ms": 246.57,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "router",
+    "jumlah": 2,
+    "stok_sebelum": 13,
+    "stok_sesudah": 11
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:21:04
+============================================================
+{
+  "timestamp": "2026-06-14 18:21:04",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Kurangi keyboard 2",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"keyboard\", \"jumlah\": 2}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok keyboard dikurangi 2. Sisa: 17 unit.",
+  "latency_ms": 494.22,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "keyboard",
+    "jumlah": 2,
+    "stok_sebelum": 19,
+    "stok_sesudah": 17
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:24:11
+============================================================
+{
+  "timestamp": "2026-06-14 18:24:11",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Kurangi mouse 3",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"mouse\", \"jumlah\": 3}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok mouse dikurangi 3. Sisa: 27 unit.",
+  "latency_ms": 430.98,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "mouse",
+    "jumlah": 3,
+    "stok_sebelum": 30,
+    "stok_sesudah": 27
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:24:14
+============================================================
+{
+  "timestamp": "2026-06-14 18:24:14",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Kurangi printer 1",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"printer\", \"jumlah\": 1}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok printer dikurangi 1. Sisa: 5 unit.",
+  "latency_ms": 320.65,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "printer",
+    "jumlah": 1,
+    "stok_sebelum": 6,
+    "stok_sesudah": 5
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:24:16
+============================================================
+{
+  "timestamp": "2026-06-14 18:24:16",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Kurangi flashdisk 5",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"flashdisk\", \"jumlah\": 5}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok flashdisk dikurangi 5. Sisa: 48 unit.",
+  "latency_ms": 229.91,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "flashdisk",
+    "jumlah": 5,
+    "stok_sebelum": 53,
+    "stok_sesudah": 48
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:24:19
+============================================================
+{
+  "timestamp": "2026-06-14 18:24:19",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Buku digunakan 3",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"buku\", \"jumlah\": 3}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok buku dikurangi 3. Sisa: 37 unit.",
+  "latency_ms": 225.3,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "buku",
+    "jumlah": 3,
+    "stok_sebelum": 40,
+    "stok_sesudah": 37
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:24:21
+============================================================
+{
+  "timestamp": "2026-06-14 18:24:21",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Pulpen digunakan 2",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"Pulpen\", \"jumlah\": 2}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok Pulpen dikurangi 2. Sisa: 20 unit.",
+  "latency_ms": 240.71,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "Pulpen",
+    "jumlah": 2,
+    "stok_sebelum": 22,
+    "stok_sesudah": 20
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:24:23
+============================================================
+{
+  "timestamp": "2026-06-14 18:24:23",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Penghapus digunakan 4",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"Penghapus\", \"jumlah\": 4}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok Penghapus dikurangi 4. Sisa: 17 unit.",
+  "latency_ms": 359.32,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "Penghapus",
+    "jumlah": 4,
+    "stok_sebelum": 21,
+    "stok_sesudah": 17
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:24:26
+============================================================
+{
+  "timestamp": "2026-06-14 18:24:26",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Monitor digunakan 1",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"monitor\", \"jumlah\": 1}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok monitor dikurangi 1. Sisa: 7 unit.",
+  "latency_ms": 220.11,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "monitor",
+    "jumlah": 1,
+    "stok_sebelum": 8,
+    "stok_sesudah": 7
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:24:29
+============================================================
+{
+  "timestamp": "2026-06-14 18:24:29",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Laptop digunakan 1",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"Laptop\", \"jumlah\": 1}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok Laptop dikurangi 1. Sisa: 3 unit.",
+  "latency_ms": 223.84,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "Laptop",
+    "jumlah": 1,
+    "stok_sebelum": 4,
+    "stok_sesudah": 3
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:24:32
+============================================================
+{
+  "timestamp": "2026-06-14 18:24:32",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Router digunakan 2",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"Router\", \"jumlah\": 2}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok Router dikurangi 2. Sisa: 9 unit.",
+  "latency_ms": 249.06,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "Router",
+    "jumlah": 2,
+    "stok_sebelum": 11,
+    "stok_sesudah": 9
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:24:34
+============================================================
+{
+  "timestamp": "2026-06-14 18:24:34",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Keyboard digunakan 1",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"keyboard\", \"jumlah\": 1}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok keyboard dikurangi 1. Sisa: 16 unit.",
+  "latency_ms": 229.13,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "keyboard",
+    "jumlah": 1,
+    "stok_sebelum": 17,
+    "stok_sesudah": 16
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:24:38
+============================================================
+{
+  "timestamp": "2026-06-14 18:24:38",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Mouse digunakan 2",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"Mouse\", \"jumlah\": 2}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok Mouse dikurangi 2. Sisa: 25 unit.",
+  "latency_ms": 243.54,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "Mouse",
+    "jumlah": 2,
+    "stok_sebelum": 27,
+    "stok_sesudah": 25
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:24:42
+============================================================
+{
+  "timestamp": "2026-06-14 18:24:42",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Printer digunakan 1",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"Printer\", \"jumlah\": 1}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok Printer dikurangi 1. Sisa: 4 unit.",
+  "latency_ms": 237.25,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "Printer",
+    "jumlah": 1,
+    "stok_sebelum": 5,
+    "stok_sesudah": 4
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:24:46
+============================================================
+{
+  "timestamp": "2026-06-14 18:24:46",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Flashdisk digunakan 3",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"Flashdisk\", \"jumlah\": 3}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok Flashdisk dikurangi 3. Sisa: 45 unit.",
+  "latency_ms": 335.83,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "Flashdisk",
+    "jumlah": 3,
+    "stok_sebelum": 48,
+    "stok_sesudah": 45
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:24:49
+============================================================
+{
+  "timestamp": "2026-06-14 18:24:49",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Buku keluar 5",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"Buku\", \"jumlah\": 5}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok Buku dikurangi 5. Sisa: 32 unit.",
+  "latency_ms": 219.72,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "Buku",
+    "jumlah": 5,
+    "stok_sebelum": 37,
+    "stok_sesudah": 32
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:24:53
+============================================================
+{
+  "timestamp": "2026-06-14 18:24:53",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Pulpen keluar 4",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"Pulpen\", \"jumlah\": 4}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok Pulpen dikurangi 4. Sisa: 16 unit.",
+  "latency_ms": 226.59,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "Pulpen",
+    "jumlah": 4,
+    "stok_sebelum": 20,
+    "stok_sesudah": 16
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:24:55
+============================================================
+{
+  "timestamp": "2026-06-14 18:24:55",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Penghapus keluar 3",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"penghapus\", \"jumlah\": 3}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok penghapus dikurangi 3. Sisa: 14 unit.",
+  "latency_ms": 230.3,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "penghapus",
+    "jumlah": 3,
+    "stok_sebelum": 17,
+    "stok_sesudah": 14
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:24:58
+============================================================
+{
+  "timestamp": "2026-06-14 18:24:58",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Monitor keluar 1",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"Monitor\", \"jumlah\": 1}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok Monitor dikurangi 1. Sisa: 6 unit.",
+  "latency_ms": 238.5,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "Monitor",
+    "jumlah": 1,
+    "stok_sebelum": 7,
+    "stok_sesudah": 6
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:25:02
+============================================================
+{
+  "timestamp": "2026-06-14 18:25:02",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Laptop keluar 1",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"Laptop\", \"jumlah\": 1}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok Laptop dikurangi 1. Sisa: 2 unit.",
+  "latency_ms": 412.11,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "Laptop",
+    "jumlah": 1,
+    "stok_sebelum": 3,
+    "stok_sesudah": 2
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:25:04
+============================================================
+{
+  "timestamp": "2026-06-14 18:25:04",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Router keluar 2",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"Router\", \"jumlah\": 2}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok Router dikurangi 2. Sisa: 7 unit.",
+  "latency_ms": 339.3,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "Router",
+    "jumlah": 2,
+    "stok_sebelum": 9,
+    "stok_sesudah": 7
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:25:07
+============================================================
+{
+  "timestamp": "2026-06-14 18:25:07",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Keyboard keluar 2",
+  "raw_ai_response": "{\"fungsi\": \"tambah\", \"barang\": \"Keyboard\", \"jumlah\": 2}",
+  "parsed_function": "tambah",
+  "output": "✅ Berhasil! Stok Keyboard ditambah 2. Total: 18 unit.",
+  "latency_ms": 268.07,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "tambah",
+    "barang": "Keyboard",
+    "jumlah": 2,
+    "stok_sebelum": 16,
+    "stok_sesudah": 18
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:25:10
+============================================================
+{
+  "timestamp": "2026-06-14 18:25:10",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Mouse keluar 3",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"Mouse\", \"jumlah\": 3}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok Mouse dikurangi 3. Sisa: 22 unit.",
+  "latency_ms": 249.06,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "Mouse",
+    "jumlah": 3,
+    "stok_sebelum": 25,
+    "stok_sesudah": 22
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:25:12
+============================================================
+{
+  "timestamp": "2026-06-14 18:25:12",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Printer keluar 1",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"Printer\", \"jumlah\": 1}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok Printer dikurangi 1. Sisa: 3 unit.",
+  "latency_ms": 249.18,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "Printer",
+    "jumlah": 1,
+    "stok_sebelum": 4,
+    "stok_sesudah": 3
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:25:15
+============================================================
+{
+  "timestamp": "2026-06-14 18:25:15",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Flashdisk keluar 4",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"Flashdisk\", \"jumlah\": 4}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok Flashdisk dikurangi 4. Sisa: 41 unit.",
+  "latency_ms": 328.56,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "Flashdisk",
+    "jumlah": 4,
+    "stok_sebelum": 45,
+    "stok_sesudah": 41
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:25:17
+============================================================
+{
+  "timestamp": "2026-06-14 18:25:17",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Tolong kurangi buku 2",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"buku\", \"jumlah\": 2}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok buku dikurangi 2. Sisa: 30 unit.",
+  "latency_ms": 232.1,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "buku",
+    "jumlah": 2,
+    "stok_sebelum": 32,
+    "stok_sesudah": 30
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:25:19
+============================================================
+{
+  "timestamp": "2026-06-14 18:25:19",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Tolong kurangi pulpen 1",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"pulpen\", \"jumlah\": 1}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok pulpen dikurangi 1. Sisa: 15 unit.",
+  "latency_ms": 221.52,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "pulpen",
+    "jumlah": 1,
+    "stok_sebelum": 16,
+    "stok_sesudah": 15
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:25:22
+============================================================
+{
+  "timestamp": "2026-06-14 18:25:22",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Tolong kurangi penghapus 2",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"penghapus\", \"jumlah\": 2}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok penghapus dikurangi 2. Sisa: 12 unit.",
+  "latency_ms": 249.51,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "penghapus",
+    "jumlah": 2,
+    "stok_sebelum": 14,
+    "stok_sesudah": 12
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:25:25
+============================================================
+{
+  "timestamp": "2026-06-14 18:25:25",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Tolong kurangi monitor 1",
+  "raw_ai_response": "{\"fungsi\": \"kurang_tanpa_jumlah\", \"barang\": \"monitor\"}",
+  "parsed_function": "kurang_tanpa_jumlah",
+  "output": "Kurangi berapa unit monitor? Contoh: 'Kurangi stok monitor 2'",
+  "latency_ms": 364.89,
+  "status": "Clarification"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:25:32
+============================================================
+{
+  "timestamp": "2026-06-14 18:25:32",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Tolong kurangi laptop 1",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"laptop\", \"jumlah\": 1}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok laptop dikurangi 1. Sisa: 1 unit.",
+  "latency_ms": 322.65,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "laptop",
+    "jumlah": 1,
+    "stok_sebelum": 2,
+    "stok_sesudah": 1
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:25:40
+============================================================
+{
+  "timestamp": "2026-06-14 18:25:40",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Router dipakai 2",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"Router\", \"jumlah\": 2}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok Router dikurangi 2. Sisa: 5 unit.",
+  "latency_ms": 603.67,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "Router",
+    "jumlah": 2,
+    "stok_sebelum": 7,
+    "stok_sesudah": 5
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:25:43
+============================================================
+{
+  "timestamp": "2026-06-14 18:25:43",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Keyboard dipakai 1",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"keyboard\", \"jumlah\": 1}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok keyboard dikurangi 1. Sisa: 17 unit.",
+  "latency_ms": 274.6,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "keyboard",
+    "jumlah": 1,
+    "stok_sebelum": 18,
+    "stok_sesudah": 17
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:25:48
+============================================================
+{
+  "timestamp": "2026-06-14 18:25:48",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Mouse dipakai 2",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"Mouse\", \"jumlah\": 2}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok Mouse dikurangi 2. Sisa: 20 unit.",
+  "latency_ms": 369.53,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "Mouse",
+    "jumlah": 2,
+    "stok_sebelum": 22,
+    "stok_sesudah": 20
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:25:56
+============================================================
+{
+  "timestamp": "2026-06-14 18:25:56",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Printer dipakai 1",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"Printer\", \"jumlah\": 1}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok Printer dikurangi 1. Sisa: 2 unit.",
+  "latency_ms": 341.46,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "Printer",
+    "jumlah": 1,
+    "stok_sebelum": 3,
+    "stok_sesudah": 2
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:25:59
+============================================================
+{
+  "timestamp": "2026-06-14 18:25:59",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Flashdisk dipakai 3",
+  "raw_ai_response": "{\"fungsi\": \"kurang\", \"barang\": \"Flashdisk\", \"jumlah\": 3}",
+  "parsed_function": "kurang",
+  "output": "✅ Berhasil! Stok Flashdisk dikurangi 3. Sisa: 38 unit.",
+  "latency_ms": 329.88,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "kurang",
+    "barang": "Flashdisk",
+    "jumlah": 3,
+    "stok_sebelum": 41,
+    "stok_sesudah": 38
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:41:05
+============================================================
+{
+  "timestamp": "2026-06-14 18:41:05",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Cek stok buku",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"buku\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok buku saat ini: 30 unit.",
+  "latency_ms": 329.99,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:41:07
+============================================================
+{
+  "timestamp": "2026-06-14 18:41:07",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Cek stok pulpen",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"pulpen\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok pulpen saat ini: 15 unit.",
+  "latency_ms": 244.27,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:41:10
+============================================================
+{
+  "timestamp": "2026-06-14 18:41:10",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Cek stok penghapus",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"penghapus\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok penghapus saat ini: 12 unit.",
+  "latency_ms": 239.16,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:41:13
+============================================================
+{
+  "timestamp": "2026-06-14 18:41:13",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Cek stok monitor",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"monitor\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok monitor saat ini: 6 unit.",
+  "latency_ms": 229.17,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:41:15
+============================================================
+{
+  "timestamp": "2026-06-14 18:41:15",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Cek stok laptop",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"laptop\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok laptop saat ini: 1 unit.",
+  "latency_ms": 226.44,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:41:17
+============================================================
+{
+  "timestamp": "2026-06-14 18:41:17",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Cek stok router",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"router\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok router saat ini: 5 unit.",
+  "latency_ms": 200.58,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:41:20
+============================================================
+{
+  "timestamp": "2026-06-14 18:41:20",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Cek stok keyboard",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"keyboard\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok keyboard saat ini: 17 unit.",
+  "latency_ms": 240.59,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:41:22
+============================================================
+{
+  "timestamp": "2026-06-14 18:41:22",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Cek stok mouse",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"mouse\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok mouse saat ini: 20 unit.",
+  "latency_ms": 333.62,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:41:24
+============================================================
+{
+  "timestamp": "2026-06-14 18:41:24",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Cek stok printer",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"printer\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok printer saat ini: 2 unit.",
+  "latency_ms": 219.85,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:41:26
+============================================================
+{
+  "timestamp": "2026-06-14 18:41:26",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Cek stok flashdisk",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"flashdisk\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok flashdisk saat ini: 38 unit.",
+  "latency_ms": 259.97,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:41:30
+============================================================
+{
+  "timestamp": "2026-06-14 18:41:30",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Berapa stok buku",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"buku\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok buku saat ini: 30 unit.",
+  "latency_ms": 219.59,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:41:33
+============================================================
+{
+  "timestamp": "2026-06-14 18:41:33",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Berapa stok pulpen",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"pulpen\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok pulpen saat ini: 15 unit.",
+  "latency_ms": 209.74,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:41:35
+============================================================
+{
+  "timestamp": "2026-06-14 18:41:35",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Berapa stok penghapus",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"penghapus\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok penghapus saat ini: 12 unit.",
+  "latency_ms": 261.23,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:41:39
+============================================================
+{
+  "timestamp": "2026-06-14 18:41:39",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Berapa stok monitor",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"monitor\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok monitor saat ini: 6 unit.",
+  "latency_ms": 226.18,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:41:42
+============================================================
+{
+  "timestamp": "2026-06-14 18:41:42",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Berapa stok laptop",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"laptop\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok laptop saat ini: 1 unit.",
+  "latency_ms": 329.98,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:41:45
+============================================================
+{
+  "timestamp": "2026-06-14 18:41:45",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Berapa stok router",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"router\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok router saat ini: 5 unit.",
+  "latency_ms": 565.82,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:41:47
+============================================================
+{
+  "timestamp": "2026-06-14 18:41:47",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Berapa stok keyboard",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"keyboard\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok keyboard saat ini: 17 unit.",
+  "latency_ms": 439.8,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:41:49
+============================================================
+{
+  "timestamp": "2026-06-14 18:41:49",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Berapa stok mouse",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"mouse\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok mouse saat ini: 20 unit.",
+  "latency_ms": 478.68,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:41:51
+============================================================
+{
+  "timestamp": "2026-06-14 18:41:51",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Berapa stok printer",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"printer\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok printer saat ini: 2 unit.",
+  "latency_ms": 243.43,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:41:55
+============================================================
+{
+  "timestamp": "2026-06-14 18:41:55",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Berapa stok flashdisk",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"flashdisk\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok flashdisk saat ini: 38 unit.",
+  "latency_ms": 226.04,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:41:58
+============================================================
+{
+  "timestamp": "2026-06-14 18:41:58",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Ada buku?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"buku\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok buku saat ini: 30 unit.",
+  "latency_ms": 302.4,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:42:00
+============================================================
+{
+  "timestamp": "2026-06-14 18:42:00",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Ada pulpen?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"pulpen\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok pulpen saat ini: 15 unit.",
+  "latency_ms": 459.86,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:42:02
+============================================================
+{
+  "timestamp": "2026-06-14 18:42:02",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Ada penghapus?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"penghapus\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok penghapus saat ini: 12 unit.",
+  "latency_ms": 313.04,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:42:05
+============================================================
+{
+  "timestamp": "2026-06-14 18:42:05",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Ada monitor?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"monitor\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok monitor saat ini: 6 unit.",
+  "latency_ms": 528.29,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:42:08
+============================================================
+{
+  "timestamp": "2026-06-14 18:42:08",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Ada laptop?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"laptop\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok laptop saat ini: 1 unit.",
+  "latency_ms": 469.25,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:42:11
+============================================================
+{
+  "timestamp": "2026-06-14 18:42:11",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Ada router?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"router\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok router saat ini: 5 unit.",
+  "latency_ms": 519.91,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:42:13
+============================================================
+{
+  "timestamp": "2026-06-14 18:42:13",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Ada keyboard?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"keyboard\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok keyboard saat ini: 17 unit.",
+  "latency_ms": 248.52,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:42:16
+============================================================
+{
+  "timestamp": "2026-06-14 18:42:16",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Ada mouse?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"mouse\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok mouse saat ini: 20 unit.",
+  "latency_ms": 216.86,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:42:18
+============================================================
+{
+  "timestamp": "2026-06-14 18:42:18",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Ada printer?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"printer\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok printer saat ini: 2 unit.",
+  "latency_ms": 210.45,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:42:20
+============================================================
+{
+  "timestamp": "2026-06-14 18:42:20",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Ada flashdisk?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"flashdisk\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok flashdisk saat ini: 38 unit.",
+  "latency_ms": 227.53,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:42:23
+============================================================
+{
+  "timestamp": "2026-06-14 18:42:23",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Buku masih tersedia?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"Buku\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok Buku saat ini: 30 unit.",
+  "latency_ms": 247.14,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:42:27
+============================================================
+{
+  "timestamp": "2026-06-14 18:42:27",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Pulpen masih tersedia?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"Pulpen\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok Pulpen saat ini: 15 unit.",
+  "latency_ms": 1097.95,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:42:29
+============================================================
+{
+  "timestamp": "2026-06-14 18:42:29",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Penghapus masih tersedia?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"penghapus\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok penghapus saat ini: 12 unit.",
+  "latency_ms": 508.77,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:42:31
+============================================================
+{
+  "timestamp": "2026-06-14 18:42:31",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Monitor masih tersedia?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"monitor\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok monitor saat ini: 6 unit.",
+  "latency_ms": 219.83,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:42:34
+============================================================
+{
+  "timestamp": "2026-06-14 18:42:34",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Laptop masih tersedia?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"Laptop\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok Laptop saat ini: 1 unit.",
+  "latency_ms": 325.05,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:42:36
+============================================================
+{
+  "timestamp": "2026-06-14 18:42:36",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Router masih tersedia?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"Router\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok Router saat ini: 5 unit.",
+  "latency_ms": 227.15,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:42:40
+============================================================
+{
+  "timestamp": "2026-06-14 18:42:40",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Keyboard masih tersedia?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"keyboard\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok keyboard saat ini: 17 unit.",
+  "latency_ms": 209.77,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:42:42
+============================================================
+{
+  "timestamp": "2026-06-14 18:42:42",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Mouse masih tersedia?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"Mouse\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok Mouse saat ini: 20 unit.",
+  "latency_ms": 491.02,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:42:44
+============================================================
+{
+  "timestamp": "2026-06-14 18:42:44",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Printer masih tersedia?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"Printer\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok Printer saat ini: 2 unit.",
+  "latency_ms": 248.23,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:42:48
+============================================================
+{
+  "timestamp": "2026-06-14 18:42:48",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Flashdisk masih tersedia?",
+  "raw_ai_response": "{\"fungsi\": \"cek\", \"barang\": \"Flashdisk\"}",
+  "parsed_function": "cek",
+  "output": "📦 Stok Flashdisk saat ini: 38 unit.",
+  "latency_ms": 232.18,
+  "status": "Database_Action"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:53:19
+============================================================
+{
+  "timestamp": "2026-06-14 18:53:19",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Hapus buku",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"buku\"}",
+  "parsed_function": "hapus",
+  "output": "Berhasil! Barang 'buku' telah dihapus dari database.",
+  "latency_ms": 370.74,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "hapus",
+    "barang": "buku",
+    "stok_sebelum": 30
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:53:21
+============================================================
+{
+  "timestamp": "2026-06-14 18:53:21",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Hapus pulpen",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"pulpen\"}",
+  "parsed_function": "hapus",
+  "output": "Berhasil! Barang 'pulpen' telah dihapus dari database.",
+  "latency_ms": 218.93,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "hapus",
+    "barang": "pulpen",
+    "stok_sebelum": 15
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:53:24
+============================================================
+{
+  "timestamp": "2026-06-14 18:53:24",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Hapus penghapus",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"penghapus\"}",
+  "parsed_function": "hapus",
+  "output": "Berhasil! Barang 'penghapus' telah dihapus dari database.",
+  "latency_ms": 490.42,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "hapus",
+    "barang": "penghapus",
+    "stok_sebelum": 12
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:53:29
+============================================================
+{
+  "timestamp": "2026-06-14 18:53:29",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Hapus monitor",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"monitor\"}",
+  "parsed_function": "hapus",
+  "output": "Berhasil! Barang 'monitor' telah dihapus dari database.",
+  "latency_ms": 226.02,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "hapus",
+    "barang": "monitor",
+    "stok_sebelum": 6
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:53:34
+============================================================
+{
+  "timestamp": "2026-06-14 18:53:34",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Hapus laptop",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"laptop\"}",
+  "parsed_function": "hapus",
+  "output": "Berhasil! Barang 'laptop' telah dihapus dari database.",
+  "latency_ms": 399.48,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "hapus",
+    "barang": "laptop",
+    "stok_sebelum": 1
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:53:36
+============================================================
+{
+  "timestamp": "2026-06-14 18:53:36",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Hapus router",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"router\"}",
+  "parsed_function": "hapus",
+  "output": "Berhasil! Barang 'router' telah dihapus dari database.",
+  "latency_ms": 331.17,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "hapus",
+    "barang": "router",
+    "stok_sebelum": 5
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:53:39
+============================================================
+{
+  "timestamp": "2026-06-14 18:53:39",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Hapus keyboard",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"keyboard\"}",
+  "parsed_function": "hapus",
+  "output": "Berhasil! Barang 'keyboard' telah dihapus dari database.",
+  "latency_ms": 243.32,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "hapus",
+    "barang": "keyboard",
+    "stok_sebelum": 17
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:53:42
+============================================================
+{
+  "timestamp": "2026-06-14 18:53:42",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Hapus mouse",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"mouse\"}",
+  "parsed_function": "hapus",
+  "output": "Berhasil! Barang 'mouse' telah dihapus dari database.",
+  "latency_ms": 362.23,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "hapus",
+    "barang": "mouse",
+    "stok_sebelum": 20
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:53:44
+============================================================
+{
+  "timestamp": "2026-06-14 18:53:44",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Hapus printer",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"printer\"}",
+  "parsed_function": "hapus",
+  "output": "Berhasil! Barang 'printer' telah dihapus dari database.",
+  "latency_ms": 229.39,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "hapus",
+    "barang": "printer",
+    "stok_sebelum": 2
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:53:47
+============================================================
+{
+  "timestamp": "2026-06-14 18:53:47",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Hapus flashdisk",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"flashdisk\"}",
+  "parsed_function": "hapus",
+  "output": "Berhasil! Barang 'flashdisk' telah dihapus dari database.",
+  "latency_ms": 222.09,
+  "status": "Database_Action",
+  "db_change": {
+    "aksi": "hapus",
+    "barang": "flashdisk",
+    "stok_sebelum": 38
+  }
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:53:49
+============================================================
+{
+  "timestamp": "2026-06-14 18:53:49",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Delete buku",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"buku\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'buku' tidak ditemukan di database.",
+  "latency_ms": 479.82,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:53:52
+============================================================
+{
+  "timestamp": "2026-06-14 18:53:52",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Delete pulpen",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"pulpen\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'pulpen' tidak ditemukan di database.",
+  "latency_ms": 326.31,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:53:54
+============================================================
+{
+  "timestamp": "2026-06-14 18:53:54",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Delete penghapus",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"penghapus\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'penghapus' tidak ditemukan di database.",
+  "latency_ms": 346.99,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:53:56
+============================================================
+{
+  "timestamp": "2026-06-14 18:53:56",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Delete monitor",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"monitor\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'monitor' tidak ditemukan di database.",
+  "latency_ms": 190.02,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:53:59
+============================================================
+{
+  "timestamp": "2026-06-14 18:53:59",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Delete laptop",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"laptop\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'laptop' tidak ditemukan di database.",
+  "latency_ms": 441.89,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:54:02
+============================================================
+{
+  "timestamp": "2026-06-14 18:54:02",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Delete router",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"router\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'router' tidak ditemukan di database.",
+  "latency_ms": 462.01,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:54:04
+============================================================
+{
+  "timestamp": "2026-06-14 18:54:04",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Delete keyboard",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"keyboard\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'keyboard' tidak ditemukan di database.",
+  "latency_ms": 220.66,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:54:08
+============================================================
+{
+  "timestamp": "2026-06-14 18:54:08",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Delete mouse",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"mouse\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'mouse' tidak ditemukan di database.",
+  "latency_ms": 212.93,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:54:10
+============================================================
+{
+  "timestamp": "2026-06-14 18:54:10",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Delete printer",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"printer\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'printer' tidak ditemukan di database.",
+  "latency_ms": 212.76,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:54:13
+============================================================
+{
+  "timestamp": "2026-06-14 18:54:13",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Delete flashdisk",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"flashdisk\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'flashdisk' tidak ditemukan di database.",
+  "latency_ms": 479.9,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:54:15
+============================================================
+{
+  "timestamp": "2026-06-14 18:54:15",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Buang data buku",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"buku\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'buku' tidak ditemukan di database.",
+  "latency_ms": 329.4,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:54:18
+============================================================
+{
+  "timestamp": "2026-06-14 18:54:18",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Buang data pulpen",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"pulpen\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'pulpen' tidak ditemukan di database.",
+  "latency_ms": 217.75,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:54:21
+============================================================
+{
+  "timestamp": "2026-06-14 18:54:21",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Buang data penghapus",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"penghapus\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'penghapus' tidak ditemukan di database.",
+  "latency_ms": 231.86,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:54:25
+============================================================
+{
+  "timestamp": "2026-06-14 18:54:25",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Buang data monitor",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"monitor\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'monitor' tidak ditemukan di database.",
+  "latency_ms": 324.65,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:54:28
+============================================================
+{
+  "timestamp": "2026-06-14 18:54:28",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Buang data laptop",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"laptop\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'laptop' tidak ditemukan di database.",
+  "latency_ms": 216.43,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:54:31
+============================================================
+{
+  "timestamp": "2026-06-14 18:54:31",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Buang data router",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"router\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'router' tidak ditemukan di database.",
+  "latency_ms": 210.57,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:54:35
+============================================================
+{
+  "timestamp": "2026-06-14 18:54:35",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Buang data keyboard",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"keyboard\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'keyboard' tidak ditemukan di database.",
+  "latency_ms": 236.83,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:54:36
+============================================================
+{
+  "timestamp": "2026-06-14 18:54:36",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Buang data mouse",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"mouse\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'mouse' tidak ditemukan di database.",
+  "latency_ms": 239.74,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:54:39
+============================================================
+{
+  "timestamp": "2026-06-14 18:54:39",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Buang data printer",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"printer\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'printer' tidak ditemukan di database.",
+  "latency_ms": 210.74,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:54:42
+============================================================
+{
+  "timestamp": "2026-06-14 18:54:42",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Buang data flashdisk",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"flashdisk\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'flashdisk' tidak ditemukan di database.",
+  "latency_ms": 333.0,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:54:44
+============================================================
+{
+  "timestamp": "2026-06-14 18:54:44",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Hilangkan buku",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"buku\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'buku' tidak ditemukan di database.",
+  "latency_ms": 346.38,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:54:48
+============================================================
+{
+  "timestamp": "2026-06-14 18:54:48",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Hilangkan pulpen",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"pulpen\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'pulpen' tidak ditemukan di database.",
+  "latency_ms": 333.21,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:54:51
+============================================================
+{
+  "timestamp": "2026-06-14 18:54:51",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Hilangkan penghapus",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"penghapus\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'penghapus' tidak ditemukan di database.",
+  "latency_ms": 497.11,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:54:53
+============================================================
+{
+  "timestamp": "2026-06-14 18:54:53",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Hilangkan monitor",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"monitor\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'monitor' tidak ditemukan di database.",
+  "latency_ms": 227.53,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:54:55
+============================================================
+{
+  "timestamp": "2026-06-14 18:54:55",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Hilangkan laptop",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"laptop\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'laptop' tidak ditemukan di database.",
+  "latency_ms": 320.39,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:54:59
+============================================================
+{
+  "timestamp": "2026-06-14 18:54:59",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Hilangkan router",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"router\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'router' tidak ditemukan di database.",
+  "latency_ms": 216.81,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:55:02
+============================================================
+{
+  "timestamp": "2026-06-14 18:55:02",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Hilangkan keyboard",
+  "raw_ai_response": "Tidak ada hubungan dengan inventaris, saya tidak bisa menghilangkan keyboard karena itu adalah perangkat fisik.",
+  "parsed_function": null,
+  "output": "Tidak ada hubungan dengan inventaris, saya tidak bisa menghilangkan keyboard karena itu adalah perangkat fisik.",
+  "latency_ms": 860.81,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:55:07
+============================================================
+{
+  "timestamp": "2026-06-14 18:55:07",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Hilangkan mouse",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"mouse\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'mouse' tidak ditemukan di database.",
+  "latency_ms": 460.47,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:55:10
+============================================================
+{
+  "timestamp": "2026-06-14 18:55:10",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Hilangkan printer",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"printer\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'printer' tidak ditemukan di database.",
+  "latency_ms": 320.79,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:55:13
+============================================================
+{
+  "timestamp": "2026-06-14 18:55:13",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Hilangkan flashdisk",
+  "raw_ai_response": "{\"fungsi\": \"hapus\", \"barang\": \"flashdisk\"}",
+  "parsed_function": "hapus",
+  "output": "❌ Barang 'flashdisk' tidak ditemukan di database.",
+  "latency_ms": 348.92,
+  "status": "Error_Stok"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:55:17
+============================================================
+{
+  "timestamp": "2026-06-14 18:55:17",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Halo",
+  "raw_ai_response": "Halo, ada yang bisa saya bantu?",
+  "parsed_function": null,
+  "output": "Halo, ada yang bisa saya bantu?",
+  "latency_ms": 419.11,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:55:20
+============================================================
+{
+  "timestamp": "2026-06-14 18:55:20",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Selamat pagi",
+  "raw_ai_response": "Selamat pagi!",
+  "parsed_function": null,
+  "output": "Selamat pagi!",
+  "latency_ms": 189.92,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:55:22
+============================================================
+{
+  "timestamp": "2026-06-14 18:55:22",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Apa kabar?",
+  "raw_ai_response": "Baik, terima kasih.",
+  "parsed_function": null,
+  "output": "Baik, terima kasih.",
+  "latency_ms": 210.68,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:55:25
+============================================================
+{
+  "timestamp": "2026-06-14 18:55:25",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Siapa kamu?",
+  "raw_ai_response": "Saya adalah asisten gudang inventaris. Saya membantu mengelola stok barang di gudang dengan melakukan berbagai fungsi seperti mengecek stok, menambah stok, mengurangi stok, dan menghapus barang dari database.",
+  "parsed_function": null,
+  "output": "Saya adalah asisten gudang inventaris. Saya membantu mengelola stok barang di gudang dengan melakukan berbagai fungsi seperti mengecek stok, menambah stok, mengurangi stok, dan menghapus barang dari database.",
+  "latency_ms": 350.52,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:55:28
+============================================================
+{
+  "timestamp": "2026-06-14 18:55:28",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Apa itu AI?",
+  "raw_ai_response": "AI adalah kecerdasan buatan, yaitu teknologi yang memungkinkan mesin untuk melakukan tugas-tugas yang biasanya memerlukan kecerdasan manusia, seperti belajar, mengenali pola, membuat keputusan, dan berinteraksi dengan lingkungan.",
+  "parsed_function": null,
+  "output": "AI adalah kecerdasan buatan, yaitu teknologi yang memungkinkan mesin untuk melakukan tugas-tugas yang biasanya memerlukan kecerdasan manusia, seperti belajar, mengenali pola, membuat keputusan, dan berinteraksi dengan lingkungan.",
+  "latency_ms": 498.53,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:55:31
+============================================================
+{
+  "timestamp": "2026-06-14 18:55:31",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Jelaskan machine learning",
+  "raw_ai_response": "Machine learning adalah bidang ilmu komputer yang berfokus pada pengembangan algoritma dan statistik yang memungkinkan komputer untuk belajar dari data dan membuat keputusan tanpa diprogram secara eksplisit. Ini memungkinkan komputer untuk meningkatkan kinerja dan akurasi dalam melakukan tugas-tugas tertentu, seperti pengenalan pola, klasifikasi, dan prediksi.",
+  "parsed_function": null,
+  "output": "Machine learning adalah bidang ilmu komputer yang berfokus pada pengembangan algoritma dan statistik yang memungkinkan komputer untuk belajar dari data dan membuat keputusan tanpa diprogram secara eksplisit. Ini memungkinkan komputer untuk meningkatkan kinerja dan akurasi dalam melakukan tugas-tugas tertentu, seperti pengenalan pola, klasifikasi, dan prediksi.",
+  "latency_ms": 554.16,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:55:36
+============================================================
+{
+  "timestamp": "2026-06-14 18:55:36",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Cuaca hari ini bagaimana?",
+  "raw_ai_response": "Cuaca hari ini tidak terlalu panas, tapi juga tidak hujan.",
+  "parsed_function": null,
+  "output": "Cuaca hari ini tidak terlalu panas, tapi juga tidak hujan.",
+  "latency_ms": 390.36,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:55:39
+============================================================
+{
+  "timestamp": "2026-06-14 18:55:39",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Berapa umur bumi?",
+  "raw_ai_response": "Bumi diperkirakan berusia sekitar 4,54 miliar tahun.",
+  "parsed_function": null,
+  "output": "Bumi diperkirakan berusia sekitar 4,54 miliar tahun.",
+  "latency_ms": 239.53,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:55:42
+============================================================
+{
+  "timestamp": "2026-06-14 18:55:42",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Saya lapar",
+  "raw_ai_response": "Saya sarankan kamu mencari makanan atau minuman untuk menghilangkan rasa laparmu.",
+  "parsed_function": null,
+  "output": "Saya sarankan kamu mencari makanan atau minuman untuk menghilangkan rasa laparmu.",
+  "latency_ms": 294.17,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:55:46
+============================================================
+{
+  "timestamp": "2026-06-14 18:55:46",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Saya capek",
+  "raw_ai_response": "Saya paham, sepertinya Anda butuh istirahat. Apakah ada yang bisa saya bantu untuk membuat Anda merasa lebih baik?",
+  "parsed_function": null,
+  "output": "Saya paham, sepertinya Anda butuh istirahat. Apakah ada yang bisa saya bantu untuk membuat Anda merasa lebih baik?",
+  "latency_ms": 439.94,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:55:50
+============================================================
+{
+  "timestamp": "2026-06-14 18:55:50",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Buku favorit saya Harry Potter",
+  "raw_ai_response": "Buku Harry Potter memang sangat populer dan disukai banyak orang. Seri buku karangan J.K. Rowling ini telah menjadi fenomena global dan telah diterjemahkan ke dalam banyak bahasa. Apakah kamu memiliki buku favorit dalam seri Harry Potter?",
+  "parsed_function": null,
+  "output": "Buku Harry Potter memang sangat populer dan disukai banyak orang. Seri buku karangan J.K. Rowling ini telah menjadi fenomena global dan telah diterjemahkan ke dalam banyak bahasa. Apakah kamu memiliki buku favorit dalam seri Harry Potter?",
+  "latency_ms": 330.01,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:55:54
+============================================================
+{
+  "timestamp": "2026-06-14 18:55:54",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Laptop saya rusak",
+  "raw_ai_response": "Maaf mendengar itu, semoga bisa diperbaiki segera. Apakah ada yang bisa saya bantu terkait inventaris?",
+  "parsed_function": null,
+  "output": "Maaf mendengar itu, semoga bisa diperbaiki segera. Apakah ada yang bisa saya bantu terkait inventaris?",
+  "latency_ms": 614.78,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:55:56
+============================================================
+{
+  "timestamp": "2026-06-14 18:55:56",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Monitor saya mati",
+  "raw_ai_response": "Maaf mendengar itu, coba periksa kabel power dan pastikan semua koneksi sudah benar. Jika masih tidak menyala, mungkin ada kerusakan pada monitor atau komponen lainnya.",
+  "parsed_function": null,
+  "output": "Maaf mendengar itu, coba periksa kabel power dan pastikan semua koneksi sudah benar. Jika masih tidak menyala, mungkin ada kerusakan pada monitor atau komponen lainnya.",
+  "latency_ms": 358.27,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:56:00
+============================================================
+{
+  "timestamp": "2026-06-14 18:56:00",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Router rumah saya error",
+  "raw_ai_response": "Router rumah Anda error, mungkin perlu direset atau diperiksa koneksi internetnya. Apakah Anda sudah mencoba mematikan dan menyalakan kembali router?",
+  "parsed_function": null,
+  "output": "Router rumah Anda error, mungkin perlu direset atau diperiksa koneksi internetnya. Apakah Anda sudah mencoba mematikan dan menyalakan kembali router?",
+  "latency_ms": 459.39,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:56:02
+============================================================
+{
+  "timestamp": "2026-06-14 18:56:02",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Flashdisk saya hilang",
+  "raw_ai_response": "Maaf mendengar itu, semoga flashdisk Anda bisa ditemukan kembali. Apakah ada yang bisa saya bantu terkait inventaris?",
+  "parsed_function": null,
+  "output": "Maaf mendengar itu, semoga flashdisk Anda bisa ditemukan kembali. Apakah ada yang bisa saya bantu terkait inventaris?",
+  "latency_ms": 367.21,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:56:06
+============================================================
+{
+  "timestamp": "2026-06-14 18:56:06",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Saya suka keyboard mekanikal",
+  "raw_ai_response": "Saya senang mendengar bahwa Anda suka keyboard mekanikal! Keyboard mekanikal memang memiliki kelebihan dalam hal kenyamanan dan kecepatan mengetik. Apakah Anda memiliki keyboard mekanikal favorit atau merek tertentu yang Anda sukai?",
+  "parsed_function": null,
+  "output": "Saya senang mendengar bahwa Anda suka keyboard mekanikal! Keyboard mekanikal memang memiliki kelebihan dalam hal kenyamanan dan kecepatan mengetik. Apakah Anda memiliki keyboard mekanikal favorit atau merek tertentu yang Anda sukai?",
+  "latency_ms": 480.09,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:56:09
+============================================================
+{
+  "timestamp": "2026-06-14 18:56:09",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Mouse gaming mahal ya",
+  "raw_ai_response": "Mouse gaming memang bisa memiliki harga yang bervariasi, mulai dari yang terjangkau hingga yang sangat mahal, tergantung pada fitur, kualitas, dan mereknya.",
+  "parsed_function": null,
+  "output": "Mouse gaming memang bisa memiliki harga yang bervariasi, mulai dari yang terjangkau hingga yang sangat mahal, tergantung pada fitur, kualitas, dan mereknya.",
+  "latency_ms": 453.36,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:56:12
+============================================================
+{
+  "timestamp": "2026-06-14 18:56:12",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Printer saya macet",
+  "raw_ai_response": "Printer kamu macet, coba periksa kertas dan tinta, pastikan tidak ada yang tersangkut atau habis. Jika masih bermasalah, mungkin perlu direset atau dibawa ke tempat servis.",
+  "parsed_function": null,
+  "output": "Printer kamu macet, coba periksa kertas dan tinta, pastikan tidak ada yang tersangkut atau habis. Jika masih bermasalah, mungkin perlu direset atau dibawa ke tempat servis.",
+  "latency_ms": 571.66,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:56:15
+============================================================
+{
+  "timestamp": "2026-06-14 18:56:15",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Pulpen saya habis tinta",
+  "raw_ai_response": "Pulpen yang habis tinta memang bisa sangat mengganggu. Mungkin sudah waktunya untuk menggantinya atau mengisinya dengan tinta baru. Apakah ada yang bisa saya bantu terkait dengan pulpen atau inventaris?",
+  "parsed_function": null,
+  "output": "Pulpen yang habis tinta memang bisa sangat mengganggu. Mungkin sudah waktunya untuk menggantinya atau mengisinya dengan tinta baru. Apakah ada yang bisa saya bantu terkait dengan pulpen atau inventaris?",
+  "latency_ms": 700.06,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:56:17
+============================================================
+{
+  "timestamp": "2026-06-14 18:56:17",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Penghapus saya hilang",
+  "raw_ai_response": "Penghapus kamu hilang, coba cari di meja atau di tempat biasanya kamu meletakkan penghapus.",
+  "parsed_function": null,
+  "output": "Penghapus kamu hilang, coba cari di meja atau di tempat biasanya kamu meletakkan penghapus.",
+  "latency_ms": 311.84,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:56:20
+============================================================
+{
+  "timestamp": "2026-06-14 18:56:20",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Tolong ceritakan lelucon",
+  "raw_ai_response": "Kenapa ayam bisa menyeberangi jalan? Karena ayam ingin pergi ke \"sisi lain\"!",
+  "parsed_function": null,
+  "output": "Kenapa ayam bisa menyeberangi jalan? Karena ayam ingin pergi ke \"sisi lain\"!",
+  "latency_ms": 409.81,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:56:24
+============================================================
+{
+  "timestamp": "2026-06-14 18:56:24",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Berapa 10 + 20",
+  "raw_ai_response": "30",
+  "parsed_function": null,
+  "output": "30",
+  "latency_ms": 189.94,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:56:27
+============================================================
+{
+  "timestamp": "2026-06-14 18:56:27",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Siapa presiden Indonesia?",
+  "raw_ai_response": "Presiden Indonesia saat ini adalah Joko Widodo.",
+  "parsed_function": null,
+  "output": "Presiden Indonesia saat ini adalah Joko Widodo.",
+  "latency_ms": 318.88,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:56:31
+============================================================
+{
+  "timestamp": "2026-06-14 18:56:31",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Saya ingin membeli laptop baru",
+  "raw_ai_response": "Tidak ada hubungan dengan inventaris gudang.",
+  "parsed_function": null,
+  "output": "Tidak ada hubungan dengan inventaris gudang.",
+  "latency_ms": 351.62,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:56:34
+============================================================
+{
+  "timestamp": "2026-06-14 18:56:34",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Terima kasih",
+  "raw_ai_response": "Sama-sama",
+  "parsed_function": null,
+  "output": "Sama-sama",
+  "latency_ms": 311.5,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:56:37
+============================================================
+{
+  "timestamp": "2026-06-14 18:56:37",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Sampai jumpa",
+  "raw_ai_response": "Sampai jumpa",
+  "parsed_function": null,
+  "output": "Sampai jumpa",
+  "latency_ms": 192.9,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:56:40
+============================================================
+{
+  "timestamp": "2026-06-14 18:56:40",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Selamat malam",
+  "raw_ai_response": "Selamat malam",
+  "parsed_function": null,
+  "output": "Selamat malam",
+  "latency_ms": 217.6,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:56:43
+============================================================
+{
+  "timestamp": "2026-06-14 18:56:43",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Selamat siang",
+  "raw_ai_response": "Selamat siang",
+  "parsed_function": null,
+  "output": "Selamat siang",
+  "latency_ms": 177.04,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:56:45
+============================================================
+{
+  "timestamp": "2026-06-14 18:56:45",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Apa hobi kamu?",
+  "raw_ai_response": "Saya suka membaca buku dan menonton film.",
+  "parsed_function": null,
+  "output": "Saya suka membaca buku dan menonton film.",
+  "latency_ms": 231.8,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:56:49
+============================================================
+{
+  "timestamp": "2026-06-14 18:56:49",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Kamu dibuat pakai apa?",
+  "raw_ai_response": "Saya dibuat menggunakan teknologi bahasa pemrograman dan kecerdasan buatan, tetapi saya tidak memiliki informasi tentang inventaris.",
+  "parsed_function": null,
+  "output": "Saya dibuat menggunakan teknologi bahasa pemrograman dan kecerdasan buatan, tetapi saya tidak memiliki informasi tentang inventaris.",
+  "latency_ms": 512.55,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:56:53
+============================================================
+{
+  "timestamp": "2026-06-14 18:56:53",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Jelaskan database",
+  "raw_ai_response": "Database adalah kumpulan data yang terorganisir dan tersimpan dalam sebuah sistem, sehingga data tersebut dapat diakses, diperbarui, dan dikelola dengan efisien. Database dapat berupa koleksi data yang besar dan kompleks, dan digunakan untuk menyimpan dan mengelola data dalam berbagai aplikasi, seperti sistem informasi, aplikasi bisnis, dan lain-lain.\n\nDatabase memiliki beberapa karakteristik, antara lain:\n\n1. Kumpulan data: Database adalah kumpulan data yang terorganisir dan tersimpan dalam sebuah sistem.\n2. Terstruktur: Data dalam database terstruktur dalam bentuk tabel, relasi, dan indeks, sehingga memudahkan pengaksesan dan pengelolaan data.\n3. Dapat diakses: Database dapat diakses oleh pengguna melalui antarmuka pengguna, seperti query, form, dan laporan.\n4. Dapat diperbarui: Database dapat diperbarui dengan menambah, menghapus, atau mengubah data yang ada.\n5. Dapat dikelola: Database dapat dikelola dengan menggunakan berbagai alat dan teknik, seperti backup, recovery, dan optimasi.\n\nDatabase memiliki beberapa jenis, antara lain:\n\n1. Database relasional: Database yang menggunakan struktur tabel dan relasi untuk menyimpan data.\n2. Database NoSQL: Database yang tidak menggunakan struktur tabel dan relasi, tetapi menggunakan struktur data lain, seperti dokumen, grafik, atau kunci-nilai.\n3. Database objek: Database yang menyimpan data dalam bentuk objek, seperti objek Java atau objek Python.\n4. Database waktu nyata: Database yang dirancang untuk menyimpan dan mengelola data dalam waktu nyata, seperti data sensor atau data transaksi.\n\nDatabase memiliki banyak manfaat, antara lain:\n\n1. Mengelola data dengan efisien: Database memungkinkan pengguna untuk mengelola data dengan efisien, sehingga memudahkan pengaksesan dan penggunaan data.\n2. Meningkatkan keamanan data: Database dapat meningkatkan keamanan data dengan menggunakan berbagai teknik, seperti enkripsi dan autentikasi.\n3. Meningkatkan kinerja: Database dapat meningkatkan kinerja aplikasi dengan menggunakan berbagai teknik, seperti indeks dan caching.\n4. Meningkatkan skalabilitas: Database dapat meningkatkan skalabilitas aplikasi dengan menggunakan berbagai teknik, seperti partisi dan replikasi.",
+  "parsed_function": null,
+  "output": "Database adalah kumpulan data yang terorganisir dan tersimpan dalam sebuah sistem, sehingga data tersebut dapat diakses, diperbarui, dan dikelola dengan efisien. Database dapat berupa koleksi data yang besar dan kompleks, dan digunakan untuk menyimpan dan mengelola data dalam berbagai aplikasi, seperti sistem informasi, aplikasi bisnis, dan lain-lain.\n\nDatabase memiliki beberapa karakteristik, antara lain:\n\n1. Kumpulan data: Database adalah kumpulan data yang terorganisir dan tersimpan dalam sebuah sistem.\n2. Terstruktur: Data dalam database terstruktur dalam bentuk tabel, relasi, dan indeks, sehingga memudahkan pengaksesan dan pengelolaan data.\n3. Dapat diakses: Database dapat diakses oleh pengguna melalui antarmuka pengguna, seperti query, form, dan laporan.\n4. Dapat diperbarui: Database dapat diperbarui dengan menambah, menghapus, atau mengubah data yang ada.\n5. Dapat dikelola: Database dapat dikelola dengan menggunakan berbagai alat dan teknik, seperti backup, recovery, dan optimasi.\n\nDatabase memiliki beberapa jenis, antara lain:\n\n1. Database relasional: Database yang menggunakan struktur tabel dan relasi untuk menyimpan data.\n2. Database NoSQL: Database yang tidak menggunakan struktur tabel dan relasi, tetapi menggunakan struktur data lain, seperti dokumen, grafik, atau kunci-nilai.\n3. Database objek: Database yang menyimpan data dalam bentuk objek, seperti objek Java atau objek Python.\n4. Database waktu nyata: Database yang dirancang untuk menyimpan dan mengelola data dalam waktu nyata, seperti data sensor atau data transaksi.\n\nDatabase memiliki banyak manfaat, antara lain:\n\n1. Mengelola data dengan efisien: Database memungkinkan pengguna untuk mengelola data dengan efisien, sehingga memudahkan pengaksesan dan penggunaan data.\n2. Meningkatkan keamanan data: Database dapat meningkatkan keamanan data dengan menggunakan berbagai teknik, seperti enkripsi dan autentikasi.\n3. Meningkatkan kinerja: Database dapat meningkatkan kinerja aplikasi dengan menggunakan berbagai teknik, seperti indeks dan caching.\n4. Meningkatkan skalabilitas: Database dapat meningkatkan skalabilitas aplikasi dengan menggunakan berbagai teknik, seperti partisi dan replikasi.",
+  "latency_ms": 1771.51,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:57:00
+============================================================
+{
+  "timestamp": "2026-06-14 18:57:00",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Jelaskan Firebase",
+  "raw_ai_response": "Firebase adalah sebuah platform pengembangan aplikasi yang dibuat oleh Google. Firebase menyediakan berbagai layanan yang memungkinkan pengembang untuk membangun, menguji, dan mengelola aplikasi dengan lebih cepat dan efisien. Beberapa layanan yang ditawarkan oleh Firebase antara lain:\n\n* Firebase Realtime Database: sebuah database NoSQL yang memungkinkan pengembang untuk menyimpan dan mengakses data secara real-time.\n* Firebase Firestore: sebuah database NoSQL yang lebih canggih dan fleksibel daripada Realtime Database.\n* Firebase Authentication: sebuah layanan yang memungkinkan pengembang untuk mengautentikasi pengguna dan mengelola akses ke aplikasi.\n* Firebase Cloud Functions: sebuah layanan yang memungkinkan pengembang untuk menjalankan kode server-side tanpa perlu mengelola infrastruktur.\n* Firebase Cloud Storage: sebuah layanan yang memungkinkan pengembang untuk menyimpan dan mengakses file secara online.\n* Firebase Cloud Messaging: sebuah layanan yang memungkinkan pengembang untuk mengirimkan notifikasi push ke pengguna.\n\nFirebase juga menyediakan berbagai alat dan fitur lainnya, seperti Firebase Analytics, Firebase Crashlytics, dan Firebase Performance Monitoring, yang membantu pengembang untuk memantau dan mengoptimalkan aplikasi mereka.\n\nDengan menggunakan Firebase, pengembang dapat fokus pada pengembangan aplikasi tanpa perlu khawatir tentang infrastruktur dan layanan yang diperlukan untuk menjalankan aplikasi. Firebase juga menyediakan integrasi yang mudah dengan berbagai platform, termasuk Android, iOS, dan web.",
+  "parsed_function": null,
+  "output": "Firebase adalah sebuah platform pengembangan aplikasi yang dibuat oleh Google. Firebase menyediakan berbagai layanan yang memungkinkan pengembang untuk membangun, menguji, dan mengelola aplikasi dengan lebih cepat dan efisien. Beberapa layanan yang ditawarkan oleh Firebase antara lain:\n\n* Firebase Realtime Database: sebuah database NoSQL yang memungkinkan pengembang untuk menyimpan dan mengakses data secara real-time.\n* Firebase Firestore: sebuah database NoSQL yang lebih canggih dan fleksibel daripada Realtime Database.\n* Firebase Authentication: sebuah layanan yang memungkinkan pengembang untuk mengautentikasi pengguna dan mengelola akses ke aplikasi.\n* Firebase Cloud Functions: sebuah layanan yang memungkinkan pengembang untuk menjalankan kode server-side tanpa perlu mengelola infrastruktur.\n* Firebase Cloud Storage: sebuah layanan yang memungkinkan pengembang untuk menyimpan dan mengakses file secara online.\n* Firebase Cloud Messaging: sebuah layanan yang memungkinkan pengembang untuk mengirimkan notifikasi push ke pengguna.\n\nFirebase juga menyediakan berbagai alat dan fitur lainnya, seperti Firebase Analytics, Firebase Crashlytics, dan Firebase Performance Monitoring, yang membantu pengembang untuk memantau dan mengoptimalkan aplikasi mereka.\n\nDengan menggunakan Firebase, pengembang dapat fokus pada pengembangan aplikasi tanpa perlu khawatir tentang infrastruktur dan layanan yang diperlukan untuk menjalankan aplikasi. Firebase juga menyediakan integrasi yang mudah dengan berbagai platform, termasuk Android, iOS, dan web.",
+  "latency_ms": 1343.72,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:57:02
+============================================================
+{
+  "timestamp": "2026-06-14 18:57:02",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Apa itu Telegram Bot?",
+  "raw_ai_response": "Telegram Bot adalah sebuah aplikasi yang menggunakan platform messaging Telegram untuk berinteraksi dengan pengguna. Bot ini dapat melakukan berbagai tugas, seperti menjawab pertanyaan, mengirimkan informasi, dan bahkan melakukan tugas-tugas otomatis. Bot ini dibuat menggunakan bahasa pemrograman dan dapat diintegrasikan dengan berbagai layanan lainnya.",
+  "parsed_function": null,
+  "output": "Telegram Bot adalah sebuah aplikasi yang menggunakan platform messaging Telegram untuk berinteraksi dengan pengguna. Bot ini dapat melakukan berbagai tugas, seperti menjawab pertanyaan, mengirimkan informasi, dan bahkan melakukan tugas-tugas otomatis. Bot ini dibuat menggunakan bahasa pemrograman dan dapat diintegrasikan dengan berbagai layanan lainnya.",
+  "latency_ms": 450.95,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:57:05
+============================================================
+{
+  "timestamp": "2026-06-14 18:57:05",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Apa itu Python?",
+  "raw_ai_response": "Python adalah bahasa pemrograman tingkat tinggi yang dikembangkan pada tahun 1991 oleh Guido van Rossum. Bahasa pemrograman ini dikenal karena sintaksnya yang sederhana, fleksibel, dan mudah dipahami, sehingga sangat populer di kalangan pengembang dan ilmuwan data. Python banyak digunakan dalam berbagai bidang, seperti pengembangan web, analisis data, kecerdasan buatan, dan lain-lain.",
+  "parsed_function": null,
+  "output": "Python adalah bahasa pemrograman tingkat tinggi yang dikembangkan pada tahun 1991 oleh Guido van Rossum. Bahasa pemrograman ini dikenal karena sintaksnya yang sederhana, fleksibel, dan mudah dipahami, sehingga sangat populer di kalangan pengembang dan ilmuwan data. Python banyak digunakan dalam berbagai bidang, seperti pengembangan web, analisis data, kecerdasan buatan, dan lain-lain.",
+  "latency_ms": 590.34,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:57:08
+============================================================
+{
+  "timestamp": "2026-06-14 18:57:08",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Saya sedang belajar coding",
+  "raw_ai_response": "Saya senang mendengar itu! Belajar coding bisa sangat menyenangkan dan menantang. Apa bahasa pemrograman yang sedang kamu pelajari sekarang?",
+  "parsed_function": null,
+  "output": "Saya senang mendengar itu! Belajar coding bisa sangat menyenangkan dan menantang. Apa bahasa pemrograman yang sedang kamu pelajari sekarang?",
+  "latency_ms": 388.98,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:57:11
+============================================================
+{
+  "timestamp": "2026-06-14 18:57:11",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Hari ini panas sekali",
+  "raw_ai_response": "Hari ini memang panas sekali, ya.",
+  "parsed_function": null,
+  "output": "Hari ini memang panas sekali, ya.",
+  "latency_ms": 339.86,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:58:20
+============================================================
+{
+  "timestamp": "2026-06-14 18:58:20",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Saya suka membaca buku",
+  "raw_ai_response": "Saya senang mendengar bahwa Anda suka membaca buku! Membaca dapat membuka wawasan dan meningkatkan pengetahuan kita tentang berbagai hal. Apa jenis buku yang Anda sukai? Fiksi, non-fiksi, atau mungkin buku self-improvement?",
+  "parsed_function": null,
+  "output": "Saya senang mendengar bahwa Anda suka membaca buku! Membaca dapat membuka wawasan dan meningkatkan pengetahuan kita tentang berbagai hal. Apa jenis buku yang Anda sukai? Fiksi, non-fiksi, atau mungkin buku self-improvement?",
+  "latency_ms": 460.94,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:58:23
+============================================================
+{
+  "timestamp": "2026-06-14 18:58:23",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Monitor 24 inci bagus tidak?",
+  "raw_ai_response": "Monitor 24 inci bisa menjadi pilihan yang bagus, tergantung pada kebutuhan dan preferensi Anda. Ukuran 24 inci dapat menyediakan ruang layar yang cukup untuk multitasking dan menawarkan resolusi yang baik untuk pengalaman visual yang menyenangkan. Namun, pertimbangan lain seperti resolusi, refresh rate, dan fitur lainnya juga perlu dipertimbangkan saat memilih monitor yang sesuai untuk kebutuhan Anda.",
+  "parsed_function": null,
+  "output": "Monitor 24 inci bisa menjadi pilihan yang bagus, tergantung pada kebutuhan dan preferensi Anda. Ukuran 24 inci dapat menyediakan ruang layar yang cukup untuk multitasking dan menawarkan resolusi yang baik untuk pengalaman visual yang menyenangkan. Namun, pertimbangan lain seperti resolusi, refresh rate, dan fitur lainnya juga perlu dipertimbangkan saat memilih monitor yang sesuai untuk kebutuhan Anda.",
+  "latency_ms": 572.68,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:58:27
+============================================================
+{
+  "timestamp": "2026-06-14 18:58:27",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Router merek apa yang bagus?",
+  "raw_ai_response": "Tidak ada merek router yang secara universal dianggap sebagai yang \"terbaik\" karena kebutuhan dan preferensi pengguna berbeda-beda. Namun, beberapa merek router yang populer dan umumnya dianggap bagus termasuk TP-Link, Netgear, Linksys, Asus, dan D-Link.",
+  "parsed_function": null,
+  "output": "Tidak ada merek router yang secara universal dianggap sebagai yang \"terbaik\" karena kebutuhan dan preferensi pengguna berbeda-beda. Namun, beberapa merek router yang populer dan umumnya dianggap bagus termasuk TP-Link, Netgear, Linksys, Asus, dan D-Link.",
+  "latency_ms": 718.56,
+  "status": "Chat_Response"
+}
+
+============================================================
+ LOG ENTRY — 2026-06-14 18:58:30
+============================================================
+{
+  "timestamp": "2026-06-14 18:58:30",
+  "model": "llama-3.3-70b-versatile",
+  "input": "Flashdisk 64GB cukup untuk kuliah?",
+  "raw_ai_response": "Tergantung kebutuhan Anda, flashdisk 64GB bisa cukup untuk menyimpan dokumen, presentasi, dan beberapa file lainnya. Namun, jika Anda memiliki banyak file besar seperti video atau proyek desain, maka 64GB mungkin tidak cukup. Pertimbangkan juga apakah Anda memerlukan ruang penyimpanan tambahan untuk file lainnya seperti foto, musik, atau aplikasi.",
+  "parsed_function": null,
+  "output": "Tergantung kebutuhan Anda, flashdisk 64GB bisa cukup untuk menyimpan dokumen, presentasi, dan beberapa file lainnya. Namun, jika Anda memiliki banyak file besar seperti video atau proyek desain, maka 64GB mungkin tidak cukup. Pertimbangkan juga apakah Anda memerlukan ruang penyimpanan tambahan untuk file lainnya seperti foto, musik, atau aplikasi.",
+  "latency_ms": 730.47,
+  "status": "Chat_Response"
+}

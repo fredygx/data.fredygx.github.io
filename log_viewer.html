@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📊 Log Viewer - Groq vs Gemini</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #0f0f13;
+    color: #e1e1e6;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  .container { max-width: 1440px; margin: 0 auto; }
+
+  /* HEADER */
+  .header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 24px; background: #1a1a24; border-radius: 16px;
+    border: 1px solid #2a2a3a; margin-bottom: 20px; flex-wrap: wrap; gap: 12px;
+  }
+  .header h1 {
+    font-size: 22px; font-weight: 800;
+    background: linear-gradient(135deg, #8b5cf6, #06b6d4);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .header-left { display: flex; align-items: center; gap: 12px; }
+  .badge {
+    padding: 4px 12px; border-radius: 20px; font-size: 11px; font-weight: 600;
+  }
+  .badge-groq { background: #2d1b69; color: #a78bfa; border: 1px solid #4c1d95; }
+  .badge-gemini { background: #0a3d2e; color: #34d399; border: 1px solid #059669; }
+
+  /* STATS ROW */
+  .stats-row {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px; margin-bottom: 20px;
+  }
+  .stat-card {
+    background: #1a1a24; border: 1px solid #2a2a3a; border-radius: 12px;
+    padding: 16px 20px; transition: all .2s;
+  }
+  .stat-card:hover { border-color: #4a4a6a; transform: translateY(-1px); }
+  .stat-label { font-size: 11px; color: #8888a0; text-transform: uppercase; letter-spacing: .5px; font-weight: 600; margin-bottom: 4px; }
+  .stat-value { font-size: 28px; font-weight: 800; }
+  .stat-sub { font-size: 12px; color: #8888a0; margin-top: 2px; }
+  .stat-groq .stat-value { color: #a78bfa; }
+  .stat-gemini .stat-value { color: #34d399; }
+  .stat-total .stat-value { color: #fbbf24; }
+
+  /* FILTERS */
+  .filters {
+    display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;
+    align-items: center;
+  }
+  .filter-group { display: flex; gap: 6px; align-items: center; }
+  .filter-group label { font-size: 12px; font-weight: 600; color: #8888a0; text-transform: uppercase; letter-spacing: .3px; }
+  .btn {
+    padding: 7px 16px; border-radius: 8px; border: 1px solid #2a2a3a;
+    background: #1a1a24; color: #c0c0d0; font-size: 13px; font-weight: 500;
+    cursor: pointer; transition: all .15s; font-family: inherit;
+  }
+  .btn:hover { border-color: #4a4a6a; background: #222233; }
+  .btn.active { border-color: #8b5cf6; background: #2d1b69; color: #c4b5fd; }
+  .btn-source.active-groq { border-color: #8b5cf6; background: #2d1b69; color: #a78bfa; }
+  .btn-source.active-gemini { border-color: #34d399; background: #0a3d2e; color: #34d399; }
+  .btn-source.active-all { border-color: #fbbf24; background: #312e1a; color: #fbbf24; }
+  .btn-func.active { border-color: #06b6d4; background: #0a3d4e; color: #67e8f9; }
+  .btn-view.active { border-color: #8b5cf6; background: #2d1b69; color: #c4b5fd; }
+  .btn-cstat.active { border-color: #f59e0b; background: #312e1a; color: #fbbf24; }
+
+  /* PARSED FUNCTION STATS */
+  .func-stats {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 8px; margin-bottom: 20px;
+  }
+  .func-card {
+    background: #1a1a24; border: 1px solid #2a2a3a; border-radius: 10px;
+    padding: 12px 16px; cursor: pointer; transition: all .15s; text-align: center;
+  }
+  .func-card:hover { border-color: #4a4a6a; transform: translateY(-1px); }
+  .func-card.active { border-color: #06b6d4; background: #0a3d4e; }
+  .func-name { font-size: 13px; font-weight: 600; color: #06b6d4; margin-bottom: 2px; }
+  .func-count { font-size: 22px; font-weight: 800; }
+  .func-sub { font-size: 10px; color: #8888a0; }
+  .func-card .groq-bar, .func-card .gemini-bar {
+    height: 4px; border-radius: 2px; margin-top: 6px; transition: width .4s ease;
+  }
+  .func-card .groq-bar { background: #a78bfa; }
+  .func-card .gemini-bar { background: #34d399; }
+
+  /* LOG TABLE */
+  .log-table-wrap {
+    background: #1a1a24; border: 1px solid #2a2a3a; border-radius: 12px;
+    overflow: hidden;
+  }
+  .log-table-header {
+    display: grid; grid-template-columns: 160px 80px 1fr 100px 100px 90px;
+    padding: 12px 16px; background: #12121c; border-bottom: 1px solid #2a2a3a;
+    font-size: 11px; font-weight: 600; color: #8888a0; text-transform: uppercase;
+    letter-spacing: .3px; gap: 8px;
+  }
+  .log-list { max-height: 600px; overflow-y: auto; }
+  .log-list::-webkit-scrollbar { width: 6px; }
+  .log-list::-webkit-scrollbar-track { background: transparent; }
+  .log-list::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+  .log-row {
+    display: grid; grid-template-columns: 160px 80px 1fr 100px 100px 90px;
+    padding: 10px 16px; border-bottom: 1px solid #222233; gap: 8px;
+    font-size: 13px; transition: background .1s; cursor: pointer;
+    align-items: start;
+  }
+  .log-row:hover { background: #222233; }
+  .log-row .time { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #8888a0; }
+  .log-row .source { font-size: 11px; font-weight: 600; }
+  .log-row .source.groq { color: #a78bfa; }
+  .log-row .source.gemini { color: #34d399; }
+  .log-row .input-text { color: #e1e1e6; line-height: 1.4; word-break: break-word; }
+  .log-row .func { font-weight: 600; font-size: 12px; }
+  .log-row .func.tambah { color: #4ade80; }
+  .log-row .func.kurang { color: #fb923c; }
+  .log-row .func.cek { color: #38bdf8; }
+  .log-row .func.hapus { color: #f87171; }
+  .log-row .func.cek_semua { color: #c084fc; }
+  .log-row .func.null { color: #8888a0; font-style: italic; }
+  .log-row .latency { font-family: 'JetBrains Mono', monospace; font-size: 12px; text-align: right; }
+  .log-row .latency.fast { color: #4ade80; }
+  .log-row .latency.medium { color: #fbbf24; }
+  .log-row .latency.slow { color: #f87171; }
+  .log-row .status-badge {
+    font-size: 11px; padding: 2px 6px; border-radius: 4px;
+    text-align: center; font-weight: 500;
+  }
+  .log-row .status-badge.ok { background: #0a3d2e; color: #34d399; }
+  .log-row .status-badge.error { background: #3d0a0a; color: #f87171; }
+  .log-row .status-badge.chat { background: #1a1a3d; color: #818cf8; }
+  .log-row .status-badge.clarify { background: #3d2e0a; color: #fbbf24; }
+
+  /* EXPANDED DETAIL */
+  .log-detail {
+    display: none; padding: 0 16px 16px; border-bottom: 1px solid #222233;
+    background: #12121c;
+  }
+  .log-detail.open { display: block; }
+  .log-detail pre {
+    font-family: 'JetBrains Mono', monospace; font-size: 12px;
+    background: #0a0a12; padding: 12px; border-radius: 8px;
+    overflow-x: auto; color: #b0b0c0; line-height: 1.5;
+  }
+  .detail-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 10px;
+  }
+  .detail-section { background: #0a0a12; border-radius: 8px; padding: 12px; }
+  .detail-section h4 {
+    font-size: 11px; font-weight: 600; color: #8888a0; text-transform: uppercase;
+    letter-spacing: .3px; margin-bottom: 8px;
+  }
+  .detail-section .field { display: flex; justify-content: space-between; padding: 3px 0; font-size: 13px; }
+  .detail-section .field .key { color: #8888a0; }
+  .detail-section .field .val { color: #e1e1e6; font-weight: 500; }
+
+  .empty-state {
+    text-align: center; padding: 48px 24px; color: #8888a0;
+  }
+  .empty-state h3 { font-size: 18px; margin-bottom: 8px; color: #8888a0; }
+  .loading {
+    text-align: center; padding: 48px; color: #8888a0;
+  }
+  .loading .spinner {
+    width: 32px; height: 32px; border: 3px solid #2a2a3a;
+    border-top-color: #8b5cf6; border-radius: 50%; animation: spin .7s linear infinite;
+    margin: 0 auto 12px;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .latency-avg {
+    display: inline-flex; align-items: center; gap: 4px;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .log-table-header, .log-row { grid-template-columns: 120px 60px 1fr 80px 70px 70px; font-size: 12px; }
+    .log-row .time { font-size: 11px; }
+    .detail-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .log-table-header, .log-row { grid-template-columns: 1fr 70px; gap: 4px; }
+    .log-table-header .hide-mobile, .log-row .hide-mobile { display: none; }
+    .stats-row { grid-template-columns: repeat(2, 1fr); }
+    .func-stats { grid-template-columns: repeat(3, 1fr); }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <h1>📊 Log Viewer</h1>
+      <span class="badge badge-groq">Groq</span>
+      <span class="badge badge-gemini">Gemini</span>
+    </div>
+    <div style="font-size:12px;color:#8888a0;">
+      <span id="totalLabel">Memuat data...</span>
+    </div>
+  </div>
+
+  <!-- STATS ROW -->
+  <div class="stats-row" id="statsRow">
+    <div class="stat-card stat-groq">
+      <div class="stat-label">Total Groq</div>
+      <div class="stat-value" id="totalGroq">-</div>
+      <div class="stat-sub" id="groqModels"></div>
+    </div>
+    <div class="stat-card stat-gemini">
+      <div class="stat-label">Total Gemini</div>
+      <div class="stat-value" id="totalGemini">-</div>
+      <div class="stat-sub" id="geminiModels"></div>
+    </div>
+    <div class="stat-card stat-total">
+      <div class="stat-label">Total Entries</div>
+      <div class="stat-value" id="totalAll">-</div>
+      <div class="stat-sub" id="totalDbActions"></div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Rata-rata Latency</div>
+      <div class="stat-value" id="avgLatency" style="color:#06b6d4;">-</div>
+      <div class="stat-sub" id="latencyCompare"></div>
+    </div>
+  </div>
+
+  <!-- FILTERS -->
+  <div class="filters">
+    <div class="filter-group">
+      <label>Sumber</label>
+      <button class="btn btn-source active-all" data-source="all" onclick="setSource('all')">All</button>
+      <button class="btn btn-source" data-source="groq" onclick="setSource('groq')">Groq</button>
+      <button class="btn btn-source" data-source="gemini" onclick="setSource('gemini')">Gemini</button>
+    </div>
+    <div class="filter-group">
+      <label>Fungsi</label>
+      <button class="btn btn-func active" data-func="all" onclick="setFunc('all')">Semua</button>
+      <button class="btn btn-func" data-func="tambah" onclick="setFunc('tambah')">➕ Tambah</button>
+      <button class="btn btn-func" data-func="kurang" onclick="setFunc('kurang')">➖ Kurang</button>
+      <button class="btn btn-func" data-func="cek" onclick="setFunc('cek')">👁️ Cek</button>
+      <button class="btn btn-func" data-func="hapus" onclick="setFunc('hapus')">🗑️ Hapus</button>
+      <button class="btn btn-func" data-func="null" onclick="setFunc('null')">💬 Chat</button>
+    </div>
+    <div class="filter-group" style="margin-left:auto;">
+      <label>Tampilan</label>
+      <button class="btn btn-view active" data-view="log" onclick="setView('log')">📋 Log</button>
+      <button class="btn btn-view" data-view="compare" onclick="setView('compare')">🔍 Banding</button>
+    </div>
+  </div>
+
+  <!-- PARSED FUNCTION STATS -->
+  <div class="func-stats" id="funcStats"></div>
+
+  <!-- INPUT COMPARISON -->
+  <div id="compareView" style="display:none;">
+    <div class="stats-row" id="compareStats">
+      <div class="stat-card" style="border-color:#4ade80;">
+        <div class="stat-label">✅ Cocok (Sama)</div>
+        <div class="stat-value" id="compareMatch" style="color:#4ade80;">-</div>
+        <div class="stat-sub">Input yang sama di kedua AI</div>
+      </div>
+      <div class="stat-card" style="border-color:#a78bfa;">
+        <div class="stat-label">🟣 Hanya di Groq</div>
+        <div class="stat-value" id="compareOnlyGroq" style="color:#a78bfa;">-</div>
+        <div class="stat-sub">Input yang ada di Groq tapi TIDAK di Gemini</div>
+      </div>
+      <div class="stat-card" style="border-color:#34d399;">
+        <div class="stat-label">🟢 Hanya di Gemini</div>
+        <div class="stat-value" id="compareOnlyGemini" style="color:#34d399;">-</div>
+        <div class="stat-sub">Input yang ada di Gemini tapi TIDAK di Groq</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">📊 Coverage</div>
+        <div class="stat-value" id="compareCoverage" style="color:#fbbf24;">-</div>
+        <div class="stat-sub" id="compareCoverageSub"></div>
+      </div>
+    </div>
+
+    <!-- FILTER BY STATUS -->
+    <div class="filters">
+      <div class="filter-group">
+        <label>Status</label>
+        <button class="btn btn-cstat active" data-cs="all" onclick="setCompareStatus('all')">Semua</button>
+        <button class="btn btn-cstat" data-cs="match" onclick="setCompareStatus('match')">✅ Cocok</button>
+        <button class="btn btn-cstat" data-cs="only-groq" onclick="setCompareStatus('only-groq')">🟣 Groq Saja</button>
+        <button class="btn btn-cstat" data-cs="only-gemini" onclick="setCompareStatus('only-gemini')">🟢 Gemini Saja</button>
+      </div>
+    </div>
+
+    <div class="log-table-wrap">
+      <div class="log-table-header" id="compareHeader" style="grid-template-columns:1fr 90px 90px 50px;">
+        <span>📝 Input</span>
+        <span>🔵 Groq</span>
+        <span>🟢 Gemini</span>
+        <span>Status</span>
+      </div>
+      <div class="log-list" id="compareList">
+        <div class="loading" id="compareLoading">
+          <div class="spinner"></div>
+          <div>Membandingkan input...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LOG TABLE -->
+  <div class="log-table-wrap" id="logTableView">
+    <div class="log-table-header">
+      <span>⏱ Waktu</span>
+      <span>📡 Sumber</span>
+      <span>📝 Input</span>
+      <span>⚙️ Fungsi</span>
+      <span class="hide-mobile">⏳ Latency</span>
+      <span class="hide-mobile">📌 Status</span>
+    </div>
+    <div class="log-list" id="logList">
+      <div class="loading" id="loadingState">
+        <div class="spinner"></div>
+        <div>Memuat data log...</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ============= STATE =============
+let allEntries = [];
+let groqEntries = [];
+let geminiEntries = [];
+let currentSource = 'all';
+let currentFunc = 'all';
+let currentView = 'log';
+let currentCompareStatus = 'all';
+let compareData = { match: [], onlyGroq: [], onlyGemini: [] };
+
+// ============= PARSE LOG FILE =============
+function parseLogText(text) {
+  const entries = [];
+  // Split by ==== separator
+  const blocks = text.split(/={5,}/);
+  for (const block of blocks) {
+    // Find JSON block (starts with {)
+    const jsonMatch = block.match(/\{[\s\S]*\}/);
+    if (jsonMatch) {
+      try {
+        const data = JSON.parse(jsonMatch[0]);
+        if (data && data.timestamp) {
+          entries.push(data);
+        }
+      } catch(e) {
+        // Skip invalid JSON
+      }
+    }
+  }
+  return entries;
+}
+
+// ============= FETCH =============
+async function loadData() {
+  try {
+    const [groqRes, geminiRes] = await Promise.all([
+      fetch('log_penelitian-groq.txt'),
+      fetch('log_penelitian-gemini.txt')
+    ]);
+
+    const groqText = await groqRes.text();
+    const geminiText = await geminiRes.text();
+
+    groqEntries = parseLogText(groqText);
+    geminiEntries = parseLogText(geminiText);
+
+    // Mark source
+    groqEntries.forEach(e => e._source = 'groq');
+    geminiEntries.forEach(e => e._source = 'gemini');
+
+    allEntries = [...groqEntries, ...geminiEntries];
+
+    // Sort by timestamp descending
+    allEntries.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+
+    render();
+  } catch(e) {
+    document.getElementById('logList').innerHTML = `
+      <div class="empty-state">
+        <h3>❌ Gagal memuat data</h3>
+        <p>${e.message}</p>
+        <p style="margin-top:8px;font-size:13px;">Pastikan file <strong>log_penelitian-groq.txt</strong> dan <strong>log_penelitian-gemini.txt</strong> ada di folder yang sama.</p>
+      </div>`;
+  }
+}
+
+// ============= FILTER FUNCTIONS =============
+function setSource(source) {
+  currentSource = source;
+  document.querySelectorAll('.btn-source').forEach(b => {
+    b.className = 'btn btn-source';
+    if (b.dataset.source === source) b.classList.add('active-' + source);
+    else if (source === 'all') {}
+  });
+  document.querySelector('.btn-source.active-all')?.classList.add('active-all');
+  // Manual class toggle
+  document.querySelectorAll('.btn-source').forEach(b => {
+    b.classList.remove('active-groq', 'active-gemini', 'active-all');
+    if (b.dataset.source === source) b.classList.add('active-' + (source === 'all' ? 'all' : source));
+    if (source === 'all' && b.dataset.source === 'all') b.classList.add('active-all');
+  });
+  renderTable();
+}
+
+function setFunc(func) {
+  currentFunc = func;
+  document.querySelectorAll('.btn-func').forEach(b => {
+    b.classList.toggle('active', b.dataset.func === func);
+  });
+  renderTable();
+}
+
+// ============= VIEW MODE =============
+function setView(view) {
+  currentView = view;
+  document.querySelectorAll('.btn-view').forEach(b => {
+    b.classList.toggle('active', b.dataset.view === view);
+  });
+  if (view === 'compare') {
+    renderComparison();
+    document.getElementById('compareView').style.display = 'block';
+    document.getElementById('logTableView').style.display = 'none';
+    document.querySelector('.func-stats').style.display = 'none';
+  } else {
+    document.getElementById('compareView').style.display = 'none';
+    document.getElementById('logTableView').style.display = 'block';
+    document.querySelector('.func-stats').style.display = 'grid';
+    renderTable();
+  }
+}
+
+function setCompareStatus(status) {
+  currentCompareStatus = status;
+  document.querySelectorAll('.btn-cstat').forEach(b => {
+    b.classList.toggle('active', b.dataset.cs === status);
+  });
+  renderComparison();
+}
+
+function getFiltered() {
+  let entries = allEntries;
+  if (currentSource === 'groq') entries = entries.filter(e => e._source === 'groq');
+  if (currentSource === 'gemini') entries = entries.filter(e => e._source === 'gemini');
+
+  if (currentFunc === 'null') entries = entries.filter(e => e.parsed_function === null || e.parsed_function === undefined);
+  else if (currentFunc !== 'all') entries = entries.filter(e => e.parsed_function === currentFunc);
+
+  return entries;
+}
+
+// ============= RENDER =============
+function render() {
+  renderStats();
+  renderFuncStats();
+  renderTable();
+  document.getElementById('totalLabel').textContent = `${allEntries.length} entries (${groqEntries.length} Groq · ${geminiEntries.length} Gemini)`;
+}
+
+function renderStats() {
+  document.getElementById('totalGroq').textContent = groqEntries.length;
+  document.getElementById('totalGemini').textContent = geminiEntries.length;
+  document.getElementById('totalAll').textContent = allEntries.length;
+
+  const dbActions = allEntries.filter(e => e.status === 'Database_Action').length;
+  document.getElementById('totalDbActions').textContent = `${dbActions} DB actions`;
+
+  const groqModels = [...new Set(groqEntries.map(e => e.model))].join(', ');
+  const geminiModels = [...new Set(geminiEntries.map(e => e.model))].join(', ');
+  document.getElementById('groqModels').textContent = groqModels || 'groq';
+  document.getElementById('geminiModels').textContent = geminiModels || 'gemini';
+
+  // Avg latency
+  const latencies = allEntries.map(e => e.latency_ms).filter(l => l != null);
+  if (latencies.length) {
+    const avg = latencies.reduce((a, b) => a + b, 0) / latencies.length;
+    document.getElementById('avgLatency').textContent = avg < 1000 ? `${avg.toFixed(0)} ms` : `${(avg / 1000).toFixed(2)} s`;
+
+    const groqLat = groqEntries.map(e => e.latency_ms).filter(l => l != null);
+    const gemLat = geminiEntries.map(e => e.latency_ms).filter(l => l != null);
+    const avgGroq = groqLat.length ? (groqLat.reduce((a, b) => a + b, 0) / groqLat.length) : 0;
+    const avgGem = gemLat.length ? (gemLat.reduce((a, b) => a + b, 0) / gemLat.length) : 0;
+    document.getElementById('latencyCompare').innerHTML =
+      `<span class="latency-avg">Groq: ${avgGroq < 1000 ? avgGroq.toFixed(0) + ' ms' : (avgGroq / 1000).toFixed(2) + ' s'}</span> · ` +
+      `<span class="latency-avg">Gemini: ${avgGem < 1000 ? avgGem.toFixed(0) + ' ms' : (avgGem / 1000).toFixed(2) + ' s'}</span>`;
+  }
+}
+
+function renderFuncStats() {
+  const funcs = {};
+  for (const e of allEntries) {
+    const fn = e.parsed_function || 'null';
+    if (!funcs[fn]) funcs[fn] = { total: 0, groq: 0, gemini: 0 };
+    funcs[fn].total++;
+    funcs[fn][e._source]++;
+  }
+
+  const maxTotal = Math.max(...Object.values(funcs).map(f => f.total), 1);
+  const funcNames = { 'tambah': '➕ Tambah', 'kurang': '➖ Kurang', 'cek': '👁️ Cek', 'hapus': '🗑️ Hapus', 'cek_semua': '📋 Semua', 'tambah_tanpa_jumlah': '❓ Tambah?', 'kurang_tanpa_jumlah': '❓ Kurang?', 'null': '💬 Chat' };
+
+  let html = '';
+  for (const [fn, data] of Object.entries(funcs)) {
+    const label = funcNames[fn] || fn;
+    const groqPct = data.total > 0 ? (data.groq / maxTotal) * 100 : 0;
+    const geminiPct = data.total > 0 ? (data.gemini / maxTotal) * 100 : 0;
+    html += `
+      <div class="func-card ${currentFunc === fn ? 'active' : ''}" onclick="setFunc('${fn}')">
+        <div class="func-name">${label}</div>
+        <div class="func-count">${data.total}</div>
+        <div class="func-sub">${data.groq} Groq · ${data.gemini} Gemini</div>
+        <div class="groq-bar" style="width:${groqPct}%"></div>
+        <div class="gemini-bar" style="width:${geminiPct}%"></div>
+      </div>`;
+  }
+  document.getElementById('funcStats').innerHTML = html;
+}
+
+function renderTable() {
+  const entries = getFiltered();
+  const list = document.getElementById('logList');
+
+  if (!entries.length) {
+    list.innerHTML = `<div class="empty-state"><h3>📭 Tidak ada data</h3><p>Coba ubah filter yang dipilih.</p></div>`;
+    return;
+  }
+
+  // Update total label
+  document.getElementById('totalLabel').textContent = `${allEntries.length} entries (menampilkan ${entries.length})`;
+
+  let html = '';
+  for (const e of entries) {
+    const time = e.timestamp || '-';
+    const source = e._source || '-';
+    const input = e.input || '-';
+    const func = e.parsed_function;
+    const latency = e.latency_ms;
+    const status = e.status || '-';
+    const dbChange = e.db_change;
+
+    const latClass = latency < 500 ? 'fast' : latency < 1500 ? 'medium' : 'slow';
+    const latText = latency != null ? (latency < 1000 ? `${latency.toFixed(0)} ms` : `${(latency / 1000).toFixed(2)} s`) : '-';
+    const funcDisplay = func || '💬 chat';
+    const funcClass = func || 'null';
+
+    let statusClass = 'ok';
+    if ((status || '').includes('Error')) statusClass = 'error';
+    else if (status === 'Chat_Response') statusClass = 'chat';
+    else if (status === 'Clarification') statusClass = 'clarify';
+
+    const entryId = time.replace(/[^a-zA-Z0-9]/g, '') + Math.random().toString(36).slice(2, 6);
+
+    html += `
+      <div class="log-row" onclick="toggleDetail('${entryId}')">
+        <span class="time">${time.split(' ')[1] || time}</span>
+        <span class="source ${source}">${source}</span>
+        <span class="input-text" title="${escHtml(input)}">${truncate(input, 60)}</span>
+        <span class="func ${funcClass}">${funcDisplay}</span>
+        <span class="latency ${latClass} hide-mobile">${latText}</span>
+        <span class="status-badge ${statusClass} hide-mobile">${status === 'Database_Action' ? 'DB' : status === 'Chat_Response' ? 'Chat' : status === 'Clarification' ? '?' : status}</span>
+      </div>
+      <div class="log-detail" id="detail-${entryId}">
+        <pre>${escHtml(JSON.stringify(e, null, 2))}</pre>
+        ${dbChange ? `
+        <div class="detail-grid">
+          <div class="detail-section">
+            <h4>🗄️ Database Change</h4>
+            <div class="field"><span class="key">Aksi</span><span class="val">${dbChange.aksi || '-'}</span></div>
+            <div class="field"><span class="key">Barang</span><span class="val">${dbChange.barang || '-'}</span></div>
+            ${dbChange.jumlah != null ? `<div class="field"><span class="key">Jumlah</span><span class="val">${dbChange.jumlah}</span></div>` : ''}
+            <div class="field"><span class="key">Stok Sebelum</span><span class="val">${dbChange.stok_sebelum != null ? dbChange.stok_sebelum : '-'}</span></div>
+            ${dbChange.stok_sesudah != null ? `<div class="field"><span class="key">Stok Sesudah</span><span class="val">${dbChange.stok_sesudah}</span></div>` : ''}
+          </div>
+          <div class="detail-section">
+            <h4>⚡ Performance</h4>
+            <div class="field"><span class="key">Latency</span><span class="val">${latText}</span></div>
+            <div class="field"><span class="key">Model</span><span class="val">${e.model || '-'}</span></div>
+            <div class="field"><span class="key">Status</span><span class="val">${status}</span></div>
+            <div class="field"><span class="key">Parsed Func</span><span class="val">${func || '—'}</span></div>
+          </div>
+        </div>` : `
+        <div class="detail-grid">
+          <div class="detail-section">
+            <h4>⚡ Performance</h4>
+            <div class="field"><span class="key">Latency</span><span class="val">${latText}</span></div>
+            <div class="field"><span class="key">Model</span><span class="val">${e.model || '-'}</span></div>
+            <div class="field"><span class="key">Status</span><span class="val">${status}</span></div>
+          </div>
+          <div class="detail-section">
+            <h4>📤 Output</h4>
+            <div style="font-size:13px;color:#e1e1e6;">${e.output || '—'}</div>
+          </div>
+        </div>`}
+      </div>`;
+  }
+  list.innerHTML = html;
+}
+
+// ============= INPUT COMPARISON =============
+function buildCompareData() {
+  const groqInputs = groqEntries.map(e => e.input).filter(Boolean);
+  const geminiInputs = geminiEntries.map(e => e.input).filter(Boolean);
+
+  const groqSet = new Set(groqInputs);
+  const geminiSet = new Set(geminiInputs);
+
+  // Find matching inputs (in both)
+  const matchInputs = [...groqInputs].filter(inp => geminiSet.has(inp));
+  const onlyGroqInputs = [...groqInputs].filter(inp => !geminiSet.has(inp));
+  const onlyGeminiInputs = [...geminiInputs].filter(inp => !groqSet.has(inp));
+
+  // Deduplicate
+  compareData = {
+    match: [...new Set(matchInputs)],
+    onlyGroq: [...new Set(onlyGroqInputs)],
+    onlyGemini: [...new Set(onlyGeminiInputs)]
+  };
+}
+
+function renderComparison() {
+  buildCompareData();
+
+  const { match, onlyGroq, onlyGemini } = compareData;
+  const totalGroq = groqEntries.length;
+  const totalGemini = geminiEntries.length;
+
+  // Stats
+  document.getElementById('compareMatch').textContent = match.length;
+  document.getElementById('compareOnlyGroq').textContent = onlyGroq.length;
+  document.getElementById('compareOnlyGemini').textContent = onlyGemini.length;
+
+  const totalUnique = match.length + onlyGroq.length + onlyGemini.length;
+  const coverage = totalUnique > 0 ? ((match.length / Math.max(totalGroq, totalGemini)) * 100).toFixed(1) : 0;
+  document.getElementById('compareCoverage').textContent = `${coverage}%`;
+  document.getElementById('compareCoverageSub').textContent = `${match.length} cocok dari ${Math.max(totalGroq, totalGemini)} total`;
+
+  // Build list
+  let items = [];
+  match.forEach(inp => items.push({ input: inp, status: 'match', source: 'both' }));
+  onlyGroq.forEach(inp => items.push({ input: inp, status: 'only-groq', source: 'groq' }));
+  onlyGemini.forEach(inp => items.push({ input: inp, status: 'only-gemini', source: 'gemini' }));
+
+  // Filter by compare status
+  if (currentCompareStatus !== 'all') {
+    items = items.filter(i => i.status === currentCompareStatus);
+  }
+
+  // Sort: mismatches first, then by input alphabetically
+  items.sort((a, b) => {
+    const aScore = a.status === 'match' ? 1 : 0;
+    const bScore = b.status === 'match' ? 1 : 0;
+    if (aScore !== bScore) return aScore - bScore;
+    return a.input.localeCompare(b.input);
+  });
+
+  const list = document.getElementById('compareList');
+  if (!items.length) {
+    list.innerHTML = `<div class="empty-state"><h3>✅ Semua input cocok!</h3><p>Tidak ada perbedaan antara Groq dan Gemini.</p></div>`;
+    return;
+  }
+
+  let html = '';
+  for (const item of items) {
+    const isMatch = item.status === 'match';
+    const isOnlyGroq = item.status === 'only-groq';
+    const isOnlyGemini = item.status === 'only-gemini';
+
+    let rowStyle = '';
+    let groqIcon = '✅';
+    let geminiIcon = '✅';
+    let statusLabel = '✅ Cocok';
+    let statusClass = 'status-badge ok';
+
+    if (isOnlyGroq) {
+      rowStyle = 'background: rgba(139,92,246,0.08); border-left: 3px solid #a78bfa;';
+      geminiIcon = '❌';
+      statusLabel = '🟣 Hanya Groq';
+      statusClass = 'status-badge error';
+    } else if (isOnlyGemini) {
+      rowStyle = 'background: rgba(52,211,153,0.08); border-left: 3px solid #34d399;';
+      groqIcon = '❌';
+      statusLabel = '🟢 Hanya Gemini';
+      statusClass = 'status-badge error';
+    }
+
+    html += `
+      <div class="log-row" style="${rowStyle} grid-template-columns:1fr 90px 90px 50px;">
+        <span class="input-text" title="${escHtml(item.input)}">${truncate(item.input, 80)}</span>
+        <span style="text-align:center;font-size:16px;">${groqIcon}</span>
+        <span style="text-align:center;font-size:16px;">${geminiIcon}</span>
+        <span class="${statusClass}" style="font-size:10px;">${statusLabel}</span>
+      </div>`;
+  }
+  list.innerHTML = html;
+}
+
+function toggleDetail(id) {
+  const el = document.getElementById('detail-' + id);
+  if (el) el.classList.toggle('open');
+}
+
+function truncate(str, len) {
+  if (!str) return '-';
+  return str.length > len ? str.slice(0, len) + '…' : str;
+}
+
+function escHtml(str) {
+  if (!str) return '';
+  return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+// ============= INIT =============
+loadData();
+</script>
+</body>
+</html>
